@@ -1,0 +1,3271 @@
+@import reset
+@import lib/mixins
+@import compass
+/*----- Slick Slider Styles -----*/
+@import slick
+@import icons-sprites/icon-main/*.png
+/**/
+@import icons-sprites/icon-social/*.png
+/**/
+@import icons-sprites/icon-work/*.png
+/**/
+@import icons-sprites/icon-all/*.png
+/**/
+@import icons-sprites/icon-list/*.png
+/**/
+
+/*----- icon main -----*/
+$icon-main-sprite-dimensions: true
+@include all-icon-main-sprites
+/*----- icon social -----*/
+$icon-social-sprite-dimensions: true
+@include all-icon-social-sprites
+/*----- icon work -----*/
+$icon-work-sprite-dimensions: true
+@include all-icon-work-sprites
+/*----- icon all -----*/
+$icon-all-sprite-dimensions: true
+@include all-icon-all-sprites
+/*----- icon list -----*/
+$icon-list-sprite-dimensions: true
+@include all-icon-list-sprites
+
+// fonts
+$default-fonts: Arial, sans-serif
+
+// colors
+$viollet: #583d8b
+$orange: #d4762d
+
+/*-------------------------------------------------------------------------*/
+/*----------------------------- MAIN STYLES -------------------------------*/
+/*-------------------------------------------------------------------------*/
+.container
+	margin: 0 auto
+	width: 980px
+.row
+	+pie-clearfix
+button::-moz-focus-inner, input::-moz-focus-inner
+	border: 0
+	padding: 0
+a
+	text-decoration: none
+a:hover, a:focus
+	text-decoration: none
+svg
+	width: 100%
+	height: 100%
+body
+	min-width: 1240px
+	font-family: $default-fonts
+	font-size: 16px
+	color: $viollet
+	line-height: 1.4
+.header
+	position: absolute
+	top: 100px
+	left: 0
+	width: 100%
+	min-width: 1240px
+	> .container
+		z-index: 1000
+.body-branding
+	position: fixed
+	z-index: 3
+	top: 0
+	left: 0
+	bottom: 0
+	right: 0
+	.banner-1
+		position: absolute
+		z-index: 1100
+		right: 20px
+		top: 100px
+		> a
+			display: block
+	.service-1
+		position: absolute
+		z-index: 1100
+		top: 100px
+		left: 0
+		> a
+			display: block
+	.service-2
+		position: absolute
+		z-index: 1100
+		top: 450px
+		left: 0
+		> a
+			display: block
+.content-wrap
+	position: relative
+	z-index: 4
+	margin-top: 200px
+.wrapper
+	position: relative
+	z-index: 5
+	overflow: hidden
+	min-height: 100%
+	padding-bottom: 306px
+.footer
+	position: relative
+	z-index: 6
+	margin-top: -286px
+/*-------------------------------------------------------------------------*/
+/*----------------------------- Main page ---------------------------------*/
+/*-------------------------------------------------------------------------*/
+.is-hidden
+	display: none
+.white-btn
+	display: block
+	padding: 0 10px
+	font-size: 16px
+	color: $viollet
+	line-height: 35px
+	text-transform: uppercase
+	box-shadow: 0 0 6px rgba(1,1,1,0.3)
+	&:hover
+		box-shadow: 0 0 5px $orange
+.text-uppercase
+	text-transform: uppercase
+.text-center
+	text-align: center
+.text-orange
+	color: $orange
+.text-viollet
+	color: $viollet
+.label-hide
+	opacity: 0
+.close-banner, .close-banner-fix
+	position: absolute
+	top: 0
+	right: 0
+	padding: 0 3px 1px 3px
+	color: #fff
+	background-color: $orange
+.banner-top
+	position: relative
+	margin: 0 auto
+	width: 600px
+	height: 100px
+	z-index: 4
+	&__in
+		display: block
+		margin: 0 auto
+		width: 100%
+		height: 100%
+		background-color: #ccc
+.header
+	font-size: 20px
+	.container
+		position: relative
+		padding-top: 30px
+		padding-bottom: 0
+		background-color: #fff
+		transition: all 0.3s
+	&__top
+		position: relative
+		+pie-clearfix
+		.logo
+			float: left
+			margin-left: 0
+			height: 64px
+			transition: all 0.3s
+			img
+				height: 100%
+				vertical-align: bottom
+		.post-new
+			margin-top: 10px
+			margin-right: 0
+			transition: all 0.3s
+		.userbox
+			float: right
+			margin-top: 10px
+			margin-right: 20px
+			line-height: 38px
+			transition: all 0.3s
+			&:hover
+				color: $orange
+		.lang-selector
+			position: absolute
+			top: 14px
+			left: 100%
+			margin-left: 10px
+			padding: 0 3px
+			white-space: nowrap
+			background-color: #fff
+			border-radius: 5px
+			transition: all 0.3s
+			li
+				display: inline-block
+				font-size: 16px
+				&:hover
+					color: $orange
+				+ li
+					&:before
+						content: '|'
+						margin-right: 5px
+						color: $viollet
+	&.is-fixed
+		position: fixed
+		top: 0
+		z-index: 1000
+		.container
+			position: relative
+			padding-top: 2px
+			padding-bottom: 2px
+			box-shadow: 0 0 6px rgba(1,1,1,0.5)
+			transition: all 0.3s
+			.header__bot
+				display: none
+			.logo
+				margin-left: 2px
+				height: 38px
+				width: 57px
+				background: url("../img/logo-mini.png") no-repeat center center
+				transition: all 0.3s
+				img
+					display: none
+			.userbox
+				margin-top: 0
+				font-size: 16px
+				transition: all 0.3s
+			.post-new
+				margin-top: 0
+				margin-right: 2px
+				font-size: 16px
+				transition: all 0.3s
+			.lang-selector
+				top: 0
+				transition: all 0.3s
+			.form-search
+				position: absolute
+				left: 70px
+				top: 0
+				margin-top: 0
+				padding: 5px
+				background-color: transparent
+				.location
+					display: none
+				input, button
+					height: 32px
+					line-height: 32px
+				.search
+					width: 360px
+					margin-left: 0
+					transition: all 0.3s
+					input
+						box-shadow: inset 0 0 0 2px $viollet
+						&:focus
+							box-shadow: inset 0 0 0 2px $orange
+				.submit
+					margin-left: 10px
+					transition: all 0.3s
+					button
+						background-color: $viollet
+						&:hover
+							background-color: $orange
+.post-new
+	float: right
+	padding: 0 10px
+	color: #fff
+	line-height: 38px
+	text-transform: uppercase
+	background-color: $orange
+	transition: all 0.2s
+	&:hover
+		background-color: $viollet
+		transition: all 0.2s
+.ui-autocomplete
+	float: left
+	padding: 0 10px
+	z-index: 1001
+	background-color: #fff
+	box-shadow: 0 2px 6px rgba(1,1,1,0.5)
+	li
+		cursor: pointer
+		&:hover
+			background-color: lighten($viollet,50)
+		+ li
+			border-top: 1px solid lighten($viollet,50)
+	+ .ui-helper-hidden-accessible
+		display: none
+.form-search
+	margin-top: 10px
+	padding: 20px
+	background-color: $viollet
+	transition: all 0.3s
+	+pie-clearfix
+	.field
+		float: left
+		width: 268px
+		input, button
+			width: 100%
+			height: 35px
+			line-height: 35px
+		input
+			padding: 0 10px
+			font-size: 16px
+			color: $viollet
+			+placeholder-color($viollet)
+			&:focus
+				box-shadow: inset 0 0 0 2px $orange
+		button
+			font-size: 16px
+			color: #fff
+			text-transform: uppercase
+			text-align: left
+			text-indent: 38px
+			background-color: #9685b6
+			background-image: url("../img/icon-zoom.png")
+			background-position: 10px center
+			background-repeat: no-repeat
+			transition: all 0.2s
+			&:hover
+				background-color: $orange
+				transition: all 0.2s
+	.location
+		position: relative
+		input
+			cursor: text
+			&:focus
+				box-shadow: none
+			&::-ms-clear
+				display: none
+	.search
+		position: relative
+		width: 522px
+		margin-left: 20px
+		transition: all 0.3s
+		input
+			&::-ms-clear
+				display: none
+		.clear-input
+			position: absolute
+			z-index: 6
+			display: none
+			right: 0
+			top: 0
+			margin-right: 10px
+			margin-top: 12px
+	.submit
+		float: right
+		width: 110px
+		transition: all 0.3s
+.clear-input
+	position: absolute
+	display: none
+	right: 0
+	top: 0
+	margin-right: 10px
+	margin-top: 12px
+.search-city-wrap
+	position: relative
+	margin-bottom: 15px
+	width: 268px
+	input
+		width: 100%
+		height: 25px
+		padding: 0 10px
+		font-size: 16px
+		color: $viollet
+		line-height: 25px
+		vertical-align: top
+	.clear-input
+		margin-top: 8px
+		margin-right: 8px
+.location-wrap
+	display: none
+	min-height: 220px
+	margin-top: -1px
+	padding-left: 20px
+	padding-right: 20px
+	padding-bottom: 20px
+	background-color: $viollet
+.location-title
+	margin-bottom: 10px
+	padding-bottom: 3px
+	font-size: 16px
+	color: #fff
+	border-bottom: 1px solid #fff
+	+pie-clearfix
+	&__all, &__region, &__back
+		float: left
+		margin-right: 20px
+		font-size: inherit
+		color: inherit
+		background-color: transparent
+		cursor: pointer
+		&:hover
+			color: lighten($orange,20)
+	&__region
+		display: none
+	&__back
+		display: none
+		float: right
+		margin-right: 0
+.region-wrap, .city-wrap
+	width: 100%
+	font-size: 14px
+	color: #fff
+	+pie-clearfix
+	.region-list, .city-list
+		column-count: 4
+		column-rule: 1px solid rgba(255,255,255,0.5)
+		li
+			cursor: pointer
+			&:hover
+				color: lighten($orange,20)
+				text-decoration: underline
+.city-wrap
+	display: none
+.section-main
+	position: relative
+	+pie-clearfix
+	&__in
+		position: relative
+		float: left
+		width: 672px
+		background-color: #fff
+		+pie-clearfix
+.post-list
+	margin-left: -10px
+	+pie-clearfix
+	li
+		position: relative
+		float: left
+		margin-top: 13px
+		margin-left: 13px
+		padding: 7px
+		width: 184px
+		box-shadow: 0 0 6px rgba(1, 1, 1, 0.3)
+		&:hover
+			box-shadow: 0 0 5px 1px $orange
+		.post-list__mark
+			position: absolute
+			top: -2px
+			left: -2px
+			line-height: 50px
+			text-align: center
+			i
+				display: inline-block
+				position: relative
+				left: -2px
+				top: 1px
+				margin-left: auto
+				margin-right: auto
+				vertical-align: middle
+	&__img
+		display: block
+		width: 170px
+		height: 132px
+		line-height: 132px
+		text-align: center
+		vertical-align: middle
+		img
+			max-width: 170px
+			max-height: 132px
+			vertical-align: middle
+	&__in
+		margin-top: 8px
+		border-top: 1px solid rgba(88, 61, 139, 0.65)
+		p
+			+ p
+				font-size: 20px
+				color: $orange
+.vip-post, .advertlist-post
+	margin-top: 27px
+	.post-list
+		margin-left: 0
+		li
+			margin-top: 30px
+			margin-left: 30px
+.advertlist-post
+	margin-top: 20px
+	padding-bottom: 30px
+	border-top: 1px solid lighten($viollet,25)
+.post-title
+	padding-left: 10px
+	font-size: 20px
+	color: #fff
+	line-height: 35px
+	text-transform: uppercase
+	font-weight: normal
+	background-color: $orange
+	a
+		&:hover
+			border-bottom: 2px solid #fff
+	span
+		text-transform: none
+.icon-all-star
+	display: block
+	float: right
+	margin-top: 3px
+	cursor: pointer
+.show-all-btn
+	margin-top: 15px
+	text-align: center
+	color: #fff
+	line-height: 40px
+	letter-spacing: 0.05em
+	text-transform: uppercase
+	a
+		display: inline-block
+		padding: 0 10px
+		background-color: rgba(88, 61, 139, 0.9)
+		transition: all 0.2s
+		&:hover
+			background-color: $orange
+			transition: all 0.2s
+.slider-main
+	padding: 0
+	font-size: 26px
+	background-color: #f1f0f0
+	&__in
+		padding: 5px 38px
+	p
+		+ p
+			color: $orange
+	.icon-all-arrow-top-orange
+		position: absolute
+		display: block
+		top: 5px
+		right: 38px
+	.slick-prev, .slick-next
+		margin-top: -19px
+		font-size: 0
+		line-height: 0
+		transition: all 0.2s
+		&:hover
+			transform: scale(1.25,1.25)
+			transition: all 0.2s
+		&:before
+			display: none
+		&:after
+			content: ''
+			display: block
+			width: 25px
+			height: 30px
+	.slick-prev
+		border-left: none
+		&:after
+			margin-left: 4px
+			background: url("../img/other/icon-right.svg") no-repeat center center
+			transform: rotate(180deg)
+	.slick-next
+		border-right: none
+		&:after
+			margin-right: 4px	
+			background: url("../img/other/icon-right.svg") no-repeat center center
+	.slick-dots
+		li
+			padding: 0 5px
+			button
+				border-radius: 0
+				box-shadow: none
+				width: 10px
+				height: 10px
+				background-color: #c2c0c0
+		li.slick-active
+			button
+				opacity: 1
+				background-color: #898787
+	.slick-slide
+		padding-top: 30px
+		padding-bottom: 30px
+.nav-main
+	float: left
+	width: 308px
+	font-size: 18px
+	+pie-clearfix
+	> li
+		padding-right: 6px
+		margin-bottom: 5px
+		> span, > a
+			position: relative
+			z-index: 6
+			overflow: hidden
+			display: block
+			padding-left: 10px
+			height: 50px
+			line-height: 50px
+			background-color: #fff
+			cursor: pointer
+			.icon-wrap
+				display: inline-block
+				width: 60px
+				text-align: center
+				i
+					display: inline-block
+					vertical-align: middle
+		&.is-active, &:hover
+			padding-right: 0
+			box-shadow: 0 0 6px rgba(1, 1, 1, 0.3)
+.nav-main-sub
+	display: none
+	position: absolute
+	z-index: 5
+	left: 308px
+	right: 0
+	top: 0
+	padding-bottom: 420px
+	font-size: 16px
+	background-color: #fff
+	background-position: center bottom
+	background-size: 100% auto
+	background-repeat: no-repeat
+	box-shadow: 0 0 6px rgba(1, 1, 1, 0.3)
+	+pie-clearfix
+	> ul
+		padding-top: 10px
+		+pie-clearfix
+		> li
+			float: left
+			margin-left: 2%
+			margin-bottom: 5px
+			width: 48%
+			color: $orange
+			&:hover
+				background-color: lighten($viollet,55)
+			a
+				overflow: hidden
+				display: block
+				height: 50px
+				line-height: 50px
+				> span
+					display: inline-block
+					width: 75px
+					text-align: center
+					i
+						display: inline-block
+						vertical-align: middle
+	.post-title
+		+pie-clearfix
+		.nav-close-btn
+			float: right
+			margin-right: 10px
+			font-size: 14px
+			letter-spacing: 0.02em
+			cursor: pointer
+	&.child-bg
+		background-image: url("../img/bg/child-bg.jpg")
+	&.state-bg
+		background-image: url("../img/bg/state-bg.jpg")
+	&.transport-bg
+		background-image: url("../img/bg/transport-bg.jpg")
+	&.work-bg
+		background-image: url("../img/bg/work-bg.jpg")
+	&.animal-bg
+		background-image: url("../img/bg/animal-bg.jpg")
+	&.house-bg
+		background-image: url("../img/bg/house-bg.jpg")
+	&.electro-bg
+		background-image: url("../img/bg/electro-bg.jpg")
+	&.business-bg
+		background-image: url("../img/bg/business-bg.jpg")
+	&.style-bg
+		background-image: url("../img/bg/style-bg.jpg")
+	&.hobby-bg
+		background-image: url("../img/bg/hobby-bg.jpg")
+.section-top
+	margin-top: 30px
+	transition: all 0.3s
+	+pie-clearfix
+.top-post-btn
+	float: right
+	margin-top: 10px
+	margin-bottom: -10px
+	height: 60px
+	font-size: 20px
+	font-style: italic
+	vertical-align: top
+	transition: all 0.2s
+	+pie-clearfix
+	&:hover
+		color: $orange
+		transition: all 0.2s
+	.icon-all-arrow-left
+		float: left
+		margin-top: 10px
+		margin-right: 5px
+.section-new
+	margin-top: 40px
+	+pie-clearfix
+	&__left
+		float: left
+		width: 584px
+	&__right
+		float: right
+		width: 360px
+.banner
+	margin-top: 20px
+	a
+		display: block
+		overflow: hidden
+		margin: 0 auto
+		width: 300px
+		height: 600px
+		box-shadow: 0 0 6px rgba(1, 1, 1, 0.3)
+		img
+			width: inherit
+			height: inherit
+.news-list
+	line-height: 1.29
+	li
+		margin-top: 13px
+		padding: 7px 7px 5px 7px
+		box-shadow: 0 0 6px rgba(1, 1, 1, 0.3)
+		+pie-clearfix
+		&:hover
+			box-shadow: 0 0 5px 1px $orange
+	&__img
+		float: left
+		margin-right: 7px
+		padding-right: 7px
+		width: 58px
+		height: 58px
+		line-height: 58px
+		text-align: center
+		vertical-align: middle
+		border-right: 1px solid rgba(88, 61, 139, 0.5)
+		box-sizing: content-box
+		img
+			max-width: 58px
+			max-height: 58px
+			vertical-align: middle
+	&__in
+		.news-title
+			font-size: 18px
+			color: $orange
+			transition: all 0.2s
+			&:hover
+				text-shadow: 0 0 0.5px $orange
+				transition: all 0.2s
+		.news-list__info
+			font-size: 14px
+			+pie-clearfix
+			.news-date
+				float: left
+				transition: all 0.2s
+				&:hover
+					text-shadow: 0 0 0.5px $viollet
+					transition: all 0.2s
+			.news-comment
+				float: right
+				transition: all 0.2s
+				&:hover
+					text-shadow: 0 0 0.5px $viollet
+					transition: all 0.2s
+.section-post-new
+	margin-top: 30px
+	padding: 24px
+	padding-bottom: 14px
+	background-color: #f6e4d5
+	+pie-clearfix
+	p
+		float: right
+		font-size: 26px
+		line-height: 35px
+		text-transform: uppercase
+	.icon-all-arrow-right
+		float: right
+		margin-top: 12px
+		margin-left: 20px
+		margin-right: 20px
+.section-about
+	margin-top: 20px
+	padding: 0 20px
+	background-color: #f1f0f0
+	+pie-clearfix
+	> .row
+		padding-top: 10px
+		padding-bottom: 10px
+		font-size: 18px
+		line-height: 22px
+		border-bottom: 1px solid #d2d1d1
+		a
+			&:hover
+				color: $orange
+	.logo
+		float: right
+		margin-left: 25px
+		height: 105px
+		width: 240px
+		border-left: 1px solid #d2d1d1
+		text-align: center
+		a
+			display: block
+			margin: 10px auto 0
+			width: 162px
+			height: 81px
+			img
+				width: inherit
+				height: inherit
+				vertical-align: bottom
+.social-title
+	margin-top: 15px
+	margin-bottom: 15px
+	font-size: 24px
+	text-align: center
+.social-list
+	padding-bottom: 20px
+	li
+		display: inline-block
+		margin-left: 21px
+		line-height: 30px
+		background-color: #e0e0e0
+		transition: all 0.2s
+		&:hover
+			background-color: lighten($orange,30)
+			transition: all 0.2s
+		i
+			float: left
+			margin-right: 5px
+		span
+			float: right
+			margin-left: 5px
+			padding: 0 4px
+			font-size: 18px
+			background-color: #fff
+.footer
+	background-color: $viollet
+	padding-top: 10px
+	padding-bottom: 10px
+	color: #fff
+	+pie-clearfix
+	.footer-list
+		padding-right: 15px
+		li
+			&:hover
+				color: lighten($orange,25)
+				text-decoration: underline
+	&__left
+		float: left
+		margin-right: 4%
+		margin-bottom: 15px
+		width: 66%
+		color: #e0e0e0
+		+pie-clearfix
+		.footer__col
+			float: left
+			width: 50%
+			p
+				margin-bottom: 15px
+				padding-top: 10px
+				padding-bottom: 15px
+				font-weight: bold
+				border-bottom: 1px solid #e0e0e0
+	&__right
+		float: right
+		padding: 10px 20px 20px 20px
+		width: 30%
+		color: $viollet
+		background-color: #fff
+		p:first-child
+			margin-bottom: 15px
+			padding-bottom: 15px
+			font-weight: bold
+			border-bottom: 1px solid $viollet
+		p:nth-child(2)
+			color: $orange
+			font-weight: bold
+		p:nth-child(3)
+			line-height: 1.2
+		p:nth-child(4)
+			float: left
+			margin-top: 7px
+			margin-right: 7px
+		.phone-list
+			margin-top: 7px
+			overflow: hidden
+		.phone-btn
+			display: block
+			margin: 15px auto 0
+			width: 60%
+			font-size: 20px
+			line-height: 35px
+			color: #fff
+			background-color: $viollet
+			text-align: center
+			transition: all 0.2s
+			&:hover
+				background-color: $orange
+				transition: all 0.2s
+	&__bottom
+		color: #e0e0e0
+		line-height: 1.7
+		+pie-clearfix
+		.footer__logo
+			float: left
+			margin-right: 15px
+			padding: 3px 13px
+			width: 138px
+			height: 54px
+			background-color: #fff
+			img
+				width: 112px
+				height: 48px
+		p
+			+ p
+				color: #fff
+			a
+				&:hover
+					color: lighten($orange,25)
+/*-------------------------------------------------------------------------*/
+/*----------------------------- Login page --------------------------------*/
+/*-------------------------------------------------------------------------*/
+.login
+	margin: 0 auto
+	width: 350px
+	.post-title
+		text-align: center
+	&__inner
+		margin-top: 10px
+		padding: 40px
+		background-color: #F0EDEE
+	&__item
+		margin-top: 15px
+		+pie-clearfix
+		a
+			float: left
+			color: $orange
+			&:hover
+				text-decoration: underline
+			+ a
+				float: right
+				color: $viollet
+.icheckbox_square-orange, .iradio_square-orange
+	background-color: #fff
+	box-shadow: 0 0 3px rgba(1,1,1,0.3)
+	vertical-align: top
+	&.has-error
+		box-shadow: 0 0 2px 1px #FF0000
+		&.checked
+			box-shadow: 0 0 3px rgba(1,1,1,0.3)
+form .field
+	+pie-clearfix
+.form-input
+	float: left
+	padding: 0 10px
+	height: 35px
+	font-size: 16px
+	color: $viollet
+	width: 100%
+	box-shadow: 0 0 6px rgba(1,1,1,0.3)
+	+placeholder-color($viollet)
+.has-error
+	.form-input
+		box-shadow: 0 0 2px 1px #FF0000
+.form-area
+	padding: 5px 10px
+	font-family: $default-fonts
+	font-size: 14px
+	color: $viollet
+	border: none
+	box-shadow: 0 0 6px rgba(1,1,1,0.3)
+	width: 100%
+	height: 100px
+	resize: none
+.has-error
+	.form-area
+		box-shadow: 0 0 2px 1px #FF0000
+.form-login
+	.field
+		+ .field
+			margin-top: 15px
+	label
+		margin-left: 15px
+		cursor: pointer
+	.help-block.form-error
+		font-size: 14px
+	.icheckbox_square-orange
+		margin-top: 0
+.submit-btn
+	display: block
+	width: 100%
+	font-size: 20px
+	color: #fff
+	line-height: 40px
+	text-transform: uppercase
+	background-color: $viollet
+	transition: all 0.3s
+	&:hover
+		background-color: $orange
+		transition: all 0.3s
+	&.inverse
+		color: $viollet
+		background-color: #fff
+		box-shadow: 0 0 6px rgba(1,1,1,0.3)
+		transition: all 0.2s
+		&:hover
+			color: #fff
+			background-color: $orange
+			box-shadow: none
+			transition: all 0.2s
+.login-info
+	margin: 20px auto 0
+	padding-bottom: 50px
+	width: 450px
+	text-align: center
+	a, a:hover, a:active
+		text-decoration: underline
+		color: $orange
+	.h-line
+		margin: 15px auto
+		width: 350px
+		height: 1px
+		background-color: lighten($viollet,20)
+.social-login
+	margin-bottom: 10px
+	+pie-clearfix
+	li
+		float: left
+		a
+			display: block
+		+ li
+			float: right
+/*-------------------------------------------------------------------------*/
+/*-------------------------- Registration page ----------------------------*/
+/*-------------------------------------------------------------------------*/
+.registration
+	padding-bottom: 50px
+	+pie-clearfix
+	&__in
+		float: left
+		width: 360px
+		.post-title
+			text-align: center
+	&__info
+		float: right
+		width: 620px
+		padding: 75px 50px
+		.reg-info-list
+			margin-top: 15px
+			margin-bottom: 25px
+			li
+				margin-left: 10px
+				&:before
+					content: '\2192'
+					display: inline-block
+					margin-right: 20px
+					font-family: Verdana, Arial, sans-serif
+					font-size: 22px
+					color: $orange
+					line-height: 1
+.form-reg
+	margin-top: 10px
+	padding: 40px
+	background-color: #F0EDEE
+	.help-block.form-error
+		display: none
+	.field
+		position: relative
+		a
+			color: $orange
+		+ .field
+			margin-top: 15px
+		&:last-child
+			padding-bottom: 0
+	input
+		+ p
+			margin-top: 2px
+			margin-left: 10px
+			font-size: 12px
+	.icheckbox_square-orange
+		margin-right: 10px
+		+ span
+			font-size: 14px
+			a:hover
+				text-decoration: underline
+/*-------------------------------------------------------------------------*/
+/*-------------------------- New Advert page ------------------------------*/
+/*-------------------------------------------------------------------------*/
+.selectric-wrapper
+	&.selectric-open
+		.selectric
+			background: transparent
+.selectric-items
+	background: #fff
+	box-shadow: 0 1px 5px rgba(1,1,1,0.3)
+	border: none
+	li
+		font-size: 14px
+		color: $viollet
+		border-top: none
+		&:hover
+			background: lighten($orange,45)
+	li.selected
+		color: #fff
+		background: $orange
+.has-error
+	.selectric
+		box-shadow: 0 0 2px 1px #FF0000
+.selectric
+	box-shadow: 0 0 6px rgba(1,1,1,0.3)
+	.button:after
+		top: 6px
+		border: 7px solid transparent
+		border-top-color: #d4762d
+	.label
+		font-size: 16px
+		color: $viollet
+.advert-add
+	padding-bottom: 100px
+	.post-title
+		margin-bottom: 20px
+	.field
+		position: relative
+		+ .field
+			margin-top: 20px
+		&.h-line
+			padding-top: 20px
+			border-top: 1px solid lighten($viollet,20)
+		.submit-btn
+			width: 362px
+	.label-form
+		position: relative
+		float: left
+		padding-right: 20px
+		width: 308px
+		font-size: 18px
+		line-height: 35px
+		text-align: right
+		+pie-clearfix
+		.label-icon
+			position: absolute
+			top: 80px
+			right: 20px
+			width: 176px
+			height: 60px
+			background: url("../img/other/label-img.png") no-repeat center center
+	.area-form
+		position: relative
+		float: left
+		width: 672px
+		+pie-clearfix
+		.selectric-wrapper
+			float: left
+		.form-input, .form-area
+			width: 362px
+		&__in
+			+pie-clearfix
+		.form-area
+			vertical-align: bottom
+		.selectric-wrapper
+			width: 362px
+.has-success
+	.icon-success
+		display: block
+.help.help-block
+	position: absolute
+	left: 435px
+	top: 30px
+	display: block
+	padding: 5px 5px 5px 25px
+	font-size: 14px
+	color: $viollet
+	line-height: 1.3
+	background: url("../img/other/icon-attention.png") no-repeat 3px 6px, #fff
+	box-shadow: 0 0 6px rgba(1,1,1,0.2)
+	&:after
+		content: ''
+		position: absolute
+		display: block
+		top: -20px
+		left: -45px
+		width: 41px
+		height: 38px
+		background: url("../img/other/help-arrow.png") no-repeat center center
+.icon-success
+	display: none
+	float: left
+	margin-top: 10px
+	margin-left: 10px
+	width: 16px
+	height: 16px
+	background: url("../img/other/icon-success.png") no-repeat center center
+.help-block.form-error
+	float: left
+	margin-top: 4px
+	margin-left: 10px
+	width: 100%
+	font-size: 12px
+	line-height: 1.2
+	color: #FF0000
+.icheckbox_square-orange
+	float: left
+	margin-top: 5px
+	margin-right: 10px
+	.help-block.form-error
+		display: none
+	+ p
+		margin-right: 100px
+		font-size: 16px
+		line-height: 1.2
+		a
+			color: $orange
+.desc
+	margin-top: 3px
+	margin-left: 10px
+	font-size: 12px
+	color: $orange
+	line-height: 15px
+.photoload
+	&__in
+		float: left
+		width: 20%
+		margin-bottom: 15px
+	&__el
+		padding: 5px
+		width: 120px
+		height: 120px
+		box-shadow: 0 0 6px rgba(1,1,1,0.3)
+	&__item
+		display: block
+		width: 100%
+		height: 100%
+		line-height: 110px
+		text-align: center
+		vertical-align: middle
+		background: url("../img/other/photoload-bg.jpg") no-repeat center center
+		&.is-loaded
+			background: #fff
+		img
+			max-width: 110px
+			max-height: 110px
+			vertical-align: middle
+/*-------------------------------------------------------------------------*/
+/*-------------------------- New Advert page ------------------------------*/
+/*-------------------------------------------------------------------------*/
+.profile
+	margin-bottom: 250px
+	.form-input
+		width: 296px
+		background-color: #f1f0f0
+		box-shadow: none
+	.post-title
+		+ p
+			margin-top: 10px
+			margin-left: 10px
+			font-size: 16px
+	.field
+		+pie-clearfix
+.profile-advert
+	padding: 20px
+	&.is-empty
+		background: url("../img/other/profile-advert-bg.jpg") no-repeat center 150px
+	.post-new-wrap
+		text-align: center
+	.post-new
+		display: inline-block
+		float: none
+		margin-top: 20px
+.profile-text-empty
+	padding-top: 300px
+	font-size: 20px
+	text-align: center
+.profile-msg
+	padding: 20px
+	&.is-empty
+		background: url("../img/other/profile-msg-bg.jpg") no-repeat center 150px
+.profile-auction
+	padding: 20px
+	&.empty
+		background-color: #f1f0f0
+.profile-payment
+	padding: 20px
+	&__top
+		+pie-clearfix
+	&__balance
+		position: relative
+		float: right
+		line-height: 35px
+		font-weight: bold
+		text-transform: uppercase
+		.payment-arrow-right
+			position: absolute
+			top: 120%
+			right: -20px
+			display: block
+			width: 76px
+			height: 38px
+			background: url("../img/other/payment-arrow-right.png")	no-repeat center center
+	&__mid
+		margin-top: 20px
+		+pie-clearfix
+	.submit-btn
+		float: right
+		width: 296px
+		line-height: 35px
+	.payment-arrow-right
+		position: absolute
+		display: block
+		width: 76px
+		height: 38px
+	&__content
+		font-size: 18px
+		line-height: 20px
+		text-align: center
+		p
+			margin-top: 120px
+			padding: 0 120px
+		a
+			color: $orange
+			&:hover
+				text-decoration: underline
+.profile-settings
+	padding: 20px
+	.settings
+		> li
+			+ li
+				margin-top: 15px
+			&.is-active
+				.settings__title
+					background-color: #f1f0f0
+					&:after
+						transform: rotate(180deg)
+						transition: all 0.4s
+		&__title
+			display: block
+			padding: 0 10px
+			font-size: 20px
+			line-height: 35px
+			box-shadow: 0 0 5px rgba(1,1,1,0.3)
+			cursor: pointer
+			&:after
+				content: ''
+				display: inline-block
+				margin-left: 7px
+				width: 15px
+				height: 13px
+				background: url("../img/other/arrow-bottom.png") no-repeat center center
+				transition: all 0.4s
+		&__in
+			display: none
+.profile-delivery
+	padding: 20px
+	&.is-empty
+		background-color: #f1f0f0
+.settings-data
+	margin-top: 20px
+	padding: 0 10px
+	+pie-clearfix
+	.field
+		position: relative
+		+ .field
+			margin-top: 10px
+	.selectric-wrapper
+		width: 50%
+		.selectric
+			background-color: #f6e4d5
+			box-shadow: none
+			.button:after
+				border-top-color: $viollet
+		.selectric-items
+			box-shadow: 0 0 5px rgba(1,1,1,0.3)
+	.form-input
+		width: 50%
+		background-color: #f6e4d5
+	.submit-btn
+		margin-top: 30px
+		margin-left: 25%
+		width: 25%
+		line-height: 35px
+		&.ml0
+			margin-left: 0
+			padding: 0 30px
+			width: auto
+	.arrow-bot-orange
+		position: absolute
+		top: -40px
+		left: 30%
+		display: block
+		width: 74px
+		height: 33px
+		background: url("../img/other/arrow-bot-orange.png") no-repeat center center
+	.icheckbox_square-orange
+		margin-top: 0
+		background-color: #f1f0f0
+		box-shadow: none
+		border: none
+	.arrow-right-orange
+		position: absolute
+		display: block
+		top: -14px
+		left: 15%
+		width: 76px
+		height: 38px
+		background: url("../img/other/payment-arrow-right.png") no-repeat center center
+	.help.help-block
+		left: 59%
+	.help-block.form-error
+		margin-bottom: 10px
+.text-center
+	.submit-btn
+		display: inline-block
+		margin: 20px 0 0 0
+		padding: 0 30px
+		width: auto
+.msg-status
+	float: left
+	margin-top: 10px
+	+pie-clearfix
+	li
+		float: left
+		padding-right: 10px
+		font-size: 18px
+		line-height: 1.1
+		+ li
+			padding-left: 10px
+			border-left: 1px solid $viollet
+		&.is-active
+			color: $orange
+.search-msg, .search-payment
+	float: right
+	.field
+		position: relative
+		left: 30px
+		float: left
+		+ .field
+			left: 0
+		button[type=submit]
+			width: 30px
+			height: 35px
+			background: url("../img/other/zoom-viollet.png") no-repeat center center
+			vertical-align: top
+			transition: all 0.2s
+			&:hover
+				background-color: darken(#f1f0f0,10)
+				transition: all 0.2s
+.profile-tabs
+	margin-top: 25px
+	> .ui-tabs-nav
+		margin: 0 5px
+		+pie-clearfix
+		> li
+			position: relative
+			z-index: 1
+			overflow: hidden
+			float: left
+			padding: 5px 5px 0 5px
+			width: 162px
+			font-size: 18px
+			line-height: 40px
+			text-transform: uppercase
+			text-align: center
+			outline: none
+			> a
+				display: block
+			&:last-child
+				width: 160px
+			&.ui-tabs-active
+				z-index: 3
+				color: $orange
+				> a
+					background-color: #fff
+					box-shadow: 0 0 6px rgba(1,1,1,0.3)
+	> .ui-tabs-panel
+		position: relative
+		z-index: 2
+		min-height: 480px
+		margin: -1px 10px 0
+		box-shadow: 0 0 6px rgba(1,1,1,0.3)
+/*-------------------------------------------------------------------------*/
+/*------------------------------ Advert page ------------------------------*/
+/*-------------------------------------------------------------------------*/
+.breadcrumbs
+	box-shadow: 0 0 6px rgba(1,1,1,0.3)
+	&-list
+		padding: 16px 20px
+		font-size: 18px
+		line-height: 18px
+		+pie-clearfix
+		li
+			float: left
+			padding-right: 7px
+			+ li
+				padding-left: 7px
+				border-left: 2px solid lighten($viollet,20)
+			&:last-child, &:hover
+				color: $orange
+.banner-inner__top
+	margin: 20px auto 0
+	width: 728px
+	height: 90px
+	box-shadow: 0 0 6px rgba(1,1,1,0.3)
+	> a
+		display: inline-block
+		width: 100%
+		height: 100%
+		line-height: 90px
+		vertical-align: middle
+		text-align: center
+		img
+			max-width: 728px
+			max-height: 90px
+			vertical-align: middle
+.advert-wrap
+	position: relative
+	margin-top: 20px
+	padding-bottom: 50px
+	+pie-clearfix
+.advert-in
+	float: left
+	width: 650px
+	+pie-clearfix
+.advert-title
+	padding: 15px 20px
+	font-size: 24px
+	color: #fff
+	line-height: 28px
+	font-weight: normal
+	text-transform: uppercase
+	background-color: $orange
+.advert-info
+	margin-left: 20px
+	margin-top: 15px
+	font-size: 18px
+	.show-map-link
+		font-weight: bold
+	&__el
+		margin-top: 3px
+	.advert-id:before
+		content: '|'
+		display: inline-block
+		margin-right: 10px
+		margin-left: 7px
+		font-size: 20px
+		line-height: 20px
+.actions-list
+	margin-top: 15px
+	margin-left: 20px
+	font-size: 18px
+	line-height: 20px
+	+pie-clearfix
+	li
+		float: left
+		+ li
+			margin-left: 15px
+		a
+			display: block
+			padding: 8px 10px
+			box-shadow: 0 0 6px rgba(1,1,1,0.3)
+			.icon-star-sm
+				display: inline-block
+				margin-right: 5px
+				width: 14px
+				height: 13px
+				line-height: 20px
+				background: url("../img/other/star-sm.png") no-repeat center center
+			&:hover
+				box-shadow: 0 0 5px 1px $orange
+.advert-photo
+	margin-top: 20px
+	padding: 10px
+	min-height: 120px
+	text-align: center
+	box-shadow: 0 0 6px rgba(1,1,1,0.3)
+	&__empty
+		display: none
+		font-size: 24px
+		line-height: 120px
+		text-decoration: underline
+		color: #ccc
+	&.empty
+		.advert-photo__empty
+			display: block
+	img
+		max-width: 630px
+		max-height: 580px
+		vertical-align: middle
+	&__mask
+		display: block
+		position: absolute
+		top: 100%
+		left: 0
+		width: 100%
+		height: 100%
+		transition: all 0.4s
+		.advert-fancybox
+			display: block
+			width: 100%
+			height: 100%
+			text-align: center
+			font-size: 24px
+			color: #fff
+			background-color: rgba(1,1,1,0.4)
+			p
+				position: absolute
+				top: 50%
+				left: 0
+				margin-top: -16px
+				width: 100%	
+	&__in
+		overflow: hidden
+		position: relative	
+		&:hover
+			.advert-photo__mask
+				top: 0
+				transition: all 0.4s
+.advert-desc__list
+	margin-top: 10px
+	padding: 0 0 0 20px
+	+pie-clearfix
+	.advert-desc__el
+		float: left
+		margin-top: 10px
+		padding-right: 20px
+		width: 50%
+		a:hover
+			text-decoration: underline
+.title-sm
+	margin-top: 30px
+	margin-bottom: 10px
+	margin-left: 20px
+	font-size: 18px
+	line-height: 20px
+	color: $orange
+	text-transform: uppercase
+	font-weight: bold
+.advert-desc
+	margin-left: 20px
+	margin-right: 20px
+	font-size: 18px
+	line-height: 22px
+.advert-slider
+	// background-color: #ccc
+	&__in
+		padding: 5px
+		width: 130px
+		height: 130px
+		.img-wrapper
+			display: inline-block
+			padding: 5px
+			width: 120px
+			height: 120px
+			line-height: 105px
+			vertical-align: middle
+			text-align: center
+			background-color: #fff
+			box-shadow: 0 0 6px rgba(1,1,1,0.3)
+			&:hover
+				box-shadow: 0 0 5px $orange
+			img
+				display: inline-block
+				max-width: 110px
+				max-height: 110px
+				vertical-align: middle
+	.slick-next, .slick-prev
+		margin-top: -23px
+		width: 22px
+		height: 46px
+		background: url("../img/other/advert-slider-arrow.png") no-repeat center center
+		box-shadow: 0 0 2px rgba(1,1,1,0.5)
+		opacity: 0.8
+		&:hover
+			opacity: 1
+		&:before
+			content: none
+	.slick-next
+		right: 10px
+	.slick-prev
+		left: 10px
+		transform: rotate(180deg)
+.advert-socials
+	margin-top: 35px
+	padding-top: 15px
+	font-size: 18px
+	line-height: 30px
+	border-top: 1px solid lighten($viollet,25)
+	+pie-clearfix
+	span
+		float: left
+		margin-left: 20px
+		margin-right: 25px
+		font-weight: bold
+	&__list
+		li
+			display: inline-block
+			+ li
+				margin-left: 25px
+			a
+				display: block
+				padding-right: 5px
+				box-shadow: 0 0 6px rgba(1,1,1,0.3)
+				&:hover
+					box-shadow: 0 0 5px $orange
+			i
+				display: inline-block
+				margin-right: 5px
+				vertical-align: bottom
+.pagination-sm
+	margin-top: 35px
+	+pie-clearfix
+	.prev-btn
+		float: left
+		&:before
+			content: '<'
+			display: inline-block
+			margin-right: 5px
+	.next-btn
+		float: right
+		&:after
+			content: '>'
+			display: inline-block
+			margin-left: 5px
+.author-contacts
+	margin-top: 35px
+	padding-left: 20px
+	padding-top: 15px
+	border-top: 1px solid lighten($viollet,25)
+	.title-sm
+		margin: 0
+		float: left
+		line-height: 45px
+	.submit-btn
+		position: relative
+		float: right
+		padding: 0 15px
+		width: auto
+		line-height: 45px
+		.icon-all-mail-lg
+			display: inline-block
+			margin-right: 10px
+			vertical-align: -2px
+		&:after
+			content: ''
+			position: absolute
+			top: 120%
+			left: -30%
+			display: block
+			width: 107px
+			height: 51px
+			background: url("../img/other/arrow-top-viollet.png") no-repeat center center
+	&__list
+		font-size: 18px
+		line-height: 30px
+		a, span
+			&:hover
+				color: $orange
+		i
+			display: inline-block
+			width: 30px
+			vertical-align: middle
+.advert-com
+	margin-top: 30px
+	&__list
+		margin-top: 20px
+		li
+			padding: 7px
+			box-shadow: 0 0 6px rgba(1,1,1,0.3)
+			+pie-clearfix
+			+ li
+				margin-top: 10px
+			&:hover
+				box-shadow: 0 0 5px $orange
+		.user-ava__img
+			float: left
+			margin-right: 7px
+			width: 40px
+			height: 40px
+			img
+				width: 100%
+				height: 100%
+				vertical-align: bottom
+	&__in
+		overflow: hidden
+		float: left
+		padding-left: 7px
+		border-left: 1px solid lighten($viollet,25)
+		.user-name
+			font-size: 18px
+			font-weight: bold
+			transition: all 0.2s
+			&:hover
+				color: $orange
+				transition: all 0.2s
+		.advert-com-date
+			font-size: 14px
+			color: $orange
+.add-com
+	.title-sm
+		margin-top: 40px
+		margin-bottom: 20px
+		position: relative
+		display: inline-block
+		.arrow-bot-orange
+			position: absolute
+			display: block
+			top: 50%
+			left: 110%
+			width: 107px
+			height: 51px
+			background: url("../img/other/arrow-bot-orange-lg.png") no-repeat center center
+.form-comment
+	position: relative
+	font-size: 18px
+	+pie-clearfix
+	.field
+		+ .field
+			margin-top: 10px
+		&.add-file
+			float: left
+			width: 50%
+			input
+				width: 100%
+			+ .field
+				float: left
+				width: 50%
+		&__info
+			margin-top: 10px
+			margin-left: 20px
+			width: 250px
+			font-size: 14px
+			line-height: 16px
+			span
+				display: block
+	p
+		margin-left: 20px
+		margin-bottom: 5px
+	i
+		display: inline-block
+		margin-right: 10px
+		vertical-align: middle
+	.form-input
+		width: 50%
+		float: none
+	.form-area, .form-input
+		padding-left: 20px
+		font-size: 18px
+		vertical-align: middle
+		+placeholder-color($viollet)
+	.submit-btn
+		position: absolute
+		right: 0
+		bottom: 7px
+		width: 45%
+.advert-post
+	margin-bottom: 50px
+	+ .advert-post
+		margin-bottom: 75px
+	&__list
+		+pie-clearfix
+		li
+			float: left
+			margin-top: 20px
+			padding-bottom: 20px
+			width: 50%
+			height: 205px
+			border-bottom: 1px solid lighten($viollet,25)
+			+pie-clearfix
+	&__img
+		float: left
+		margin-right: 15px
+		padding: 5px
+		width: 185px
+		height: 185px
+		line-height: 173px
+		text-align: center
+		vertical-align: middle
+		box-shadow: 0 0 6px rgba(1,1,1,0.3)
+		img
+			max-width: 175px
+			max-height: 175px
+			vertical-align: middle
+	&-title
+		font-size: 20px
+		line-height: 24px
+		font-weight: bold
+		&:hover
+			color: $orange
+	&-desc
+		overflow: hidden
+		margin-top: 5px
+		height: 66px
+		font-size: 18px
+		line-height: 22px
+	&-price
+		margin-top: 5px
+		margin-bottom: 5px
+		font-size: 24px
+		color: $orange
+		font-weight: bold
+	&-loc
+		font-size: 18px
+		color: $orange
+		font-weight: bold
+/* fancybox styles */
+.fancybox-wrap, .fancybox-wrap *
+	box-sizing: content-box
+.fancybox-wrap
+	.fancybox-title
+		padding: 0 10px
+		font-size: 20px
+		line-height: 24px
+		text-transform: uppercase
+		background-color: rgba(0,0,0,0.2)
+#fancybox-thumbs ul li a
+	border-radius: 0
+	border-width: 1px
+	opacity: 0.6
+#fancybox-thumbs ul li.fancybox-thumb-active a
+	border-width: 2px
+/* author msh popup */
+.author-msg-popup
+	display: none
+	padding: 10px
+	width: 670px
+	background-color: #f1f0f0
+	box-sizing: border-box
+	*
+		box-sizing: border-box
+	.title-sm
+		margin-top: 10px
+	.field
+		position: relative
+		padding-bottom: 18px
+	.help-block.form-error
+		position: absolute
+		bottom: 0
+		left: 0
+/* advert aside */
+.advert-aside
+	float: right
+	width: 304px
+	+pie-clearfix
+	.banner
+		a
+			width: 250px
+			height: 250px
+.advert-el
+	position: absolute
+	top: 0
+	right: 0
+	width: 304px
+	&.is-fixed
+		position: fixed
+		top: 60px
+		width: 304px
+	&.is-fixed, &.is-active
+		.advert-el__container
+			padding-bottom: 10px
+			box-shadow: 0 0 6px rgba(1,1,1,0.3)
+	&__price
+		height: 58px
+		font-size: 38px
+		color: $orange
+		font-weight: bold
+		text-align: center
+		line-height: 58px
+		background-color: #f1f0f0
+	.submit-btn
+		margin-top: 20px
+		padding-left: 15px
+		text-align: left
+		display: block
+		line-height: 45px
+		&.show-phone
+			text-transform: none
+		.icon-all-mail-lg, .icon-all-phone-lg
+			display: inline-block
+			margin-right: 15px
+			vertical-align: -2px
+		.icon-all-phone-lg
+			vertical-align: -6px
+		span
+			+ span
+				margin-left: 5px
+				font-size: 14px
+				color: #d0c9dc
+				letter-spacing: 0.05em
+				text-transform: uppercase
+		+ .submit-btn
+			margin-top: 10px
+.advert-el__map
+	margin-top: 18px
+	padding: 5px 5px 20px 5px
+	box-shadow: 0 0 6px rgba(1,1,1,0.3)
+	&-in
+		+pie-clearfix
+	.icon-all-loc-lg
+		float: left
+		margin-top: 10px
+		margin-left: 15px
+		margin-right: 15px
+		vertical-align: middle
+	&-info
+		overflow: hidden
+		p
+			margin-top: 10px
+			font-weight: bold
+			line-height: 18px
+		a
+			float: left
+			margin-top: 3px
+			color: $orange
+			border-bottom: 1px solid lighten($orange,25)
+.advert-el__user
+	margin-top: 20px
+	padding: 5px
+	.icon-all-user-lg
+		float: left
+		margin-left: 15px
+		margin-right: 15px
+		vertical-align: middle
+	&-info
+		overflow: hidden
+		p
+			line-height: 18px
+			+ p
+				font-size: 14px
+		a
+			float: left
+			margin-top: 10px
+			color: $orange
+			border-bottom: 1px solid lighten($orange,25)
+/*-------------------------------------------------------------------------*/
+/*------------------------ List of Advertisements -------------------------*/
+/*-------------------------------------------------------------------------*/
+.advertlist-wrap
+	margin-top: 20px
+	border-bottom: 1px solid lighten($viollet,25)
+	+pie-clearfix
+.advertlist-in
+	float: right
+	width: 672px
+	+pie-clearfix
+.breadcrumbs.sm
+	position: relative
+	padding: 5px
+	+pie-clearfix
+	> i
+		position: absolute
+		top: 50%
+		left: 8px
+		margin-top: -20px
+	.breadcrumbs-list
+		overflow: hidden
+		margin-left: 50px
+		padding: 10px 15px 11px 10px
+		border-left: 1px solid lighten($viollet,20)
+		li
+			margin-top: 3px
+.al-settings
+	margin-top: 15px
+	font-size: 18px
+	line-height: 31px
+	+pie-clearfix
+	&-type
+		float: left
+		+pie-clearfix
+		li
+			float: left
+			&.is-active
+				a
+					color: $orange
+					border-bottom: 2px solid lighten($orange,25)
+			+ li
+				margin-left: 10px
+			a
+				display: block
+				padding: 0 10px
+				box-shadow: 0 0 6px rgba(1,1,1,0.3)
+				border-bottom: 2px solid transparent
+				&:hover
+					color: $orange
+					border-bottom: 2px solid lighten($orange,25)
+	&-sort
+		float: left
+		margin-left: 10px
+		width: 242px
+		.selectric
+			.label
+				margin: 0 23px 0 10px
+				height: 33px
+				line-height: 33px
+				font-size: 18px
+			&:hover
+				.label
+					color: $orange
+			.button
+				width: 23px
+				height: 33px
+				border-left: 1px solid #dfdfdf
+	&-currency
+		float: left
+		margin-left: 11px
+		box-shadow: 0 0 6px rgba(1,1,1,0.3)
+		+pie-clearfix
+		li
+			float: left
+			&.is-active
+				a
+					color: $orange
+					border-bottom: 2px solid lighten($orange,25)
+			+ li
+				border-left: 1px solid #dfdfdf
+			a
+				display: block
+				padding: 0 6px
+				border-bottom: 2px solid transparent
+				&:hover
+					color: $orange
+					border-bottom: 2px solid lighten($orange,25)
+	&-view
+		float: right
+		box-shadow: 0 0 6px rgba(1,1,1,0.3)
+		+pie-clearfix
+		li
+			float: left
+			&.is-active
+				a
+					border-bottom: 2px solid lighten($orange,25)
+				i
+					background-position: 0 0
+			+ li
+				border-left: 1px solid #dfdfdf
+				&.is-active
+					i
+						background-position: 0 -38px
+			a
+				display: block
+				width: 37px
+				height: 33px
+				line-height: 30px
+				text-align: center
+				border-bottom: 2px solid transparent
+				&:hover
+					border-bottom: 2px solid lighten($orange,25)
+				i
+					display: inline-block
+					vertical-align: middle
+.advertlist__inner
+	margin-top: 20px
+	+pie-clearfix
+	> li
+		padding-top: 10px
+		padding-bottom: 20px
+		border-top: 1px solid lighten($viollet,25)
+		+pie-clearfix
+		.advertlist__img
+			float: left
+			margin-top: 10px
+			margin-right: 20px
+			width: 185px
+			height: 185px
+			padding: 5px
+			line-height: 170px
+			text-align: center
+			vertical-align: middle
+			box-shadow: 0 0 6px rgba(1,1,1,0.3)
+			img
+				max-width: 175px
+				max-height: 175px
+				vertical-align: middle
+.advertlist-item
+	overflow: hidden
+	margin-top: 5px
+	&__title
+		+pie-clearfix
+		font-size: 20px
+		line-height: 24px
+		a
+			font-weight: bold
+			&:hover
+				color: $orange
+		span
+			float: right
+			font-weight: bold
+			color: $orange
+	&__desc
+		margin-top: 10px
+		width: 350px
+		min-height: 110px
+		font-size: 18px
+		line-height: 22px
+		+ p
+			margin-top: 3px
+			font-size: 18px
+			line-height: 22px
+			color: $orange
+			font-weight: bold
+	&__info
+		line-height: 22px
+		+pie-clearfix
+		.item-favor
+			float: right
+			span
+				margin-right: 10px
+			.icon-all-star
+				margin-top: -3px
+				display: inline-block
+.advertlist-aside
+	float: left
+	position: relative
+	width: 288px
+	padding-bottom: 440px
+	.banner
+		a
+			width: 240px
+			height: 400px
+/* outfilters */
+.outfilters-wrap
+	display: none
+	position: relative
+	margin-bottom: 20px
+	padding-bottom: 90px
+	background-color: #f1f0f0
+	.help-block-info
+		position: absolute
+		left: -113px
+		top: 4px
+		width: 75px
+		font-size: 14px
+		line-height: 16px
+		color: $viollet
+		font-weight: bold
+		i
+			position: absolute
+			display: block
+			right: -33px
+			bottom: -40px
+	.title-sm
+		margin: 0 5px
+		padding-left: 15px
+		text-transform: none
+		line-height: 40px
+		border-bottom: 1px solid #d2d1d1
+.all-filter-btn
+	display: none
+	position: absolute
+	left: 0
+	bottom: 50px
+	width: 100%
+	font-size: 14px
+	font-weight: bold
+	text-align: center
+	cursor: pointer
+	&:hover
+		color: $orange
+		&:after
+			content: ''
+			display: inline-block
+			+arr(14, 10, lighten($orange,15), b)
+	&:after
+		content: ''
+		display: inline-block
+		+arr(14, 10, lighten($viollet,15), b)
+	&:before
+		content: '...'
+		display: block
+		margin-bottom: 17px
+		width: 100%
+		color: $viollet
+		font-size: 40px
+		line-height: 10px
+		text-align: center
+	&.is-active
+		&:hover
+			&:after
+				content: ''
+				display: inline-block
+				+arr(14, 10, lighten($orange,15), t)
+		&:after
+			content: ''
+			display: inline-block
+			+arr(14, 10, lighten($viollet,15), t)
+		&:before
+			content: none
+.outfilters-container
+	overflow: hidden
+	height: 162px
+.outfilters
+	overflow: hidden
+	padding: 10px 20px
+	padding-bottom: 0
+	&-title
+		font-weight: bold
+		line-height: 25px
+	&-list
+		margin-left: 10px
+		+pie-clearfix
+		li
+			margin-top: 3px
+			mb
+			+pie-clearfix
+			.outfilters-cancel
+				float: left
+				margin-top: 3px
+				margin-right: 10px
+				box-shadow: 0 0 3px rgba(1,1,1,0.3)
+				&:hover
+					box-shadow: 0 0 3px $orange
+				i
+					display: block
+					vertical-align: middle
+.cancel-btn-wrap
+	position: absolute
+	left: 0
+	bottom: 20px
+	width: 100%
+	text-align: center
+	.cancel-btn
+		display: inline-block
+		padding-bottom: 1px
+		font-size: 14px
+		color: $orange
+		background-color: transparent
+		border-bottom: 1px solid lighten($orange,15)
+		transition: all 0.2s
+		&:hover
+			text-shadow: 0 0 0.5px $orange
+			transition: all 0.2s
+/* multifilters */
+.multifilters-wrap
+	position: relative
+	.help-block-info
+		position: absolute
+		left: -113px
+		top: -25px
+		width: 75px
+		font-size: 14px
+		line-height: 16px
+		color: $orange
+		font-weight: bold
+		i
+			position: absolute
+			display: block
+			right: -33px
+			bottom: -40px
+.multifilters
+	padding: 25px 20px
+	background-color: #f1f0f0
+	+pie-clearfix
+	.multifilters-in
+		+pie-clearfix
+		+ .multifilters-in
+			margin-top: 20px
+			&.multifilters-both
+				margin-top: 10px
+				&:before
+					position: absolute
+					content: ''
+					display: block
+					left: -10px
+					bottom: 50%
+					width: 9px
+					height: 34px
+					border-top: 1px solid #d67b34
+					border-left: 1px solid #d67b34
+					border-bottom: 1px solid #d67b34
+			.nav-btn
+				font-weight: normal
+				line-height: 25px
+				i
+					margin-top: 6px
+			.nav-menu
+				top: 27px
+		&.is-active
+			.nav-btn
+				box-shadow: 0 0 0 1px #d67b34
+			.nav-input
+				box-shadow: 0 0 0 1px #d67b34
+		&.multifilters-input
+			.nav-btn
+				cursor: text
+				i
+					display: none
+		&.multifilters-checkbox
+			.icheckbox_square-orange
+				margin-top: 0
+			.nav-menu
+				li
+					+pie-clearfix
+					label
+						display: block
+						padding: 3px 10px
+						line-height: 22px
+						cursor: pointer
+						i
+							float: right
+							margin-top: 3px
+							text-indent: -9999px
+							overflow: hidden
+					&.is-active
+						color: $viollet
+						background-color: #fff
+		&.multifilters-select
+			.nav-menu
+				li
+					+pie-clearfix
+					label
+						display: block
+						line-height: 22px
+						cursor: pointer
+		&.multifilters-category
+			.nav-menu
+				overflow-y: visible
+				max-height: none
+		.multifilters-info-wrap
+			display: none
+			position: absolute
+			left: 100%
+			top: 0
+			margin-left: 10px
+			padding: 5px
+			width: 260px
+			height: auto
+			font-size: 14px
+			line-height: 16px
+			color: $orange
+			background-color: #fff
+			box-shadow: 0 0 6px rgba(1,1,1,0.3)
+			i
+				float: left
+				margin-top: 2px
+				margin-right: 7px
+			span
+				overflow: hidden
+				display: block
+	li
+		position: relative
+		.nav-input
+			display: none
+			height: 25px
+			line-height: 25px
+			user-select: none
+			+placeholder-color(#aaa)
+		.nav-btn
+			position: relative
+			display: block
+			padding: 0 10px
+			width: 100%
+			line-height: 35px
+			font-weight: bold
+			background-color: #fff
+			box-shadow: 0 0 6px rgba(1,1,1,0.3)
+			+pie-clearfix
+			i
+				float: right
+				margin-top: 11px
+		.clear-filter-btn
+			display: none
+			position: absolute
+			right: 0
+			top: 0
+			width: 35px
+			height: 25px
+			cursor: pointer
+			background: url("../img/other/cancel.png") no-repeat center center, #fff
+			&:hover
+				background-image: url("../img/other/cancel-hover.png")
+		.nav-menu
+			display: none
+			overflow-y: auto
+			position: absolute
+			z-index: 50
+			left: 0
+			top: 37px
+			min-width: 100%
+			max-height: 300px
+			font-size: 14px
+			line-height: 20px
+			background-color: #fff
+			box-shadow: 0 0 6px rgba(1,1,1,0.3)
+			li
+				color: $viollet
+				border-bottom: 1px solid #eee
+				&.is-active, &.is-active:hover
+					color: #fff
+					background-color: $orange
+				&:hover
+					background-color: lighten($orange,45)
+					.nav-submenu
+						display: block
+				a
+					display: block
+					padding: 5px 10px
+					white-space: nowrap
+					+pie-clearfix
+					i
+						float: right
+						margin-top: 2px
+				.nav-submenu
+					display: none
+					position: absolute
+					top: 0
+					left: 100%
+					background-color: #fff
+					box-shadow: 0 0 6px rgba(1,1,1,0.3)
+/* pagination */
+.pagination
+	margin-top: 20px
+	line-height: 25px
+	+pie-clearfix
+	&__list
+		float: left
+		margin-right: 10px
+		li
+			display: inline-block
+			margin-right: 3px
+			&:hover, &.is-active
+				color: $orange
+	&__number
+		float: left
+		padding-left: 10px
+		border-left: 1px solid lighten($viollet,25)
+		+pie-clearfix
+		span
+			float: left
+			margin-right: 10px
+		form
+			float: left
+			.form-input
+				padding: 0
+				width: 50px
+				height: 25px
+				text-align: center
+				&:focus
+					box-shadow: 0 0 5px $orange
+			input[type="submit"]
+				display: none
+				visibility: hidden
+				opacity: 0
+	&__nav
+		float: right
+		.prev-button, .next-button
+			float: left
+			padding: 0 8px
+			box-shadow: 0 0 6px rgba(1,1,1,0.3)
+			&:hover
+				color: $orange
+				box-shadow: 0 0 5px $orange
+		.next-button
+			margin-left: 10px
+/*-------------------------------------------------------------------------*/
+/*---------------------------- Partners page ------------------------------*/
+/*-------------------------------------------------------------------------*/
+.partners
+	margin-bottom: 100px
+	.post-title
+		background-color: $viollet
+	&__list
+		margin-top: 20px
+		+pie-clearfix
+		li
+			float: left
+			margin-top: 20px
+			margin-left: 20px
+			a
+				display: block
+				img
+					vertical-align: middle
+/*-------------------------------------------------------------------------*/
+/*------------------------- User Agreement page ---------------------------*/
+/*-------------------------------------------------------------------------*/
+.agreement
+	margin-top: 20px
+	margin-bottom: 70px
+	font-size: 16px
+	line-height: 22px
+	a
+		color: $orange
+		&:hover, &:active
+			text-decoration: underline
+	.post-title
+		background-color: $viollet
+	> ol
+		padding-left: 33px
+		margin-bottom: 25px
+		> li
+			margin-top: 10px
+			list-style-type: decimal
+			> ul
+				padding-left: 22px
+				> li
+					margin-top: 10px
+					list-style-type: disc
+	&-title
+		margin-top: 20px
+		padding-top: 6px
+		padding-left: 10px
+		padding-right: 10px
+		padding-bottom: 5px
+		font-size: 20px
+		line-height: 24px
+		text-transform: uppercase
+		background-color: #f1f0f0
+		box-shadow: 0 0 6px rgba(1,1,1,0.3)
+		.to-top-btn
+			float: right
+			height: 24px
+			font-size: 16px
+			color: $viollet
+			line-height: 24px
+			text-transform: none
+			background-color: transparent
+			&:hover
+				text-decoration: underline
+			i
+				display: inline-block
+				margin-right: 10px
+				vertical-align: middle
+/*-------------------------------------------------------------------------*/
+/*------------------------- User Agreement page ---------------------------*/
+/*-------------------------------------------------------------------------*/
+.sitemap
+	margin-top: 20px
+	.post-title
+		background-color: $viollet
+	&__list
+		margin-top: 20px
+		margin-bottom: 70px
+		+pie-clearfix
+	&__item
+		display: inline-block
+		margin-top: 25px
+		margin-left: 16px
+		width: 220px
+		vertical-align: top
+		> a
+			display: block
+			margin-bottom: 5px
+			font-size: 16px
+			color: $orange
+			line-height: 32px
+			font-weight: bold
+			text-transform: uppercase
+			border-bottom: 1px solid lighten($orange,25)
+			&:hover
+				text-decoration: underline
+	&__sublist
+		font-size: 12px
+		color: #685096
+		line-height: 18px
+		a:hover
+			color: $orange
+			text-decoration: underline
+		span
+			color: #afa6c2
+		.sitemap__sublist
+			margin-left: 15px
+/*-------------------------------------------------------------------------*/
+/*---------------------------------- Blog ---------------------------------*/
+/*-------------------------------------------------------------------------*/
+.siteblog
+	margin-top: 20px
+	+pie-clearfix
+.siteblog__title
+	padding: 5px 5px 5px 10px
+	background-color: $viollet
+	+pie-clearfix
+	.nav-blog
+		float: left
+		font-size: 20px
+		color: #fff
+		line-height: 30px
+		text-transform: uppercase
+		li
+			display: inline-block
+			padding-right: 4px
+			+ li
+				padding-left: 8px
+				border-left: 1px solid #fff
+			a:hover
+				color: lighten($orange,25)
+	.blog-search
+		float: right
+		+pie-clearfix
+		.field
+			float: left
+			input[type="text"]
+				position: relative
+				left: 30px
+				padding-left: 10px
+				padding-right: 40px
+				width: 260px
+				height: 30px
+				font-size: 18px
+				color: #fff
+				line-height: 30px
+				background-color: #9685b6
+				vertical-align: middle
+				+placeholder-color(#fff)
+			button[type="submit"]
+				position: relative
+				width: 30px
+				height: 30px
+				background: url("../img/icon-zoom.png") no-repeat center center, transparent	
+				vertical-align: middle
+.blog
+	&__wrap
+		margin-top: 30px
+		float: left
+		width: 640px
+		+pie-clearfix
+	&__list
+		> li
+			padding-bottom: 17px
+			border-bottom: 1px solid lighten($viollet,25)
+			+ li
+				margin-top: 25px
+		.advert-socials
+			float: left
+			margin-top: 0
+			padding-top: 3px
+			border-top: none
+		.more-btn
+			float: right
+			padding-left: 10px
+			padding-right: 10px
+			font-size: 18px
+			line-height: 35px
+			background-color: #fff
+			box-shadow: 0 0 6px rgba(1,1,1,0.3)
+			&:hover
+				box-shadow: 0 0 5px $orange
+			i
+				display: inline-block
+				margin-left: 5px
+				vertical-align: -2px
+	&__img
+		float: left
+		margin-right: 15px
+		margin-bottom: 20px
+		padding: 5px
+		width: 185px
+		height: 185px
+		line-height: 173px
+		text-align: center
+		vertical-align: middle
+		box-shadow: 0 0 6px rgba(1,1,1,0.3)
+		img
+			max-width: 175px
+			max-height: 175px
+			vertical-align: middle
+	&__inner
+		overflow: hidden
+		margin-bottom: 20px
+	&__title
+		font-size: 20px
+		color: $orange
+		line-height: 22px
+	&__info
+		margin-top: 3px
+		+pie-clearfix
+		p
+			float: left
+		a
+			float: right
+			color: #685096
+			&:hover
+				color: $orange
+	&__text
+		margin-top: 15px
+		font-size: 18px
+		line-height: 22px
+.blog__aside
+	float: right
+	margin-top: 30px
+	width: 300px
+	+pie-clearfix
+.form-subscribe
+	padding: 20px
+	background-color: #f1f0f0
+	h3
+		font-size: 18px
+		text-align: center
+		text-transform: uppercase
+		font-weight: normal
+	form
+		margin-top: 15px
+	.field
+		position: relative
+		.form-input
+			position: relative
+			padding-right: 55px
+			font-size: 18px
+			vertical-align: middle
+			&:focus
+				box-shadow: 0 0 5px $orange
+		button[type="submit"]
+			position: absolute
+			top: 0
+			right: 0
+			width: 45px
+			height: 30px
+			background: url("../img/other/arrow-sm-l-o.png") no-repeat center center, transparent
+.widget-vk
+	margin-top: 30px
+	text-align: center
+.blog__news
+	margin-top: 25px
+	h3
+		padding-top: 13px
+		padding-bottom: 13px
+		font-size: 20px
+		color: #fff
+		line-height: 24px
+		text-align: center
+		font-weight: normal
+		text-transform: uppercase
+		background-color: $orange
+	ul
+		margin-top: 10px
+		font-size: 15px
+		line-height: 25px
+		text-align: center
+		li
+			a:hover
+				text-decoration: underline
+			i
+				display: inline-block
+				margin-right: 15px
+				vertical-align: -2px
+.blog__tags
+	margin-top: 30px
+	h3
+		margin-bottom: 15px
+		padding-top: 13px
+		padding-bottom: 13px
+		font-size: 20px
+		line-height: 24px
+		text-align: center
+		font-weight: normal
+		text-transform: uppercase
+		background-color: #f1f0f0
+	p
+		padding-left: 20px
+		padding-right: 20px
+		a
+			&:hover
+				color: $orange
+/*-------------------------------------------------------------------------*/
+/*------------------------------- Payment ---------------------------------*/
+/*-------------------------------------------------------------------------*/
+.payment
+	margin-top: 20px
+	margin-bottom: 80px
+	padding-left: 20px
+	padding-right: 20px
+	border-top: 1px solid lighten($viollet,20)
+	+pie-clearfix
+	&__title
+		margin-top: 20px
+		font-size: 20px
+		color: $orange
+		line-height: 45px
+		text-transform: uppercase
+		font-weight: normal
+		span
+			display: inline-block
+			margin-right: 20px
+			font-size: 24px
+			padding-left: 15px
+			padding-right: 15px
+			box-shadow: 0 0 6px rgba(1,1,1,0.3)
+	.post-title
+		margin-top: 20px
+		background-color: $viollet
+	&__list
+		font-size: 20px
+		line-height: 55px
+		+ .payment__title
+			margin-top: 70px
+		> li
+			margin-top: 10px
+			padding: 20px
+			box-shadow: 0 0 6px rgba(1,1,1,0.3)
+			+pie-clearfix
+			&.is-active
+				background-color: #f1f0f0
+		.field
+			float: left
+			&__checkbox
+				padding-top: 16px
+				padding-right: 20px
+				.icheckbox_square-orange
+			&__img
+				img
+					vertical-align: middle
+			&__text
+				padding-left: 20px
+				padding-right: 20px
+				width: 500px
+			&__select
+				padding-top: 10px
+				width: 175px
+				.selectric .label
+					font-size: 20px
+				.selectric-items li
+					font-size: 16px
+			&__price
+				float: right
+				font-size: 24px
+				color: $orange
+.paytype__list
+	margin-left: -20px
+	+pie-clearfix
+	> li
+		float: left
+		margin-top: 20px
+		margin-left: 20px
+		padding: 10px 10px 0 10px
+		width: 220px
+		height: 220px
+		box-shadow: 0 0 6px rgba(1,1,1,0.3)
+		&.is-active
+			background-color: #f1f0f0
+		&:last-child
+			float: right
+			padding: 0
+			width: 460px
+			font-size: 20px
+			box-shadow: none
+			+vertical
+			.paytype__container
+				display: inline-block
+				width: 450px
+				vertical-align: bottom
+				+vertical
+			.paytype__total
+				text-align: right
+				text-transform: uppercase
+				+pie-clearfix
+				p
+					height: 52px
+					i
+						display: none
+						margin-right: 10px
+						vertical-align: -30px
+					span
+						color: $orange
+			.paytype__submit
+				margin-top: 10px
+				+pie-clearfix
+				.submit-btn
+					width: 220px
+					float: left
+					+ .submit-btn
+						float: right
+						text-align: center
+				button[type="submit"]
+					display: none
+	.paytype__img
+		width: 200px
+		height: 150px
+		line-height: 150px
+		text-align: center
+		vertical-align: middle
+		img
+			max-width: 200px
+			max-height: 150px
+			vertical-align: middle
+	.paytype__choose
+		overflow: hidden
+		margin-top: 10px
+		padding-left: 3px
+		height: 49px
+		border-top: 1px solid lighten($viollet,15)
+		+vertical
+		.icheckbox_square-orange
+			float: none
+			display: inline-block
+			margin-top: 0
+			margin-right: 10px
+			vertical-align: middle
+			+ p
+				display: inline-block
+				width: 156px
+				margin: 0
+				font-size: 18px
+				line-height: 18px
+				vertical-align: middle
+/*-------------------------------------------------------------------------*/
+/*----------------------------- Region's map ------------------------------*/
+/*-------------------------------------------------------------------------*/
+.regions
+	margin-bottom: 80px
+	.post-title
+		background-color: $viollet
+	&__list
+		> li
+			margin-top: 20px
+	&__title
+		margin-right: 20px
+		padding: 0 10px
+		height: 35px
+		color: $orange
+		line-height: 35px
+		background-color: #f1f0f0
+		+pie-clearfix
+		p
+			float: left
+			text-transform: uppercase
+			span
+				color: lighten($orange,25)
+		button
+			float: right
+			font-size: 16px
+			line-height: 35px
+			color: $viollet
+			background-color: transparent
+			i
+				display: inline-block
+				margin-left: 10px
+				vertical-align: middle
+				transform: rotate(180deg)
+			&.is-active
+				i
+					transform: rotate(0)
+			&:hover
+				color: $orange
+	&__sublist
+		margin-top: 5px
+		font-size: 12px
+		color: #685096
+		line-height: 18px
+		+pie-clearfix
+		li
+			position: relative
+			float: left
+			margin-left: 20px
+			width: 220px
+			a:hover
+				color: $orange
+			span
+				color: #afa6c2
+			.help-title
+			&:nth-child(1n+13)
+				display: none
+		&.is-active
+			li
+				display: block
+/*-------------------------------------------------------------------------*/
+/*----------------------------- Help page ---------------------------------*/
+/*-------------------------------------------------------------------------*/
+.siteblog__title
+	span
+		font-size: 20px
+		color: #fff
+.help
+	&__wrap
+		margin-top: 20px
+		margin-bottom: 70px
+		+pie-clearfix
+	&__aside
+		float: left
+		width: 308px
+		line-height: 18px
+		.nav-help
+			> li
+				position: relative
+				z-index: 6
+				padding: 15px 20px 15px 10px
+				+pie-clearfix
+				+ li
+					margin-top: 5px
+				> a
+					display: block
+					font-size: 18px
+					line-height: 20px
+					font-weight: bold
+				a:hover
+					color: $orange
+				i
+					display: none
+					float: right
+					margin-top: 3px
+					vertical-align: middle
+					transform: rotate(-90deg)
+				&.is-active
+					position: relative
+					box-shadow: 0 0 6px rgba(1,1,1,0.3)
+					&:after
+						content: ''
+						position: absolute
+						top: 0
+						right: -4px
+						display: block
+						width: 8px
+						height: 100%
+						background-color: #fff
+					> a
+						margin-left: 10px
+						color: $orange
+					i
+						display: block
+		.nav-help-sub
+			margin-left: 10px
+			li
+				margin-top: 5px
+				&.is-active
+					color: $orange
+	&__in
+		padding: 10px
+		float: right
+		width: 672px
+		box-shadow: 0 0 6px rgba(1,1,1,0.3)
+		+pie-clearfix
+	&__list
+		> li
+			> p
+				padding-left: 10px
+				line-height: 35px
+				box-shadow: 0 0 6px rgba(1,1,1,0.3)
+				cursor: pointer
+				+pie-clearfix
+				&:hover
+					color: $orange
+				i
+					float: right
+					margin-top: 10px
+					margin-right: 10px
+					transform: rotate(-180deg)
+					transition: all 0.4s
+			+ li
+				margin-top: 20px
+			&.is-active
+				> p
+					background-color: #f1f0f0
+					i
+						transform: rotate(0)
+						transition: all 0.4s
+		ol
+			padding-left: 20px
+			li
+				list-style-type: decimal
+				+ li
+					margin-top: 3px
+	&__content
+		display: none
+		padding: 10px
+		line-height: 22px
+		a
+			color: $orange
+			&:hover
+				text-decoration: underline
+.feedback-help
+	margin-bottom: 50px
+	+pie-clearfix
+	.write-to-us
+		margin-top: 15px
+		margin-left: 10px
+		margin-bottom: 15px
+		padding-right: 25px
+		width: 600px
+		font-size: 18px
+		color: $orange
+		line-height: 22px
+		height: 65px
+		background: url("../img/other/arrow-b-o.png") no-repeat bottom right
+	&__aside
+		float: left
+		width: 308px
+		.footer__right
+			float: none
+			width: 100%
+			background-color: #f1f0f0
+			box-shadow: 0 0 6px rgba(1,1,1,0.3)
+			> p:nth-child(1)
+				text-align: center
+			> p:nth-child(2)
+				font-size: 18px
+	&__in
+		float: right
+		width: 652px
+		.feedback-help-form
+			.field
+				+pie-clearfix
+				+ .field
+					margin-top: 10px
+			.selectric .label
+				font-size: 18px
+			.form-input
+				font-size: 18px
+			.form-area
+				font-size: 18px
+				vertical-align: middle
+				+placeholder-color($viollet)
+			.captcha
+				float: left
+				width: 262px
+				&__in
+					height: 45px
+					box-shadow: 0 0 6px rgba(1,1,1,0.3)
+					img
+						vertical-align: middle
+				.row
+					margin-top: 2px
+					a
+						float: left
+						font-size: 12px
+						&:hover
+							color: $orange
+						+ a
+							float: right
+			.submit-btn
+				float: right
+				width: 310px
+				height: 45px
+				line-height: 45px
+/*-------------------------------------------------------------------------*/
+/*--------------------------- Contact Us page -----------------------------*/
+/*-------------------------------------------------------------------------*/
+.feedback-help.contact-us
+	.post-title
+		background-color: $viollet
+	.write-to-us
+		padding-right: 190px
+		width: auto
+		height: 95px
+		font-size: 18px
+		color: $viollet
+		line-height: 22px
+		background-position: center bottom
+	.feedback-help__aside
+		> p
+			margin-top: 15px
+			padding: 0 10px
+			line-height: 20px
+			+ p
+				margin-top: 0
+			a
+				color: $orange
+				&:hover
+					text-decoration: underline
+.feedback-help-form
+	.field-half
+		float: left
+		margin-top: 10px
+		width: 50%
+		button[type="submit"]
+			margin-top: 25px
+		+ .field-half
+			+pie-clearfix
+			.captcha
+				float: right
+				&__in
+					margin-top: 15px
+		.form-input
+			float: none
+		.submit-btn.inverse
+			float: none
+			margin-top: 10px
+			padding: 0 10px
+			width: 100%
+			height: 35px
+			font-size: 18px
+			line-height: 35px
+			text-align: left
+			text-transform: none
+			i
+				display: inline-block
+				vertical-align: middle
+				margin-right: 10px
+		.field__info
+			margin-top: 10px
+			margin-left: 20px
+			width: 250px
+			font-size: 14px
+			line-height: 16px
