@@ -1017,10 +1017,10 @@ form .field:after { content: ""; display: table; clear: both; }
 .al-settings-type li { float: left; }
 .al-settings-type li.is-active a { color: #d4762d; border-bottom: 2px solid #eabb97; }
 .al-settings-type li + li { margin-left: 10px; }
-.al-settings-type li a { display: block; padding: 0 10px; box-shadow: 0 0 3px rgba(1, 1, 1, 0.3);  }
-.al-settings-type li a:hover { color: #d4762d; border-bottom: 2px solid #eabb97;  }
+.al-settings-type li a { display: block; padding: 0 10px; box-shadow: 0 0 3px rgba(1, 1, 1, 0.3); font-size: 18px; line-height: 31px; color: #583d8b;     font-family: Arial, sans-serif;}
+.al-settings-type li a:hover { color: #d4762d; border-bottom: 2px solid #eabb97; text-decoration: none; }
 .al-settings-sort { float: left; margin-left: 10px; width: 242px; }
-.al-settings-sort .selectric .label { margin: 0 23px 0 10px; height: 33px; line-height: 33px; font-size: 18px; }
+.al-settings-sort .selectric .label { margin: 0 23px 0 10px; height: 33px; line-height: 33px; font-size: 18px; padding: 0;}
 .al-settings-sort .selectric:hover .label { color: #d4762d; }
 .al-settings-sort .selectric .button { width: 23px; height: 33px; border-left: 1px solid #dfdfdf; }
 .al-settings-currency { float: left; margin-left: 11px; box-shadow: 0 0 6px rgba(1, 1, 1, 0.3); *zoom: 1; }
@@ -1109,9 +1109,16 @@ form .field:after { content: ""; display: table; clear: both; }
 .multifilters .multifilters-in + .multifilters-in.multifilters-both { margin-top: 10px; }
 .multifilters .multifilters-in + .multifilters-in.multifilters-both:before { position: absolute; content: ""; display: block; left: -10px; bottom: 50%; width: 9px; height: 34px; border-top: 1px solid #d67b34; border-left: 1px solid #d67b34; border-bottom: 1px solid #d67b34; }
 .multifilters .multifilters-in + .multifilters-in .nav-btn { font-weight: normal; line-height: 25px; }
+.multifilters .nav-btn span{ color: #583d8b;     font-family: Arial, sans-serif;
+    font-size: 16px;}
+    .nav-menu li a{
+    	color: #583d8b;
+    }
+    .nav-menu li a:hover,.multifilters .is-active a:hover, .multifilters .nav-btn:hover{ text-decoration: none;}
 .multifilters .multifilters-in + .multifilters-in .nav-btn i { margin-top: 6px; }
 .multifilters .multifilters-in + .multifilters-in .nav-menu { top: 27px; }
 .multifilters .multifilters-in.is-active .nav-btn { box-shadow: 0 0 0 1px #d67b34; }
+.multifilters .is-active a{color: white;}
 .multifilters .multifilters-in.is-active .nav-input { box-shadow: 0 0 0 1px #d67b34; }
 .multifilters .multifilters-in.multifilters-input .nav-btn { cursor: text; }
 .multifilters .multifilters-in.multifilters-input .nav-btn i { display: none; }
