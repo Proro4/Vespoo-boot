@@ -965,6 +965,7 @@ if ($('.multifilters-wrap').length) {
 		$('.city-wrap').hide();
 		$('.region-wrap').show();
 		$('.location-title-region').hide();
+		$(".location-title-this-region").hide();
 		$(this).hide();
 	});
 
@@ -985,16 +986,30 @@ if ($('.multifilters-wrap').length) {
 // region list
 	var regionArr = [];
 	var regionMark;
-	$.ajax({
-		type: "GET",
-		url: "ua-cities.xml", // change to full path of file on server
-		dataType: "xml",
-		success: parseRegion,
-		complete: setupRegion,
-		error: function() {
-			// if XML File could not be found
-		}
-	});
+
+	   
+		$('.region-list li').on('click', function(){
+			$('.region-wrap').hide();	
+			$('.city-wrap').show();
+			$('.location-title-region').show().text(regionMark);
+			$('.location-title-this-region').show().text('Искать по всей области');
+			$('.location-title-back').show();
+		});
+		 $('.city-list li').on('click', function(){
+				$('#cityBox').val($(this).text()).siblings('.clear-input').css('display', 'block');
+				$('#cityCurrent').val($('#cityBox').val()).siblings('.clear-input').css('display', 'block');
+				$('.location-wrap').hide();
+				$('.location-wrap input').val('');
+				$('.location-wrap .clear-input').hide();
+				$('.city-wrap').hide();
+				$('.city-list').remove();
+				$('.region-wrap').show();
+				$('.location-title-region').hide();
+				$('.location-title-this-region').hide();
+				$('.location-title-back').hide();
+			});
+	
+
 
 // Show phone number
 	$('.show-phone').on('click', function(){
