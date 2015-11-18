@@ -952,7 +952,6 @@ if ($('.multifilters-wrap').length) {
 		$('.location-wrap input').val('');
 		$('.location-wrap .clear-input').hide();
 		$('.city-wrap').hide();
-		$('.city-list').remove();
 		$('.region-wrap').show();
 		$('.location-title-region').hide();
 		$('.location-title-this-region').hide();
@@ -961,7 +960,6 @@ if ($('.multifilters-wrap').length) {
 
 	// location-title-back button
 	$('.location-title-back').on('click', function(){
-		$('.city-list').remove();
 		$('.city-wrap').hide();
 		$('.region-wrap').show();
 		$('.location-title-region').hide();
@@ -976,7 +974,6 @@ if ($('.multifilters-wrap').length) {
 		$('.location-wrap input').val('');
 		$('.location-wrap .clear-input').hide();
 		$('.city-wrap').hide();
-		$('.city-list').remove();
 		$('.region-wrap').show();
 		$('.location-title-region').hide();
 		$('.location-title-this-region').hide();
@@ -989,11 +986,14 @@ if ($('.multifilters-wrap').length) {
 
 	   
 		$('.region-list li').on('click', function(){
-			$('.region-wrap').hide();	
-			$('.city-wrap').show();
+			$('.region-wrap').hide();
+			var redId = $(this).attr('id');
+			$('.city-wrap#'+redId+'').show();
 			$('.location-title-region').show().text(regionMark);
 			$('.location-title-this-region').show().text('Искать по всей области');
 			$('.location-title-back').show();
+			$('input[type="hidden"]').val(redId);
+
 		});
 		 $('.city-list li').on('click', function(){
 				$('#cityBox').val($(this).text()).siblings('.clear-input').css('display', 'block');
@@ -1001,12 +1001,12 @@ if ($('.multifilters-wrap').length) {
 				$('.location-wrap').hide();
 				$('.location-wrap input').val('');
 				$('.location-wrap .clear-input').hide();
-				$('.city-wrap').hide();
-				$('.city-list').remove();
-				$('.region-wrap').show();
+				$('.city-wrap').hide();				$('.region-wrap').show();
 				$('.location-title-region').hide();
 				$('.location-title-this-region').hide();
 				$('.location-title-back').hide();
+				var redId = $(this).attr('id');
+				$('input[type="hidden"]').text(redId);
 			});
 	
 
