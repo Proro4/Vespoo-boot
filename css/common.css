@@ -1371,8 +1371,10 @@ form .field:after { content: ""; display: table; clear: both; }
 .help-aside .nav-help-sub li { margin-top: 5px; }
 .help-aside .nav-help-sub li a{color: #583d8b;}
 .help-aside .nav-help-sub li.is-active { color: #d4762d; }
+.help-aside .nav-help-sub li.is-active a{ color: #d4762d; }
 .help-in { padding: 10px; float: right; width: 672px; box-shadow: 0 0 6px rgba(1, 1, 1, 0.3); *zoom: 1; }
 .help-in:after { content: ""; display: table; clear: both; }
+.help-list{display: none;}
 .help-list > li > p { padding-left: 10px; line-height: 35px; box-shadow: 0 0 6px rgba(1, 1, 1, 0.3); cursor: pointer; *zoom: 1; }
 .help-list > li > p:after { content: ""; display: table; clear: both; }
 .help-list > li > p:hover { color: #d4762d; }

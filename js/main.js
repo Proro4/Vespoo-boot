@@ -1,5 +1,31 @@
 $(document).ready(function(){
 
+
+	//HElP ul
+
+
+	$('#l1').css({'display':'block'})
+
+	$('.nav-help>li>a').click(function(){
+		$('.nav-help>li').removeClass('is-active');
+		$(this).parent().addClass('is-active');
+		var listNumb = $(this).parent().attr('list')
+		$('.help-list').css('display','none');
+		$('#'+listNumb+'').css('display','block');
+	})
+	$('.nav-help>li>ul>li>a').click(function(){
+		$('.nav-help>li').removeClass('is-active');
+		$(this).parent().parent().parent().addClass('is-active');
+		var listNumb = $(this).parent().parent().parent().attr('list')
+		$('.help-list').css('display','none');
+		$('#'+listNumb+'').css('display','block');
+		var nameText = $(this).attr('name');
+		$('.help-list > li + li,.help-list > li').removeClass('is-active');
+		$('.help-list > li + li .help-content,.help-list > li .help-content').css('display','none');
+		$('#'+nameText).addClass('is-active');
+		$('#'+nameText+' .help-content').css('display','block');
+	})
+
  	//HOVER 'wear you" block
 
  	$('#cityCurrent').hover(function(){
@@ -1293,10 +1319,10 @@ if ($('.multifilters-wrap').length) {
 
 // show/hide regions map button
 	if ($('.regions').length) {
-		$('.regions__title button').on('click', function(){
-			$(this).parents('.regions__list > li').siblings('li').children('.regions__sublist').removeClass('is-active');
-			$(this).parents('.regions__list > li').siblings('li').children('.regions__title').children('button').removeClass('is-active').text("показать все").append('<i class="icon-all-more-top-viollet"></i>');
-			$(this).parents('.regions__title').siblings('.regions__sublist').toggleClass('is-active');
+		$('.regions-title button').on('click', function(){
+			$(this).parents('.regions-list > li').siblings('li').children('.regions-sublist').removeClass('is-active');
+			$(this).parents('.regions-list > li').siblings('li').children('.regions-title').children('button').removeClass('is-active').text("показать все").append('<i class="icon-all-more-top-viollet"></i>');
+			$(this).parents('.regions-title').siblings('.regions-sublist').toggleClass('is-active');
 			if ($(this).hasClass('is-active')) {
 				$(this).removeClass('is-active').text("показать все").append('<i class="icon-all-more-top-viollet"></i>');
 			} else {
@@ -1314,8 +1340,8 @@ if ($('.multifilters-wrap').length) {
 });
 
 // help accordion
-	$('.help__list > li > p').on('click', function(){
-		$(this).siblings('.help__content').slideToggle().parent().toggleClass('is-active').siblings('li').removeClass('is-active').children('.help__content').slideUp();
+	$('.help-list > li > p').on('click', function(){
+		$(this).siblings('.help-content').slideToggle().parent().toggleClass('is-active').siblings('li').removeClass('is-active').children('.help-content').slideUp();
 	});
 
 // Window Scroll
