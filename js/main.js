@@ -1375,7 +1375,16 @@ $(window).scroll(function () {
 		$('.body-branding .banner-1').css('position','absolute');
 		$('.body-branding .banner-1').css('top','auto');
 		$('.body-branding .banner-1').css('bottom',foot+30);
+
+		$('.service-1').css({'position':'absolute','top':'auto','bottom':foot+380})
+		$('.service-2').css({'position':'absolute','top':'auto','bottom':foot+30})
+
+	}else{
+
+		$('.service-1').css({'position':'fixed',bottom:'auto','top': '100px'})
+		$('.service-2').css({'position':'fixed',bottom:'auto','top': '450px'})
 	}
+
 	if(heightTop > 600){
 		$('.arrow-top').css('display','block');
 	}
