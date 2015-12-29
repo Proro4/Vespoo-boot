@@ -1,9 +1,6 @@
 $(document).ready(function(){
 
 
-	//HElP ul
-
-
 	$('#l1').css({'display':'block'})
 
 	$('.nav-help>li>a').click(function(){
@@ -1357,11 +1354,13 @@ $(window).scroll(function () {
 		$('.location-wrap').css('margin-top','10px');
 		$('.location-wrap').css('padding-top','10px');
 		$('.search-city').css('display','none');
+		$('.btn.btn-default.field.submit').css('background-color','#583d8b');
 	} else {
 	    $('.header').removeClass('is-fixed');
 		$('.location-wrap').css('margin-top','-1px');
 		$('.location-wrap').css('padding-top','0px');
 		$('.banner-standart-text').css('display','block');
+		$('.btn.btn-default.field.submit').css('background-color','#9785b7');
 	}
 	if(heightTop >= 470){
 		$('.body-branding .banner-1').css('position','fixed');

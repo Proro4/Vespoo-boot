@@ -32,12 +32,15 @@
 		<!-- end banner-top -->
 		
 		<!-- begin header  -->
+		
+
 		<div class="header" name='header'>
 			<div class="container" >
-				<div class="row">
-				<!-- begin header--top  -->
+				<div class="row no-margin">
+				<!-- begin header__top  -->
 				<div class="header-top" >
-					<a href="index.html"  class="logo"><img src="img/logo.png" alt="Vespoo"></a>
+					<a href="index.html"  class="logo"><img src="img/l
+					ogo.png" alt="Vespoo"></a>
 					<a href="#" class="post-new">+ Подать объявление</a>
 					<a href="#" class="userbox">Мой профиль</a>
 					<ul class="lang-selector">
@@ -45,15 +48,16 @@
 						<li><a href="#">мова</a></li>
 					</ul>
 				</div>
-				<!-- end header--top -->
-				
+				<!-- end header__top -->
+
 				<form action="#" id="searchForm" class="form-search">
-					<div class="form-group location col-xs-4">
+					<div class="form-group location col-xs-4 no-padding">
 						<input type="text" class="form-control field search city-search" id="cityCurrent" placeholder="Город, область...">
+						<input type="hidden" id='icCurrent' value="">
 							<a href="#" class="clear-input reset icon-all-close"></a>
 					</div>
-					<div class="form-group col-xs-4">
-					   		<input type="text" class="form-control field search" placeholder="8 350 432 обявлений">
+					<div class="form-group col-xs-4 no-padding">
+					   		<input type="text" class="form-control field search advert-search" placeholder="8 350 432 объявлений">
 					</div>
 				 		<button type="submit" class="col-xs-3 btn btn-default field submit">Поиск</button>
 
@@ -74,14 +78,31 @@
 						<a href="#" class="clear-input icon-all-close"></a>
 					</div>
 					<div class="region-wrap">
-						<ul class="region-list"><li>Автономная Республика Крым </li><li>Винницкая область</li><li>Волынская область</li><li>Днепропетровская область</li><li>Донецкая область</li><li>Житомирская область</li><li>Закарпатская область</li><li>Запорожская область</li><li>Ивано-Франковская область</li><li>Киевская область</li><li>Кировоградская область</li><li>Луганская область</li><li>Львовская область</li><li>Николаевская область</li><li>Одесская область</li><li>Полтавская область</li><li>Ровенская область</li><li>Сумская область</li><li>Тернопольская область</li><li>Харьковская область</li><li>Херсонская область</li><li>Хмельницкая область</li><li>Черкасская область</li><li>Черниговская область</li><li>Черновицкая область</li></ul>
+						<ul class="region-list"><li id="reg1">Автономная Республика Крым </li><li id="reg2">Винницкая область</li></ul>
 					</div>
-					<div class="city-wrap"></div>
+					<div class="city-wrap" id="reg1">
+						<ul class="city-list">
+							<li id="city1-1">Киев</li><li id="city1-2">Белая Церковь</li><li id="city1-3">Буча</li>
+						</ul>
+					</div>
+					<div class="city-wrap" id="reg2">
+						<ul class="city-list">
+							<li id="city2-1">Буча</li><li id="city2-2">Иванков</li><li id="city2-2">Борисполь</li>
+						</ul>
+					</div>
 					<div class="exit-location-wrap">
 						закрыть <span>X</span>
 					</div>
 				</div>
 				<!-- end location-wrap -->
+				<div class="search-city">
+					<p>Где вы:</p>
+					<button  class="take-city">Киев</button>
+					<button  class="take-city">Одесса</button>
+					<div class="search-city-line"></div>
+					<button class="take-searchForm">Выбрать город</button>
+					<i>X</i>
+				</div>
 			</div>
 			</div>
 		</div>
@@ -170,6 +191,11 @@
 						</div>
 						<div class="area-form">
 							<div class="area-form-in">
+								<form action="/file-upload" class="dropzone">
+								  <div class="fallback">
+								    <input name="file" type="file" multiple />
+								  </div>
+								</form>
 								<ul class="photoload">
 									<!-- begin photo -->
 									<li class="photoload-in">
@@ -473,5 +499,6 @@
 	<script src="js/jquery.fancybox.js"></script>
 	<script src="js/jquery.fancybox-thumbs.js"></script>
 	<script src="js/main.js"></script>
+	<script src='dropzone'></script>
 </body>
 </html>
