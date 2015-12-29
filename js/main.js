@@ -1,6 +1,21 @@
 $(document).ready(function(){
 
+	setInterval(function() {
 
+	$('.dz-error-mark').on('click',function(){
+		$(this).parent().remove();
+	})
+		$('.dropzone').each(function(){
+			if($(this).find('.dz-preview').length > 1){
+				$(this).find('.dz-preview').first().remove();
+			}
+		})
+	}, 1000);
+
+	setTimeout(function() {
+
+		$('.dz-default.dz-message>span').text(' ')
+	}, 100);
 	$('#l1').css({'display':'block'})
 
 	$('.nav-help>li>a').click(function(){

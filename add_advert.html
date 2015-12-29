@@ -135,6 +135,16 @@
 
 		<!-- begin content-wrap  -->
 		<div class="content-wrap container">
+					<form class="post-preview has-validation-callback">
+				<img src="img/content/advert-photo.jpg" alt="">
+				<h3>Название файла</h3>
+				<p>Размер: 3 Mb</p>
+				<p>Высота: 422 px</p>
+				<p>Ширина : 630 px</p>
+				<b>Разместить данное фото ?</b>
+				<input type="submit" value="Подтвердить">
+				<button>отмена</button>
+			</form>
 			<form action="#" id="formAdvert" class="advert-add">
 				<fieldset>
 					<h2 class="post-title">Подать объявление</h2>
@@ -196,71 +206,66 @@
 								    <input name="file" type="file" multiple />
 								  </div>
 								</form>
+								
 								<ul class="photoload">
 									<!-- begin photo -->
 									<li class="photoload-in">
 										<div class="photoload-el">
-											<a href="#" class="photoload-item is-loaded">
-												<img src="img/bg/animal-bg.jpg" alt="user-img">
-											</a>
+											<form action="/upload-target" class="dropzone"></form>		
 										</div>
 									</li>
 									<!-- begin photo -->
 									<li class="photoload-in">
 										<div class="photoload-el">
-											<a href="#" class="photoload-item is-loaded">
-												<img src="img/content/photo-h.jpg" alt="user-img">
-											</a>
+											<form action="/upload-target" class="dropzone"></form>		
 										</div>
 									</li>
 									<!-- begin photo -->
 									<li class="photoload-in">
 										<div class="photoload-el">
-											<a href="#" class="photoload-item is-loaded">
-												<img src="img/bg/hobby-bg.jpg" alt="user-img">
-											</a>
+											<form action="/upload-target" class="dropzone"></form>		
 										</div>
 									</li>
 									<!-- begin photo -->
 									<li class="photoload-in">
 										<div class="photoload-el">
-											<input type="file" class="photoload-item" name="photo" multiple accept="image/*,image/jpeg">
+											<form action="/upload-target" class="dropzone"></form>										
 										</div>
 									</li>
 									<!-- begin photo -->
 									<li class="photoload-in">
 										<div class="photoload-el">
-												<input type="file" class="photoload-item" name="photo" multiple accept="image/*,image/jpeg">
+											<form action="/upload-target" class="dropzone"></form>		
 										</div>
 									</li>
 									<!-- begin photo -->
 									<li class="photoload-in">
 										<div class="photoload-el">
-												<input type="file" class="photoload-item" name="photo" multiple accept="image/*,image/jpeg">
+											<form action="/upload-target" class="dropzone"></form>	
 										</div>
 									</li>
 									<!-- begin photo -->
 									<li class="photoload-in">
 										<div class="photoload-el">
-											<a href="#" class="photoload-item"></a>
+											<form action="/upload-target" class="dropzone"></form>	
 										</div>
 									</li>
 									<!-- begin photo -->
 									<li class="photoload-in">
 										<div class="photoload-el">
-											<a href="#" class="photoload-item"></a>
+											<form action="/upload-target" class="dropzone"></form>	
 										</div>
 									</li>
 									<!-- begin photo -->
 									<li class="photoload-in">
 										<div class="photoload-el">
-											<a href="#" class="photoload-item photo-exit"></a>
+											<form action="/upload-target" class="dropzone"></form>	
 										</div>
 									</li>
 									<!-- begin photo -->
 									<li class="photoload-in">
 										<div class="photoload-el ">
-											<a href="#" class="photoload-item photo-load"></a>
+											<form action="/upload-target" class="dropzone"></form>	
 										</div>
 									</li>
 								</ul>
@@ -498,7 +503,7 @@
 	<script src="js/jquery.form-validator.min.js"></script>
 	<script src="js/jquery.fancybox.js"></script>
 	<script src="js/jquery.fancybox-thumbs.js"></script>
+	<script src='js/dropzone.js'></script>
 	<script src="js/main.js"></script>
-	<script src='dropzone'></script>
 </body>
 </html>

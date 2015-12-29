@@ -1825,11 +1825,12 @@ margin-bottom: 25px;}
 input.photoload-item{padding-left: 111px;cursor: pointer;}
 input.photoload-item:active,input.photoload-item:focus{border:0; outline: 0; }
 .post-preview{
+	display: none;
 	position: absolute;
 	min-height: 300px;
-	width: 100%;
+	width: 97%;
 	background: white;
-	left: 0;
+	left: 15px;
 	top: 50px;
 	z-index: 50;
 	border: 1px solid #675096;
@@ -1879,3 +1880,42 @@ input.photoload-item:active,input.photoload-item:focus{border:0; outline: 0; }
 	margin-top: 110px;
     max-width: 980px;
 }
+.dz-success-mark,span[data-dz-errormessage]{
+	display: none!important;
+}
+.dz-error-mark{
+	cursor: pointer;
+
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    width: 15px;
+    height: 15px;
+}
+.dz-default.dz-message{
+	position: relative;
+}
+
+.dz-default.dz-message span{
+	position: absolute;
+	    color: #f0f0f0;
+	cursor: pointer;
+    height: 110px;
+    width: 110px;
+        background: url("../img/other/photoload-bg.png") no-repeat center center, #f0f0f0;
+}
+.dz-image{
+	position: relative;
+	    max-width: 110px;
+    max-height: 115px;	
+    overflow: hidden;
+}
+.dz-image img{
+	    max-width: 110px;
+    max-height: 115px;	
+
+}
+.dz-size,.dz-filename{
+	opacity: 0;
+}
+.fallback{display: none;}
