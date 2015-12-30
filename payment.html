@@ -26,13 +26,13 @@
 	<div id="main" class="wrapper">
 		<!-- begin banner-top -->
 		<div class="banner-top">
-			<a href="#" class="banner-top-in"></a>
+			<a href="#" class="banner-top__in"></a>
 			<button class="close-banner-fix">x</button>
 		</div>
 		<!-- end banner-top -->
 		
 		<!-- begin header  -->
-		
+
 		<div class="header" name='header'>
 			<div class="container" >
 				<div class="row no-margin">
@@ -108,7 +108,6 @@
 
 		<!-- end header -->
 
-
 		<!-- begin body-branding  -->
 		<div class="body-branding">
 			<!-- begin banner  -->
@@ -136,63 +135,185 @@
 
 		<!-- begin content-wrap  -->
 		<div class="content-wrap container">
-			<!-- begin login  -->
-			<div class="login">
-				<h2 class="post-title">Вход</h2>
-				<!-- begin login-inner  -->
-				<div class="login-inner">
-					<form action="#" id="formLogin" class="form-login">
-						<fieldset>
-							<!-- begin field -->
-							<div class="field">
-								<input type="text" class="form-input" name="user_email" data-validation="email" data-validation-error-msg="Введите свою почту" placeholder="Email">
-							</div>
-							<!-- begin field -->
-							<div class="field">
-								<input type="password" class="form-input" name="user_password" data-validation="length" data-validation-length="min5" data-validation-error-msg="Длина пароля не меньше 5 символов" placeholder="Пароль">
-							</div>
-							<!-- begin field -->
-							<div class="field">
-								<input type="checkbox" name="remember" id="remember">
-								<label for="remember">Запомнить меня</label>
-							</div>
-							<!-- begin field -->
-							<div class="field">
-								<button type="submit" class="submit-btn">Войти</button>
-							</div>
-						</fieldset>
-					</form>
 
-					<!-- begin login-item  -->
-					<div class="login-item">
-						<a href="#">Не можете войти?</a>
-						<a href="#">Регистрация</a>
-					</div>
-					<!-- end login-item -->
-				</div>
-				<!-- end login-inner -->
+			<!-- begin payment  -->
+			<div class="payment">
+				<form action="#" class="payment-form">
+					<fieldset>
+						<h2 class="payment-title"><span>1</span> Как продавать безопасно</h2>
+						<p class="post-title">Продам гараж в отличном состоянии</p>
+						<!-- begin payment-list -->
+						<ul class="payment-list">
+							<!-- begin element -->
+							<li>
+								<div class="field field-checkbox">
+									<input type="checkbox">
+								</div>
+								<div class="field field-img">
+									<img src="img/content/payment-icon.jpg" alt="payment-img">
+								</div>
+								<div class="field field-text">
+									<p>Топ-обьявление</p>
+								</div>
+								<div class="field field-select">
+									<select>
+										<option value="1 день">1 день</option>
+										<option value="2 дня">2 дня</option>
+										<option value="3 дня">3 дня</option>
+										<option value="4 дня">4 дня</option>
+										<option value="5 дней">5 дней</option>
+									</select>
+								</div>
+								<div class="field field-price">
+									<p>от <span>8</span> грн</p>
+								</div>
+							</li>
+							<!-- begin element -->
+							<li>
+								<div class="field field-checkbox">
+									<input type="checkbox">
+								</div>
+								<div class="field field-img">
+									<img src="img/content/payment-icon.jpg" alt="payment-img">
+								</div>
+								<div class="field field-text">
+									<p>Выделение цветом</p>
+								</div>
+								<div class="field field-select">
+									<select>
+										<option value="1 день">1 день</option>
+										<option value="2 дня">2 дня</option>
+										<option value="3 дня">3 дня</option>
+										<option value="4 дня">4 дня</option>
+										<option value="5 дней">5 дней</option>
+									</select>
+								</div>
+								<div class="field field-price">
+									<p><span>10</span> грн</p>
+								</div>
+							</li>
+							<!-- begin element -->
+							<li>
+								<div class="field field-checkbox">
+									<input type="checkbox">
+								</div>
+								<div class="field field-img">
+									<img src="img/content/payment-icon.jpg" alt="payment-img">
+								</div>
+								<div class="field field-text">
+									<p>Срочное обьявление</p>
+								</div>
+								<div class="field field-select">
+									<select>
+										<option value="1 день">1 день</option>
+										<option value="2 дня">2 дня</option>
+										<option value="3 дня">3 дня</option>
+										<option value="4 дня">4 дня</option>
+										<option value="5 дней">5 дней</option>
+									</select>
+								</div>
+								<div class="field field-price">
+									<p><span>10</span> грн</p>
+								</div>
+							</li>
+							<!-- begin element -->
+							<li>
+								<div class="field field-checkbox">
+									<input type="checkbox">
+								</div>
+								<div class="field field-img">
+									<img src="img/content/payment-icon.jpg" alt="payment-img">
+								</div>
+								<div class="field field-text">
+									<p>Поднятие в верх списка</p>
+								</div>
+								<div class="field field-select">
+									<select>
+										<option value="1 день">1 день</option>
+										<option value="2 дня">2 дня</option>
+										<option value="3 дня">3 дня</option>
+										<option value="4 дня">4 дня</option>
+										<option value="5 дней">5 дней</option>
+									</select>
+								</div>
+								<div class="field field-price">
+									<p><span>12</span> грн</p>
+								</div>
+							</li>
+						</ul>
+						<!-- end payment-list -->
+						
+						<h2 class="payment-title"><span>2</span> Выберите способ оплаты</h2>
+						<!-- begin paytype-list -->
+						<ul class="paytype-list">
+							<!-- begin element -->
+							<li>
+								<div class="paytype-img">
+									<img src="img/content/visa-mastercard.png" alt="pay-img">
+								</div>
+								<div class="paytype-choose">
+									<input type="checkbox">
+									<p><span>Банковская карта</span></p>
+								</div>
+							</li>
+							<!-- begin element -->
+							<li>
+								<div class="paytype-img">
+									<img src="img/content/p24.png" alt="pay-img">
+								</div>
+								<div class="paytype-choose">
+									<input type="checkbox">
+									<p>Приват 24</p>
+								</div>
+							</li>
+							<!-- begin element -->
+							<li>
+								<div class="paytype-img">
+									<img src="img/content/cash.png" alt="pay-img">
+								</div>
+								<div class="paytype-choose">
+									<input type="checkbox">
+									<p>Терминалы, отделения банков</p>
+								</div>
+							</li>
+							<!-- begin element -->
+							<li>
+								<div class="paytype-img">
+									<img src="img/content/pay-img.png" alt="pay-img">
+								</div>
+								<div class="paytype-choose">
+									<input type="checkbox">
+									<p>Вид оплаты</p>
+								</div>
+							</li>
+							<!-- begin element -->
+							<li>
+								<div class="paytype-img">
+									<img src="img/content/pay-img.png" alt="pay-img">
+								</div>
+								<div class="paytype-choose">
+									<input type="checkbox">
+									<p>Вид оплаты</p>
+								</div>
+							</li>
+							<!-- begin element -->
+							<li>
+								<div class="paytype-container">
+									<div class="paytype-total">
+										<p><i class="icon-all-arrow-l-o"></i>Всего к оплате: <span><span class="total-number">0</span> грн</span></p>
+									</div>
+									<div class="paytype-submit">
+										<button type="submit" class="submit-btn">Оплатить</button>
+										<a href="javascript:void(0);" class="reset submit-btn inverse">Отменить</a>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<!-- end paytype-list -->
+					</fieldset>
+				</form>
 			</div>
-			<!-- end login -->
-
-			<!-- begin login-info  -->
-			<div class="login-info">
-				<p>Вы разместили объявление, но у Вас нет пароля?</p>
-				<a href="#">Нажмите здесь</a>
-				<div class="h-line"></div>
-				<ul class="social-login">
-					<li>
-						<p>Войти через Вконтакте</p>
-						<a href="#"><img src="img/other/vk.jpg" alt="vkontakte"></a>
-					</li>
-					<li>
-						<p>Войти через Facebook</p>
-						<a href="#"><img src="img/other/fb.jpg" alt="facebook"></a>
-					</li>
-				</ul>
-				<p>Войдя в раздел Мой профиль, Вы принимаете</p>
-				<p><a href="#">Условия использования</a> сайта</p>
-			</div>
-			<!-- end login-info -->
+			<!-- end payment -->
 
 			<!-- begin section-about  -->
 			<div class="section-about">
@@ -226,7 +347,7 @@
 	<div class="footer">
 		<div class="container">
 			<div class="row">
-			<!-- begin footer__left  -->
+			<!-- begin footer--left  -->
 			<div class="footer-left col-xs-8">
 				<div class="footer-col">
 					<p>Компания</p>
@@ -251,8 +372,8 @@
 					</ul>
 				</div>
 			</div>
-			<!-- end footer__left -->
-			<!-- begin footer__right  -->
+			<!-- end footer--left -->
+			<!-- begin footer--right  -->
 			<div class="footer-right col-xs-4">
 				<p>Отдел заботы о пользователях</p>
 				<p>Фамилия Имя</p>
@@ -265,7 +386,7 @@
 				</ul>
 				<a href="#" class="phone-btn">Связаться</a>
 			</div>
-			<!-- end footer__right -->
+			<!-- end footer--right -->
 			<!-- begin footer-bottom  -->
 			<div class="footer-bottom col-xs-12">
 				<a href="#" class="footer-logo"><img src="img/logo-2.png" alt="Wespoo"></a>
@@ -279,7 +400,6 @@
 		</div>
 	</div>
 	<!-- end footer -->
-
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
 	<script src="js/icheck.min.js"></script>

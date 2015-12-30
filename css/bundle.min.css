@@ -97,7 +97,7 @@
       font-size: 24px;
       color: #d4762d;
       font-weight: bold; }
-  .check-price .field .area-form .area-form__in {
+  .check-price .field .area-form .area-form-in {
     margin: 10px 0; }
   .check-price .field .area-form .selectric b {
     color: rgba(0, 0, 0, 0.5);
@@ -284,7 +284,7 @@
         border: 1px solid #dfdfdf;
         box-shadow: 0px 0px 3px #d0d0d0;
         margin-top: 35px;
-        -webkit-transition: 0.2s all;
+        -webkit-transition:f 0.2s all;
                 transition: 0.2s all;
         margin-bottom: 10px;
         width: 225px;
@@ -450,12 +450,12 @@
       background: white; }
    .advert-title {
     background-color: #f2d6c0; }
-   .advert-el__price {
+   .advert-el-price {
     color: white; }
    .pagination {
     padding-top: 25px;
     border-top: 1px solid #685096; }
-   .advert-el__price {
+   .advert-el-price {
     height: 86px;
     line-height: 86px; }
 

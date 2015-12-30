@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Wespoo</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="css/bundle.min.css">
+	<link rel="stylesheet" href="css/orange.css">
+	<link rel="stylesheet" href="css/selectric.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.css">
+	<link rel="stylesheet" href="css/jquery.fancybox-thumbs.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.css">
+</head>
+<body>
+	<!--Begin Arrow-top-->
+<div class="arrow-top">
+	<div class="arrow-to-top">
+		<a id="top" href=""><img src="" alt=""></a>
+	</div>
+</div>
+<!--end Arrow-top-->
+	<!-- begin wrapper  -->
+	<div id="main" class="wrapper">
+		<!-- begin banner-top -->
+		<div class="banner-top">
+			<a href="#" class="banner-top-in"></a>
+			<button class="close-banner-fix">x</button>
+		</div>
+		<!-- end banner-top -->
+		
+		<!-- begin header  -->
+
+		<div class="header" name='header'>
+			<div class="container" >
+				<div class="row no-margin">
+				<!-- begin header-top  -->
+				<div class="header-top" >
+					<a href="index.html"  class="logo"><img src="img/l
+					ogo.png" alt="Wespoo"></a>
+					<a href="#" class="post-new">+ Подать объявление</a>
+					<a href="#" class="userbox">Мой профиль</a>
+					<ul class="lang-selector">
+						<li><a href="#">язык</a></li>
+						<li><a href="#">мова</a></li>
+					</ul>
+				</div>
+				<!-- end header-top -->
+
+				<form action="#" id="searchForm" class="form-search">
+					<div class="form-group location col-xs-4 no-padding">
+						<input type="text" class="form-control field search city-search" id="cityCurrent" placeholder="Город, область...">
+						<input type="hidden" id='icCurrent' value="">
+							<a href="#" class="clear-input reset icon-all-close"></a>
+					</div>
+					<div class="form-group col-xs-4 no-padding">
+					   		<input type="text" class="form-control field search advert-search" placeholder="8 350 432 объявлений">
+					</div>
+				 		<button type="submit" class="col-xs-3 btn btn-default field submit">Поиск</button>
+
+				</form>
+
+				<!-- begion location-wrap -->
+				<div class="location-wrap">
+					<div class="location-title">
+						<button class="location-title-all">Искать по всей стране</button>
+						<br>
+
+						<button class="location-title-region region-hover">Искать по всей области</button>
+						<button class="location-title-this-region"></button>
+						<button class="location-title-back">вернуться к выбору области</button>
+					</div>
+					<div class="search-city-wrap">
+						<input type="text" id="cityBox" placeholder="Начните вводить город">
+						<a href="#" class="clear-input icon-all-close"></a>
+					</div>
+					<div class="region-wrap">
+						<ul class="region-list"><li id="reg1">Автономная Республика Крым </li><li id="reg2">Винницкая область</li></ul>
+					</div>
+					<div class="city-wrap" id="reg1">
+						<ul class="city-list">
+							<li id="city1-1">Киев</li><li id="city1-2">Белая Церковь</li><li id="city1-3">Буча</li>
+						</ul>
+					</div>
+					<div class="city-wrap" id="reg2">
+						<ul class="city-list">
+							<li id="city2-1">Буча</li><li id="city2-2">Иванков</li><li id="city2-2">Борисполь</li>
+						</ul>
+					</div>
+					<div class="exit-location-wrap">
+						закрыть <span>X</span>
+					</div>
+				</div>
+				<!-- end location-wrap -->
+				<div class="search-city">
+					<p>Где вы:</p>
+					<button  class="take-city">Киев</button>
+					<button  class="take-city">Одесса</button>
+					<div class="search-city-line"></div>
+					<button class="take-searchForm">Выбрать город</button>
+					<i>X</i>
+				</div>
+			</div>
+			</div>
+		</div>
+
+		<!-- end header -->
+
+		<!-- begin body-branding  -->
+		<div class="body-branding">
+			<!-- begin banner  -->
+			<div class="banner-1">
+				<a href="#"><img src="img/banners/Banner-160x600.jpg" alt="banner"></a>
+				<button class="close-banner">x</button>
+			</div>
+			<!-- end banner -->
+
+			<!-- begin service-1  -->
+			<div class="service-1">
+				<a href="#"><img src="img/banners/service-1.jpg" alt="service"></a>
+				<button class="close-banner">x</button>
+			</div>
+			<!-- end service-1 -->
+
+			<!-- begin service-2  -->
+			<div class="service-2">
+				<a href="#"><img src="img/banners/service-1.jpg" alt="service"></a>
+				<button class="close-banner">x</button>
+			</div>
+			<!-- end service-2 -->
+		</div>
+		<!-- end body-branding -->
+
+		<!-- begin content-wrap  -->
+		<div class="content-wrap container">
+
+			<!-- begin regions  -->
+			<div class="regions">
+				<h2 class="post-title">Карта регионов</h2>
+				<ul class="regions-list">
+					<!-- begin element -->
+					<li>
+						<div class="regions-title">
+							<p>Винницкая область <span>(182073)</span></p>
+							<button>показать все<i class="icon-all-more-top-viollet"></i></button>
+						</div>
+						<ul class="regions-sublist">
+							<li><a href="#">Агрономичное <span title="количество объявлений">(26)</span></a></li>
+							<li><a href="#">Адамовка <span title="количество объявлений">(5)</span></a></li>
+							<li><a href="#">Багриновцы <span title="количество объявлений">(3)</span></a></li>
+							<li><a href="#">Большая Каменка <span title="количество объявлений">(2)</span></a></li>
+							<li><a href="#">Агрономичное <span title="количество объявлений">(26)</span></a></li>
+							<li><a href="#">Адамовка <span title="количество объявлений">(5)</span></a></li>
+							<li><a href="#">Багриновцы <span title="количество объявлений">(3)</span></a></li>
+							<li><a href="#">Большая Каменка <span title="количество объявлений">(2)</span></a></li>
+							<li><a href="#">Агрономичное <span title="количество объявлений">(26)</span></a></li>
+							<li><a href="#">Адамовка <span title="количество объявлений">(5)</span></a></li>
+							<li><a href="#">Багриновцы <span title="количество объявлений">(3)</span></a></li>
+							<li><a href="#">Большая Каменка <span title="количество объявлений">(2)</span></a></li>
+							<li><a href="#">Агрономичное <span title="количество объявлений">(26)</span></a></li>
+							<li><a href="#">Адамовка <span title="количество объявлений">(5)</span></a></li>
+							<li><a href="#">Багриновцы <span title="количество объявлений">(3)</span></a></li>
+							<li><a href="#">Большая Каменка <span title="количество объявлений">(2)</span></a></li>
+							<li><a href="#">Агрономичное <span title="количество объявлений">(26)</span></a></li>
+							<li><a href="#">Адамовка <span title="количество объявлений">(5)</span></a></li>
+							<li><a href="#">Багриновцы <span title="количество объявлений">(3)</span></a></li>
+							<li><a href="#">Большая Каменка <span title="количество объявлений">(2)</span></a></li>
+							<li><a href="#">Агрономичное <span title="количество объявлений">(26)</span></a></li>
+							<li><a href="#">Адамовка <span title="количество объявлений">(5)</span></a></li>
+							<li><a href="#">Багриновцы <span title="количество объявлений">(3)</span></a></li>
+							<li><a href="#">Большая Каменка <span title="количество объявлений">(2)</span></a></li>
+							<li><a href="#">Агрономичное <span title="количество объявлений">(26)</span></a></li>
+							<li><a href="#">Адамовка <span title="количество объявлений">(5)</span></a></li>
+							<li><a href="#">Багриновцы <span title="количество объявлений">(3)</span></a></li>
+							<li><a href="#">Большая Каменка <span title="количество объявлений">(2)</span></a></li>
+							<li><a href="#">Агрономичное <span title="количество объявлений">(26)</span></a></li>
+							<li><a href="#">Адамовка <span title="количество объявлений">(5)</span></a></li>
+							<li><a href="#">Багриновцы <span title="количество объявлений">(3)</span></a></li>
+							<li><a href="#">Большая Каменка <span title="количество объявлений">(2)</span></a></li>
+						</ul>
+					</li>
+					<!-- begin element -->
+					<li>
+						<div class="regions-title">
+							<p>Винницкая область <span>(182073)</span></p>
+							<button>показать все<i class="icon-all-more-top-viollet"></i></button>
+						</div>
+						<ul class="regions-sublist">
+							<li><a href="#">Агрономичное <span title="количество объявлений">(26)</span></a></li>
+							<li><a href="#">Адамовка <span title="количество объявлений">(5)</span></a></li>
+							<li><a href="#">Багриновцы <span title="количество объявлений">(3)</span></a></li>
+							<li><a href="#">Большая Каменка <span title="количество объявлений">(2)</span></a></li>
+							<li><a href="#">Агрономичное <span title="количество объявлений">(26)</span></a></li>
+							<li><a href="#">Адамовка <span title="количество объявлений">(5)</span></a></li>
+							<li><a href="#">Багриновцы <span title="количество объявлений">(3)</span></a></li>
+							<li><a href="#">Большая Каменка <span title="количество объявлений">(2)</span></a></li>
+							<li><a href="#">Агрономичное <span title="количество объявлений">(26)</span></a></li>
+							<li><a href="#">Адамовка <span title="количество объявлений">(5)</span></a></li>
+							<li><a href="#">Багриновцы <span title="количество объявлений">(3)</span></a></li>
+							<li><a href="#">Большая Каменка <span title="количество объявлений">(2)</span></a></li>
+							<li><a href="#">Агрономичное <span title="количество объявлений">(26)</span></a></li>
+							<li><a href="#">Адамовка <span title="количество объявлений">(5)</span></a></li>
+							<li><a href="#">Багриновцы <span title="количество объявлений">(3)</span></a></li>
+							<li><a href="#">Большая Каменка <span title="количество объявлений">(2)</span></a></li>
+							<li><a href="#">Агрономичное <span title="количество объявлений">(26)</span></a></li>
+							<li><a href="#">Адамовка <span title="количество объявлений">(5)</span></a></li>
+							<li><a href="#">Багриновцы <span title="количество объявлений">(3)</span></a></li>
+							<li><a href="#">Большая Каменка <span title="количество объявлений">(2)</span></a></li>
+							<li><a href="#">Агрономичное <span title="количество объявлений">(26)</span></a></li>
+							<li><a href="#">Адамовка <span title="количество объявлений">(5)</span></a></li>
+							<li><a href="#">Багриновцы <span title="количество объявлений">(3)</span></a></li>
+							<li><a href="#">Большая Каменка <span title="количество объявлений">(2)</span></a></li>
+							<li><a href="#">Агрономичное <span title="количество объявлений">(26)</span></a></li>
+							<li><a href="#">Адамовка <span title="количество объявлений">(5)</span></a></li>
+							<li><a href="#">Багриновцы <span title="количество объявлений">(3)</span></a></li>
+							<li><a href="#">Большая Каменка <span title="количество объявлений">(2)</span></a></li>
+							<li><a href="#">Агрономичное <span title="количество объявлений">(26)</span></a></li>
+							<li><a href="#">Адамовка <span title="количество объявлений">(5)</span></a></li>
+							<li><a href="#">Багриновцы <span title="количество объявлений">(3)</span></a></li>
+							<li><a href="#">Большая Каменка <span title="количество объявлений">(2)</span></a></li>
+						</ul>
+					</li>
+					<!-- begin element -->
+					<li>
+						<div class="regions-title">
+							<p>Винницкая область <span>(182073)</span></p>
+							<button>показать все<i class="icon-all-more-top-viollet"></i></button>
+						</div>
+						<ul class="regions-sublist">
+							<li><a href="#">Агрономичное <span title="количество объявлений">(26)</span></a></li>
+							<li><a href="#">Адамовка <span title="количество объявлений">(5)</span></a></li>
+							<li><a href="#">Багриновцы <span title="количество объявлений">(3)</span></a></li>
+							<li><a href="#">Большая Каменка <span title="количество объявлений">(2)</span></a></li>
+							<li><a href="#">Агрономичное <span title="количество объявлений">(26)</span></a></li>
+							<li><a href="#">Адамовка <span title="количество объявлений">(5)</span></a></li>
+							<li><a href="#">Багриновцы <span title="количество объявлений">(3)</span></a></li>
+							<li><a href="#">Большая Каменка <span title="количество объявлений">(2)</span></a></li>
+							<li><a href="#">Агрономичное <span title="количество объявлений">(26)</span></a></li>
+							<li><a href="#">Адамовка <span title="количество объявлений">(5)</span></a></li>
+							<li><a href="#">Багриновцы <span title="количество объявлений">(3)</span></a></li>
+							<li><a href="#">Большая Каменка <span title="количество объявлений">(2)</span></a></li>
+							<li><a href="#">Агрономичное <span title="количество объявлений">(26)</span></a></li>
+							<li><a href="#">Адамовка <span title="количество объявлений">(5)</span></a></li>
+							<li><a href="#">Багриновцы <span title="количество объявлений">(3)</span></a></li>
+							<li><a href="#">Большая Каменка <span title="количество объявлений">(2)</span></a></li>
+							<li><a href="#">Агрономичное <span title="количество объявлений">(26)</span></a></li>
+							<li><a href="#">Адамовка <span title="количество объявлений">(5)</span></a></li>
+							<li><a href="#">Багриновцы <span title="количество объявлений">(3)</span></a></li>
+							<li><a href="#">Большая Каменка <span title="количество объявлений">(2)</span></a></li>
+							<li><a href="#">Агрономичное <span title="количество объявлений">(26)</span></a></li>
+							<li><a href="#">Адамовка <span title="количество объявлений">(5)</span></a></li>
+							<li><a href="#">Багриновцы <span title="количество объявлений">(3)</span></a></li>
+							<li><a href="#">Большая Каменка <span title="количество объявлений">(2)</span></a></li>
+							<li><a href="#">Агрономичное <span title="количество объявлений">(26)</span></a></li>
+							<li><a href="#">Адамовка <span title="количество объявлений">(5)</span></a></li>
+							<li><a href="#">Багриновцы <span title="количество объявлений">(3)</span></a></li>
+							<li><a href="#">Большая Каменка <span title="количество объявлений">(2)</span></a></li>
+							<li><a href="#">Агрономичное <span title="количество объявлений">(26)</span></a></li>
+							<li><a href="#">Адамовка <span title="количество объявлений">(5)</span></a></li>
+							<li><a href="#">Багриновцы <span title="количество объявлений">(3)</span></a></li>
+							<li><a href="#">Большая Каменка <span title="количество объявлений">(2)</span></a></li>
+						</ul>
+					</li>
+					<!-- begin element -->
+					<li>
+						<div class="regions-title">
+							<p>Винницкая область <span>(182073)</span></p>
+							<button>показать все<i class="icon-all-more-top-viollet"></i></button>
+						</div>
+						<ul class="regions-sublist">
+							<li><a href="#">Агрономичное <span title="количество объявлений">(26)</span></a></li>
+							<li><a href="#">Адамовка <span title="количество объявлений">(5)</span></a></li>
+							<li><a href="#">Багриновцы <span title="количество объявлений">(3)</span></a></li>
+							<li><a href="#">Большая Каменка <span title="количество объявлений">(2)</span></a></li>
+							<li><a href="#">Агрономичное <span title="количество объявлений">(26)</span></a></li>
+							<li><a href="#">Адамовка <span title="количество объявлений">(5)</span></a></li>
+							<li><a href="#">Багриновцы <span title="количество объявлений">(3)</span></a></li>
+							<li><a href="#">Большая Каменка <span title="количество объявлений">(2)</span></a></li>
+							<li><a href="#">Агрономичное <span title="количество объявлений">(26)</span></a></li>
+							<li><a href="#">Адамовка <span title="количество объявлений">(5)</span></a></li>
+							<li><a href="#">Багриновцы <span title="количество объявлений">(3)</span></a></li>
+							<li><a href="#">Большая Каменка <span title="количество объявлений">(2)</span></a></li>
+							<li><a href="#">Агрономичное <span title="количество объявлений">(26)</span></a></li>
+							<li><a href="#">Адамовка <span title="количество объявлений">(5)</span></a></li>
+							<li><a href="#">Багриновцы <span title="количество объявлений">(3)</span></a></li>
+							<li><a href="#">Большая Каменка <span title="количество объявлений">(2)</span></a></li>
+							<li><a href="#">Агрономичное <span title="количество объявлений">(26)</span></a></li>
+							<li><a href="#">Адамовка <span title="количество объявлений">(5)</span></a></li>
+							<li><a href="#">Багриновцы <span title="количество объявлений">(3)</span></a></li>
+							<li><a href="#">Большая Каменка <span title="количество объявлений">(2)</span></a></li>
+							<li><a href="#">Агрономичное <span title="количество объявлений">(26)</span></a></li>
+							<li><a href="#">Адамовка <span title="количество объявлений">(5)</span></a></li>
+							<li><a href="#">Багриновцы <span title="количество объявлений">(3)</span></a></li>
+							<li><a href="#">Большая Каменка <span title="количество объявлений">(2)</span></a></li>
+							<li><a href="#">Агрономичное <span title="количество объявлений">(26)</span></a></li>
+							<li><a href="#">Адамовка <span title="количество объявлений">(5)</span></a></li>
+							<li><a href="#">Багриновцы <span title="количество объявлений">(3)</span></a></li>
+							<li><a href="#">Большая Каменка <span title="количество объявлений">(2)</span></a></li>
+							<li><a href="#">Агрономичное <span title="количество объявлений">(26)</span></a></li>
+							<li><a href="#">Адамовка <span title="количество объявлений">(5)</span></a></li>
+							<li><a href="#">Багриновцы <span title="количество объявлений">(3)</span></a></li>
+							<li><a href="#">Большая Каменка <span title="количество объявлений">(2)</span></a></li>
+						</ul>
+					</li>
+					<!-- begin element -->
+					<li>
+						<div class="regions-title">
+							<p>Винницкая область <span>(182073)</span></p>
+							<button>показать все<i class="icon-all-more-top-viollet"></i></button>
+						</div>
+						<ul class="regions-sublist">
+							<li><a href="#">Агрономичное <span title="количество объявлений">(26)</span></a></li>
+							<li><a href="#">Адамовка <span title="количество объявлений">(5)</span></a></li>
+							<li><a href="#">Багриновцы <span title="количество объявлений">(3)</span></a></li>
+							<li><a href="#">Большая Каменка <span title="количество объявлений">(2)</span></a></li>
+							<li><a href="#">Агрономичное <span title="количество объявлений">(26)</span></a></li>
+							<li><a href="#">Адамовка <span title="количество объявлений">(5)</span></a></li>
+							<li><a href="#">Багриновцы <span title="количество объявлений">(3)</span></a></li>
+							<li><a href="#">Большая Каменка <span title="количество объявлений">(2)</span></a></li>
+							<li><a href="#">Агрономичное <span title="количество объявлений">(26)</span></a></li>
+							<li><a href="#">Адамовка <span title="количество объявлений">(5)</span></a></li>
+							<li><a href="#">Багриновцы <span title="количество объявлений">(3)</span></a></li>
+							<li><a href="#">Большая Каменка <span title="количество объявлений">(2)</span></a></li>
+							<li><a href="#">Агрономичное <span title="количество объявлений">(26)</span></a></li>
+							<li><a href="#">Адамовка <span title="количество объявлений">(5)</span></a></li>
+							<li><a href="#">Багриновцы <span title="количество объявлений">(3)</span></a></li>
+							<li><a href="#">Большая Каменка <span title="количество объявлений">(2)</span></a></li>
+							<li><a href="#">Агрономичное <span title="количество объявлений">(26)</span></a></li>
+							<li><a href="#">Адамовка <span title="количество объявлений">(5)</span></a></li>
+							<li><a href="#">Багриновцы <span title="количество объявлений">(3)</span></a></li>
+							<li><a href="#">Большая Каменка <span title="количество объявлений">(2)</span></a></li>
+							<li><a href="#">Агрономичное <span title="количество объявлений">(26)</span></a></li>
+							<li><a href="#">Адамовка <span title="количество объявлений">(5)</span></a></li>
+							<li><a href="#">Багриновцы <span title="количество объявлений">(3)</span></a></li>
+							<li><a href="#">Большая Каменка <span title="количество объявлений">(2)</span></a></li>
+							<li><a href="#">Агрономичное <span title="количество объявлений">(26)</span></a></li>
+							<li><a href="#">Адамовка <span title="количество объявлений">(5)</span></a></li>
+							<li><a href="#">Багриновцы <span title="количество объявлений">(3)</span></a></li>
+							<li><a href="#">Большая Каменка <span title="количество объявлений">(2)</span></a></li>
+							<li><a href="#">Агрономичное <span title="количество объявлений">(26)</span></a></li>
+							<li><a href="#">Адамовка <span title="количество объявлений">(5)</span></a></li>
+							<li><a href="#">Багриновцы <span title="количество объявлений">(3)</span></a></li>
+							<li><a href="#">Большая Каменка <span title="количество объявлений">(2)</span></a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<!-- end regions -->
+
+			<!-- begin section-about  -->
+			<div class="section-about">
+				<div class="row">
+					<div class="logo">
+						<a href="#">
+							<img src="img/logo-2.png" alt="Wespoo">
+						</a>
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam totam rem aperiam totam</p>
+				</div>
+				<div class="row">
+					<p><strong>Популярные запросы:</strong> <a href="#">рубрика</a>, <a href="#">категория</a>, <a href="#">техника</a>, <a href="#">рубрика</a>, <a href="#">категория</a>, <a href="#">техника</a>, <a href="#">рубрика</a>, <a href="#">категория</a>, <a href="#">техника</a>, <a href="#">рубрика</a>, <a href="#">категория</a>, <a href="#">техника</a>, <a href="#">рубрика</a>, <a href="#">категория</a>, <a href="#">техника</a>, <a href="#">рубрика</a>, <a href="#">категория</a>, <a href="#">техника</a>, <a href="#">рубрика</a>, <a href="#">категория</a>, <a href="#">техника</a>, <a href="#">рубрика</a>, <a href="#">категория</a>, <a href="#">техника</a>, <a href="#">рубрика</a>, <a href="#">категория</a>, <a href="#">техника</a>.</p>
+				</div>
+				<p class="social-title">Спасибо, что рассказываете о нас друзьям!</p>
+				<ul class="social-list">
+					<li><a href="#"><i class="icon-social-twitter"></i>Поделиться<span>35</span></a></li>
+					<li><a href="#"><i class="icon-social-fb"></i>Поделиться<span>35</span></a></li>
+					<li><a href="#"><i class="icon-social-vk"></i>Поделиться<span>35</span></a></li>
+					<li><a href="#"><i class="icon-social-class"></i>Поделиться<span>35</span></a></li>
+					<li><a href="#"><i class="icon-social-gplus"></i>Поделиться<span>35</span></a></li>
+				</ul>
+			</div>
+			<!-- end section-about -->
+		</div>
+		<!-- end content-wrap -->
+	</div>
+	<!-- end wrapper -->
+
+	
+	<!-- begin footer  -->
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+			<!-- begin footer--left  -->
+			<div class="footer-left col-xs-8">
+				<div class="footer-col">
+					<p>Компания</p>
+					<ul class="footer-list">
+						<li><a href="#">Добавить обьявление</a></li>
+						<li><a href="#">Реклама на сайте</a></li>
+						<li><a href="#">Безопасные сделки Wespoo</a></li>
+						<li><a href="#">Партнерские программы</a></li>
+						<li><a href="#">Сортировка в поиске</a></li>
+					</ul>
+				</div>
+				<div class="footer-col col-xs-6">
+					<p>Партнерам</p>
+					<ul class="footer-list">
+						<li><a href="#">Политика конфиденциальности</a></li>
+						<li><a href="#">Возвращения средств</a></li>
+						<li><a href="#">Карта опций</a></li>
+						<li><a href="#">Карта городов</a></li>
+						<li><a href="#">Карта сайта</a></li>
+						<li><a href="#">Помощь</a></li>
+						<li><a href="#">Оставить отзыв о сайте Wespoo</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- end footer--left -->
+			<!-- begin footer--right  -->
+			<div class="footer-right col-xs-4">
+				<p>Отдел заботы о пользователях</p>
+				<p>Фамилия Имя</p>
+				<p>Консультант по вопросам работы сайта Wespoo</p>
+				<p>Горячая линия:</p>
+				<ul class="phone-list">
+					<li>0-800-00-00-00</li>
+					<li>(067)123-45-67</li>
+					<li>(093)123-45-67</li>
+				</ul>
+				<a href="#" class="phone-btn">Связаться</a>
+			</div>
+			<!-- end footer--right -->
+			<!-- begin footer-bottom  -->
+			<div class="footer-bottom col-xs-12">
+				<a href="#" class="footer-logo"><img src="img/logo-2.png" alt="Wespoo"></a>
+				<p>&copy; Wespoo.com. Все права защищены.</p>
+				<p>Разработка и поддержка <a href="#">MTITM</a></p>
+			</div>
+			<!-- end footer-bottom -->
+			
+				
+			</div>
+		</div>
+	</div>
+	<!-- end footer -->
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/icheck.min.js"></script>
+	<script src="js/jquery.selectric.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.form-validator.min.js"></script>
+	<script src="js/jquery.fancybox.js"></script>
+	<script src="js/jquery.fancybox-thumbs.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

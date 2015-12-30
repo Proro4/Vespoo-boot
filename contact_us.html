@@ -15,7 +15,7 @@
 	<link rel="stylesheet" href="css/bootstrap-theme.css">
 </head>
 <body>
-<!--Begin Arrow-top-->
+	<!--Begin Arrow-top-->
 <div class="arrow-top">
 	<div class="arrow-to-top">
 		<a id="top" href=""><img src="" alt=""></a>
@@ -31,8 +31,8 @@
 		</div>
 		<!-- end banner-top -->
 		
+	
 		<!-- begin header  -->
-		
 
 		<div class="header" name='header'>
 			<div class="container" >
@@ -49,12 +49,67 @@
 					</ul>
 				</div>
 				<!-- end header__top -->
-				
+
+				<form action="#" id="searchForm" class="form-search">
+					<div class="form-group location col-xs-4 no-padding">
+						<input type="text" class="form-control field search city-search" id="cityCurrent" placeholder="Город, область...">
+						<input type="hidden" id='icCurrent' value="">
+							<a href="#" class="clear-input reset icon-all-close"></a>
+					</div>
+					<div class="form-group col-xs-4 no-padding">
+					   		<input type="text" class="form-control field search advert-search" placeholder="8 350 432 объявлений">
+					</div>
+				 		<button type="submit" class="col-xs-3 btn btn-default field submit">Поиск</button>
+
+				</form>
+
+				<!-- begion location-wrap -->
+				<div class="location-wrap">
+					<div class="location-title">
+						<button class="location-title-all">Искать по всей стране</button>
+						<br>
+
+						<button class="location-title-region region-hover">Искать по всей области</button>
+						<button class="location-title-this-region"></button>
+						<button class="location-title-back">вернуться к выбору области</button>
+					</div>
+					<div class="search-city-wrap">
+						<input type="text" id="cityBox" placeholder="Начните вводить город">
+						<a href="#" class="clear-input icon-all-close"></a>
+					</div>
+					<div class="region-wrap">
+						<ul class="region-list"><li id="reg1">Автономная Республика Крым </li><li id="reg2">Винницкая область</li></ul>
+					</div>
+					<div class="city-wrap" id="reg1">
+						<ul class="city-list">
+							<li id="city1-1">Киев</li><li id="city1-2">Белая Церковь</li><li id="city1-3">Буча</li>
+						</ul>
+					</div>
+					<div class="city-wrap" id="reg2">
+						<ul class="city-list">
+							<li id="city2-1">Буча</li><li id="city2-2">Иванков</li><li id="city2-2">Борисполь</li>
+						</ul>
+					</div>
+					<div class="exit-location-wrap">
+						закрыть <span>X</span>
+					</div>
+				</div>
+				<!-- end location-wrap -->
+				<div class="search-city">
+					<p>Где вы:</p>
+					<button  class="take-city">Киев</button>
+					<button  class="take-city">Одесса</button>
+					<div class="search-city-line"></div>
+					<button class="take-searchForm">Выбрать город</button>
+					<i>X</i>
+				</div>
 			</div>
 			</div>
 		</div>
+
 		<!-- end header -->
-		
+			
+		<!-- begin body-branding  -->
 		<div class="body-branding">
 			<!-- begin banner  -->
 			<div class="banner-1">
@@ -62,7 +117,6 @@
 				<button class="close-banner">x</button>
 			</div>
 			<!-- end banner -->
-
 			<!-- begin service-1  -->
 			<div class="service-1">
 				<a href="#"><img src="img/banners/service-1.jpg" alt="service"></a>
@@ -77,23 +131,92 @@
 			</div>
 			<!-- end service-2 -->
 		</div>
-		<!-- begin body-branding  -->
-		
-		<!-- end body-branding -->
 
 		<!-- begin content-wrap  -->
-		<div class="content-wrap container last-steps">
-			<!-- last_step registration  -->
-				<div class="last-step">
-					<h2>сейчас вы должны активировать ваш аккаунт!</h2>
-					<div class="advertsiment-accepted">
-						<p>Перейдите по ссылке, которую мы Вам только что выслали. <br> Если не найдете письма в почте, проверьте Спам.</p>
-						
-					</div><br>
-						<p>Назад на </p> <a href="">главную страницу </a><br>
-						
-				</div>
-			<!-- end last_step -->
+		<div class="content-wrap container">
+
+			<!-- begin feedback-help  -->
+			<div class="feedback-help contact-us">
+				<h2 class="post-title">Обратная связь</h2>
+				<p class="write-to-us">Если у вас возникли вопросы по работе сервиса, команда Wespoo всегда рядом! Чтобы помочь вам максимально оперативно, нам важны все детали. Опишите суть проблемы, укажите номер объявления и добавьте скриншоты.</p>
+				<!-- begin row  -->
+				<div class="row">
+					<!-- begin feedback-help-aside  -->
+					<div class="feedback-help-aside">
+						<!-- begin info  -->
+						<div class="footer-right clearfix">
+							<p>Отдел заботы о пользователях</p>
+							<p>Фамилия Имя</p>
+							<p>Консультант по вопросам работы сайта Wespoo</p>
+							<p>Горячая линия:</p>
+							<ul class="phone-list">
+								<li>0-800-00-00-00</li>
+								<li>(067)123-45-67</li>
+								<li>(093)123-45-67</li>
+							</ul>
+						</div>
+						<!-- end info -->
+						<p>Загляните в раздел <a href="#">Помощь</a> - там есть ответы на наиболее распространенные вопросы.</p>
+						<p>Удачных сделок! :)</p>
+					</div><!-- end feedback-help-aside -->
+
+					<!-- begin feedback-help-in  -->
+					<div class="feedback-help-in">
+						<form action="#" class="feedback-help-form">
+							<fieldset>
+								<!-- begin field  -->
+								<div class="field">
+									<input type="text" class="form-input" placeholder="Ваше имя">
+								</div>
+								<!-- begin field  -->
+								<div class="field">
+									<input type="text" class="form-input" placeholder="Ваш e-mail *" data-validation="email" data-validation-error-msg="Обязательно для заполнения. На указанный email будет предоставлен ответ.">
+								</div>
+								<!-- begin field  -->
+								<div class="field">
+									<div id="errorCategory">
+										<select data-validation="required" data-validation-event="change" data-validation-error-msg="Выберите тему" data-validation-error-msg-container="#errorCategory">
+											<option value="">Выберите тему *</option>
+											<option value="Тема 1">Тема 1</option>
+											<option value="Тема 2">Тема 2</option>
+											<option value="Тема 3">Тема 3</option>
+										</select>
+									</div>
+								</div>
+								<!-- begin field  -->
+								<div class="field">
+									<textarea class="form-area" placeholder="Текст сообщения *" data-validation="length" data-validation-length="min5" data-validation-error-msg="Поле обязательное для заполнения"></textarea>
+								</div>
+								<!-- begin row -->
+								<div class="row">
+									<!-- begin field  -->
+									<div class="field field-half">
+										<div class="row">
+											<input type="text" class="form-input" placeholder="Номер объявления" data-validation="number" data-validation-error-msg="Введите номер" data-validation-optional="true">
+										</div>
+										<button class="submit-btn inverse"><i class="icon-all-clip-sm"></i>Прикрепить файл</button>
+										<p class="field-info">Типы файлов, которые принимаются: jpg, jpeg, png, doc, pdf, gif, zip, rar, tar, html, swf, txt, xls, docx, xlsx, odt <span>Максимальный размер файла 2 МБ</span></p>
+									</div>
+									<!-- begin field -->
+									<div class="field field-half">
+										<!-- begin captcha  -->
+										<div class="captcha">
+											<div class="captcha-in">
+												<img src="img/other/recaptcha.jpg" alt="recaptcha">
+											</div>
+											<div class="row">
+												<a href="#">Конфиденциальность</a>
+												<a href="#">Условия использования</a>
+											</div>
+										</div><!-- end captcha -->
+										<button type="submit" class="submit-btn">Отправить</button>
+									</div>
+								</div><!-- end row -->
+							</fieldset>
+						</form>
+					</div><!-- end feedback-help-in -->
+				</div><!-- end row -->
+			</div><!-- end feedback-help -->
 
 			<!-- begin section-about  -->
 			<div class="section-about">
@@ -123,6 +246,7 @@
 	</div>
 	<!-- end wrapper -->
 
+	
 	<!-- begin footer  -->
 	<div class="footer">
 		<div class="container">

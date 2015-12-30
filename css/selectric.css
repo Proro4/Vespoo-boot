@@ -26,6 +26,9 @@
   line-height: 35px;
   color: #444444;
   height: 35px;
+  text-align: left;
+  font-weight: normal;
+  padding: 0;
 }
 .selectric .button {
   background: ;
