@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/png">
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Wespoo</title>
@@ -180,6 +181,7 @@
 							</div>
 						</div>
 					</div>
+					
 					<!-- begin field -->
 					<div class="field h-line">
 						<div class="label-form">
@@ -191,6 +193,36 @@
 								<i class="icon-success"></i>
 							</div>
 							<p class="desc">4096 знаков осталось</p>
+						</div>
+					</div>
+					<div class="field for-cash">
+						<div class="label-form">
+							<label>Цена <span class="text-orange">*</span></label>
+						</div>
+						<div class="area-form">
+							<input type="checkbox" name="advert-check" data-validation="required">
+							<p>Бесплатно</p>						
+						</div>
+						<div class="area-form">
+							<input type="checkbox" name="advert-check" data-validation="required">							
+							<p>Обмен</p>
+						</div>
+						<div class="area-form">
+							<input type="checkbox" name="advert-check" data-validation="required">
+							<p>Цена <input type="text"> </p> 
+
+								<div class="area-form-in area-for-cash" id="errorCategory">
+								<select data-validation="required" data-validation-event="change" data-validation-error-msg="Поле обязательное для заполнения" data-validation-error-msg-container="#errorCategory">
+									<option value="">грн.</option>
+									<option value="Рубрика 1">евро.</option>
+									<option value="Рубрика 2">дол.</option>
+									<option value="Рубрика 3">руб.</option>
+								</select>
+							</div>
+								<span class="input-cash"><input   type="checkbox" name="advert-check" data-validation="required"> <span>Торг возможен</span></span>
+
+
+							
 						</div>
 					</div>
 					<!-- begin field -->

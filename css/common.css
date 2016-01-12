@@ -567,7 +567,7 @@ body { min-width: 1020px;}
 .section-about > .row a:hover { color: #d4762d; text-decoration: none;}
 .section-about .logo { float: right; margin-left: 25px; height: 105px; width: 240px; border-left: 1px solid #d2d1d1; text-align: center; }
 .section-about .logo a { display: block; margin: 10px auto 0; width: 162px; height: 81px; }
-.section-about .logo a img { width: inherit; height: inherit; vertical-align: bottom; }
+.section-about .logo a img { width: 200px; margin-top: 15px;vertical-align: bottom; }
 
 .section-about .social-title { margin-top: 15px; margin-bottom: 15px; font-size: 24px; text-align: center;     display: block;}
 
@@ -600,7 +600,7 @@ body { min-width: 1020px;}
 .footer-bottom { color: #e0e0e0; line-height: 1.7; *zoom: 1; text-transform: uppercase;}
 .footer-bottom:after { content: ""; display: table; clear: both; }
 .footer-bottom .footer-logo { float: left; margin-right: 15px; padding: 3px 13px; width: 138px; height: 54px; background-color: #fff; }
-.footer-bottom .footer-logo img { width: 112px; height: 48px; }
+.footer-bottom .footer-logo img { max-width: 118px; margin-top: 5px; }
 .footer-bottom p{margin: 0 0 5px;}
 .footer-bottom p + p { color: #fff; }
 .footer-bottom p a:hover { color: #eabb97; }
@@ -1875,11 +1875,7 @@ input.photoload-item:active,input.photoload-item:focus{border:0; outline: 0; }
 
     max-width: 1025px;
 }
-
-
-.footer-right{
-	border-radius: 5px;
-}
+	
 .content-wrap.container.last-steps{
 	margin-top: 110px;
     max-width: 980px;
@@ -2006,4 +2002,128 @@ input.photoload-item:active,input.photoload-item:focus{border:0; outline: 0; }
 }
 .content-wrap.container.standart-text{
 	padding-left: 35px;
+}
+
+.stic-purple>div:after,.stic-orange>div:after,.left-flag-orange>div:after,
+.left-flag-orange>p:after,.left-flag-purple>div:after,.left-flag-purple>p:after{
+	content: attr(info-stick);
+	position: absolute;
+	background: rgba(255,255,255,0.6);
+	box-shadow: 1px 1px 1px gray;
+	height: 35px;
+	line-height: 35px;
+	width: 100px;
+	right: -20px;
+	top:60px;
+	z-index: 50;
+	text-align: center;
+	opacity: 0;
+	transition:0.3s all;
+}
+
+.stic-purple>div:hover::after,.stic-orange>div:hover::after,.left-flag-orange>div:hover::after,
+.left-flag-orange>p:hover::after,.left-flag-purple>div:hover::after,.left-flag-purple>p:hover::after{
+	opacity: 1;
+}
+
+
+.photoload .btn.submit-btn.btn-file{
+	border-radius: 0;
+	font-style: 16px;
+}
+.photoload .btn.submit-btn.btn-file i{
+	display: none;
+}
+.photoload .file-preview-frame{
+	border: 0;
+	    box-shadow: 0 0 3px rgba(1, 1, 1, 0.3);
+}
+.photoload .file-preview-frame:not(.file-preview-error):hover{
+	    box-shadow: 0 0 3px rgba(1, 1, 1, 0.3);
+}
+
+.photoload .file-preview-frame .hidden-xs{
+	text-transform: uppercase;
+    font-size: 20px;
+        font-family: inherit;
+}
+
+.photoload .btn.submit-btn.btn-file:hover{
+	color: white;
+}
+
+.photoload .file-preview{
+	border-radius: 0;
+}
+.photoload .close.fileinput-remove{
+	color: #583d8b;
+    text-shadow: 0 1px 0 #583D8B;
+    opacity: 0.8;
+}
+
+.photoload .file-drop-zone{
+	border-radius: 
+}
+
+.photoload .file-footer-buttons button{
+	    background: #D4762E;
+    border: 0;
+}
+.photoload .file-footer-buttons i 	{
+	color: rgba(255, 255, 255, 0);
+}
+.photoload .glyphicon-trash:before{
+
+    content: "X";
+    font-family: cursive;
+    font-weight: bold;
+    position: relative;
+    bottom: 1px;
+    font-size: 13px;
+}
+.photoload .glyphicon-upload:before{
+	    content: "\e013";
+}
+.photoload .file-preview-frame:not(.file-preview-error) .file-footer-caption:hover{
+	color: #473589;
+}
+.photoload .file-footer-caption{
+	color: #473589;
+}
+.for-cash .icheckbox_square-orange + p{
+	 line-height: 1.6;
+}
+.for-cash .label-form{
+	min-height: 150px;
+}
+
+.for-cash .area-form input{
+	    box-shadow: 0 0 3px rgba(1, 1, 1, 0.3);
+	    width: 80px;
+	    font-size: 16px;
+	    margin-left: 15px;
+	    padding: 0 5px;
+		height: 34px;
+}
+
+.for-cash .area-for-cash{
+    width: 120px;
+    position: relative;
+    display: inline-block;
+    bottom: 44px;
+    left: 160px;
+}
+
+.for-cash .area-for-cash .selectric-wrapper{
+	width: 100px;
+}
+.for-cash .input-cash{
+	    position: relative;
+    left: 315px;
+    bottom: 42px;
+}
+.for-cash .input-cash>span{
+	position: relative;
+	    right: 125px;
+    bottom: 14px;
 }

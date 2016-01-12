@@ -1,15 +1,26 @@
 $(document).ready(function(){
-
-	setInterval(function() {
-
-	$('.dz-error-mark').on('click',function(){
-		$(this).parent().remove();
+	$('.post-list li').each(function(){
+		var textPol = $(this).find('.post-list-in p').html();
+		var beginTextPol = textPol.substring(0, 30);
+		$(this).find('.post-list-in p:eq(0)').html(beginTextPol+'...')
 	})
-		$('.dropzone').each(function(){
-			if($(this).find('.dz-preview').length > 1){
-				$(this).find('.dz-preview').first().remove();
-			}
-		})
+		setInterval(function() {
+
+			$('.dz-error-mark').on('click',function(){
+				$(this).parent().remove();
+			})
+			$('.dropzone').each(function(){
+				if($(this).find('.dz-preview').length > 1){
+					$(this).find('.dz-preview').first().remove();
+				}
+			})
+			$('.file-preview-thumbnails').each(function(){
+				if($(this).find('.file-preview-frame').length > 1){
+					$(this).find('.file-preview-frame').first().remove();
+				}
+			})
+
+		
 	}, 1000);
 
 	setTimeout(function() {
@@ -39,10 +50,11 @@ $(document).ready(function(){
 	})
 
  	//HOVER 'wear you" block
-
- 	$('#cityCurrent').hover(function(){
- 		$('.search-city').css('display','block');
- 	})
+	 $('#cityCurrent').hover(function(){
+ 		if($('#icCurrent').val() == ''){
+	 		$('.search-city').css('display','block');
+ 		}
+	 })
 
 	$('.exit-location-wrap').click(function(){
 		$('.location-wrap').css('display','none');
@@ -1395,8 +1407,8 @@ $(window).scroll(function () {
 
 	}else{
 
-		$('.service-1').css({'position':'fixed',bottom:'auto','top': '100px'})
-		$('.service-2').css({'position':'fixed',bottom:'auto','top': '450px'})
+		$('.service-1').css({'position':'fixed',bottom:'auto','top': '50px'})
+		$('.service-2').css({'position':'fixed',bottom:'auto','top': '400px'})
 	}
 
 	if(heightTop > 600){
