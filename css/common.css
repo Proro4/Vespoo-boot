@@ -2033,13 +2033,13 @@ input.photoload-item:active,input.photoload-item:focus{border:0; outline: 0; }
 }
 .photoload .btn.submit-btn.btn-file>span{
 	    padding-left: 25px;
-    background: url(../img/other/choose-file-h.png) no-repeat,#583d8b;
-    background-size: contain;
+    background: url(../img/other/choose-file-h.png) no-repeat;
+        background-size: 20.6px;
 }
 .photoload .btn.submit-btn.btn-file>span:hover{
 	    padding-left: 25px;
-    background: url(../img/other/choose-file.png) no-repeat,#583d8b;
-    background-size: contain;
+    background: url(../img/other/choose-file.png) no-repeat;
+     background-size: 20.6px;
 }
 .photoload .btn.submit-btn.btn-file i{
 	display: none;
@@ -2075,40 +2075,26 @@ input.photoload-item:active,input.photoload-item:focus{border:0; outline: 0; }
 	border-radius: 
 }
 
-.photoload .file-footer-buttons button{
-	    background: #D4762E;
-    border: 0;
-    transition:0.2s all;
-}
-.photoload .file-footer-buttons button:hover,.photoload .file-footer-buttons button:active,.photoload .file-footer-buttons button:focus{
-	    background: #583D8B;
-    border: 0;
-}
 .photoload .file-footer-buttons i 	{
 	color: rgba(255, 255, 255, 0);
 }
 .photoload .glyphicon-trash:before{
-	       content: "";
+	    content: "";
     position: relative;
-    padding-right: 10px;
+    padding-right: 18px;
+    padding-bottom: 1px;
     background: url(../other/delete.png)no-repeat center;
-     background-size: contain;
+        background-size: 15px;
 }
 
-.photoload .glyphicon-trash:before::hover{
-    background: url(../other/delete-h.png)no-repeat center;
-
-}
 .photoload .glyphicon-upload:before{
-	       content: "";
+	    content: "";
     position: relative;
-    padding-right: 10px;
+    padding-right: 18px;
+    padding-bottom: 1px;
     background: url(../other/upload-file.png)no-repeat center;
-    background-size: contain;
-}
-.photoload .glyphicon-upload:before::hover{
+        background-size: 14px;
 
-    background: url(../other/upload-file-h.png)no-repeat center;
 }
 .photoload .file-preview-frame:not(.file-preview-error) .file-footer-caption:hover{
 	color: #473589;
