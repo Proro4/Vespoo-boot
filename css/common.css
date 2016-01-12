@@ -2031,6 +2031,16 @@ input.photoload-item:active,input.photoload-item:focus{border:0; outline: 0; }
 	border-radius: 0;
 	font-style: 16px;
 }
+.photoload .btn.submit-btn.btn-file>span{
+	    padding-left: 25px;
+    background: url(../img/other/choose-file-h.png) no-repeat,#583d8b;
+    background-size: contain;
+}
+.photoload .btn.submit-btn.btn-file>span:hover{
+	    padding-left: 25px;
+    background: url(../img/other/choose-file.png) no-repeat,#583d8b;
+    background-size: contain;
+}
 .photoload .btn.submit-btn.btn-file i{
 	display: none;
 }
@@ -2078,22 +2088,38 @@ input.photoload-item:active,input.photoload-item:focus{border:0; outline: 0; }
 	color: rgba(255, 255, 255, 0);
 }
 .photoload .glyphicon-trash:before{
-
-    content: "X";
-    font-family: cursive;
-    font-weight: bold;
+	       content: "";
     position: relative;
-    bottom: 1px;
-    font-size: 13px;
+    padding-right: 10px;
+    background: url(../other/delete.png)no-repeat center;
+     background-size: contain;
+}
+
+.photoload .glyphicon-trash:before::hover{
+    background: url(../other/delete-h.png)no-repeat center;
+
 }
 .photoload .glyphicon-upload:before{
-	    content: "\e013";
+	       content: "";
+    position: relative;
+    padding-right: 10px;
+    background: url(../other/upload-file.png)no-repeat center;
+    background-size: contain;
+}
+.photoload .glyphicon-upload:before::hover{
+
+    background: url(../other/upload-file-h.png)no-repeat center;
 }
 .photoload .file-preview-frame:not(.file-preview-error) .file-footer-caption:hover{
 	color: #473589;
 }
 .photoload .file-footer-caption{
 	color: #473589;
+}
+
+.photoload .submit-btn{
+	background: url(../img/other/choose-file-h.png);
+	    background-color: #583d8b;
 }
 .for-cash .icheckbox_square-orange + p{
 	 line-height: 1.6;
