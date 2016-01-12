@@ -2068,6 +2068,11 @@ input.photoload-item:active,input.photoload-item:focus{border:0; outline: 0; }
 .photoload .file-footer-buttons button{
 	    background: #D4762E;
     border: 0;
+    transition:0.2s all;
+}
+.photoload .file-footer-buttons button:hover,.photoload .file-footer-buttons button:active,.photoload .file-footer-buttons button:focus{
+	    background: #583D8B;
+    border: 0;
 }
 .photoload .file-footer-buttons i 	{
 	color: rgba(255, 255, 255, 0);
