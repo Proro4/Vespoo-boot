@@ -1,4 +1,29 @@
 $(document).ready(function(){
+	setInterval(function(){
+
+	if($('.ad-is-date .icheckbox_square-orange').hasClass('checked')){
+		$('.ad-is-data .icheckbox_square-orange').addClass('checked');
+	}
+	else{
+		$('.ad-is-data .icheckbox_square-orange').removeClass('checked');
+
+	}
+	},1000)
+
+
+	$('.ad-is-date.order .iCheck-helper').css('left','100px');
+	$('.ad-is .ad-is-data .icheckbox_square-orange, .ad-is-date.order .icheckbox_square-orange').removeClass();
+
+	var heightFormAll = $('.area-form-all .area-form').height();
+	heightFormAll = heightFormAll -25;
+	var lengthFormAll = $('.area-form-all .area-form').length;
+	$('.dop-option .label-form').css('height',heightFormAll*lengthFormAll);
+
+	$('.ad-is-block').each(function(){
+		var textPol = $(this).find('.ad-is-name').html();
+		var beginTextPol = textPol.substring(0, 50);
+		$(this).find('.ad-is-name').html(beginTextPol+'...')
+	})
 	$('.post-list li').each(function(){
 		var textPol = $(this).find('.post-list-in p').html();
 		var beginTextPol = textPol.substring(0, 30);
