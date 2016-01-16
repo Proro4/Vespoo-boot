@@ -2407,3 +2407,6 @@ input.photoload-item:active,input.photoload-item:focus{border:0; outline: 0; }
 	font-size: 14px;
 	font-weight: normal;
 }
+.ad-is-block .ad-is-edit.del-edit{
+	left:335px;	
+}
