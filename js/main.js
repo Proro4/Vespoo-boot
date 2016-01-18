@@ -13,6 +13,11 @@ $(document).ready(function(){
 
 	$('.ad-is-date.order .iCheck-helper').css('left','100px');
 	$('.ad-is .ad-is-data .icheckbox_square-orange, .ad-is-date.order .icheckbox_square-orange').removeClass();
+	$('.refill .paytype-choose .icheckbox_square-orange').css('right','50px');
+
+	setTimeout(function() {
+	$('.refill .paytype-choose .icheckbox_square-orange .icheckbox_square-orange').css('left','50px');
+	},200)
 
 	var heightFormAll = $('.area-form-all .area-form').height();
 	heightFormAll = heightFormAll -25;

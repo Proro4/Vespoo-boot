@@ -1,4 +1,4 @@
-	<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/png">
@@ -56,6 +56,7 @@
 
 		<!-- end header -->
 
+
 		<!-- begin body-branding  -->
 		<div class="body-branding">
 			<!-- begin banner  -->
@@ -87,6 +88,25 @@
 			<div class="profile">
 				<h2 class="post-title">мои заказы</h2>
 				<p>Здесь вы найдёте Ваши активные и отложенные заказы, историю заказов и финансовых рассчетов.</p>
+				<!-- begin boot-alert -->
+		<div class="boot-alert">
+			<div class="alert alert-success">
+			  <strong>Success!</strong> Indicates a successful or positive action.
+			</div>
+
+			<div class="alert alert-info">
+			  <strong>Info!</strong> Indicates a neutral informative change or action.
+			</div>
+
+			<div class="alert alert-warning">
+			  <strong>Warning!</strong> Indicates a warning that might need attention.
+			</div>
+
+			<div class="alert alert-danger">
+			  <strong>Danger!</strong> Indicates a dangerous or potentially negative action.
+			</div>
+		</div>
+				<!-- end boot-alert -->
 				<div class="profile-tabs">
 					<ul>
 						<li><a href="#profile-2">заказы</a></li>
@@ -97,8 +117,8 @@
 							
 						<div class="profile-msg-top">
 							<ul class="msg-status">
-								<li class="is-active"><a href="#">История заказов (1090)</a></li>
-								<li><a href="#">История финансовых рассчетов (1090)</a></li>
+								<li><a href="#">История заказов (1090)</a></li>
+								<li class="is-active"><a href="#">История финансовых рассчетов (1090)</a></li>
 							</ul>
 							<form action="#" class="search-msg">
 								<fieldset>
@@ -113,49 +133,15 @@
 								</fieldset>
 							</form>
 						</div>
-						<div class="profile-payment-mid">
-							<button class="submit-btn">Пополнить счет</button>
-						</div>
 						<div class="profile-payment-balance">
 							<p>Ваш счет <span class="text-orange">10000 грн.</span></p>
 							<i class="payment-arrow-right"></i>
 						</div>
-
-				<h2 class="post-title">история финансовых рассчетов</h2>
-							<ul class="ad-is-date order">
-								<li>
-									<div class="icheckbox_square-orange" style="position: relative;">
-										<input type="checkbox" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);">
-										<ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);">	
-										</ins>
-									</div>
-								Дата платежа </li>
-								<li>Описание</li>
-								<li>Способ оплаты</li>
-								<li>№ заказа</li>
-								<li>Cумма</li>
-							</ul>
-						<div class="ad-is order">
-							<div class="ad-is-block">
-								<div class="ad-is-data">
-									<div class="icheckbox_square-orange" style="position: relative;">
-										<input type="checkbox" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);">
-										<ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);">	
-										</ins>
-									</div>
-									15.03.16
-								</div>
-								<a class="ad-is-name" href="#">
-									Поднятие объявления в списке
-								</a>
-								<a href="#" class="ad-is-edit">Детали заказа </a> 
-								<a href="#" class="ad-is-edit">Удалить</a>
-								<span class="Pay-m"> Банковская карта</span>
-								<span class="ad-is-numb"> 99 900</span>
-
-								<span>15 500 грн.</span>
-							</div>
+						<h2 class="post-title">пополнение счета</h2>
+						<div class="relill-pay">
+							На какую сумму вы хотите пополнить счет? <input type="text"> грн.
 						</div>
+						
 
 						<p class="pay-title">Выберите способ оплаты</p>
 						<ul class="paytype-list refill">
@@ -165,7 +151,7 @@
 									<img src="img/content/visa-mastercard.png" alt="pay-img">
 								</div>
 								<div class="paytype-choose">
-									<div class="icheckbox_square-orange" style="position: relative;"><input type="checkbox" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"><ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"></ins></div>
+									<div class="icheckbox_square-orange refill" style="position: relative;"><input type="checkbox" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"><ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"></ins></div>
 									<p><span>Банковская карта</span></p>
 								</div>
 							</li>

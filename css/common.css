@@ -2410,3 +2410,40 @@ input.photoload-item:active,input.photoload-item:focus{border:0; outline: 0; }
 .ad-is-block .ad-is-edit.del-edit{
 	left:335px;	
 }
+.relill-pay{
+	display: block;
+	width: 100%;
+	margin: 15px 0;
+	border-bottom: 1px solid;
+	padding-bottom: 30px;
+}
+.relill-pay input{
+	box-shadow: 0 0 3px rgba(1, 1, 1, 0.3);
+	width: 150px;
+	height: 35px;
+	margin: 0 10px;
+
+}
+.boot-alert .alert{
+	border: 0;
+	border-radius: 0;
+}
+.boot-alert .alert strong{
+	text-transform: uppercase;
+}
+.alert.alert-success{
+	color: #d4762d;
+	background: #f3f8e3;
+}
+.alert.alert-info{
+	color: #583d8b;
+	background: #f3f8e3;
+}
+.alert.alert-warning{
+	color: #583d8b;
+	background: #f6e4d5;
+}
+.alert.alert-danger{
+	color: #d4762d;
+	background: #f6e4d5;
+}
