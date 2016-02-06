@@ -44,6 +44,14 @@
 					ogo.png" alt="Wespoo"></a>
 					<a href="#" class="post-new">+ Подать объявление</a>
 					<a href="#" class="userbox">Мой профиль</a>
+					<ul class="userbox-pop-up">
+						<li><a href="">Мой профиль:</a></li>
+						<li><a href="">Объявления</a></li>
+						<li><a href="">Сообщения</a></li>
+						<li><a href="">Настройки</a></li>
+						<li><a href="">Доставка</a></li>
+						<li><a href="">Выйти <i>X</i></a></li>
+					</ul>
 					<ul class="lang-selector">
 						<li><a href="#">язык</a></li>
 						<li><a href="#">мова</a></li>
@@ -73,6 +81,7 @@
 						<button class="location-title-region region-hover">Искать по всей области</button>
 						<button class="location-title-this-region"></button>
 						<button class="location-title-back">вернуться к выбору области</button>
+						<div class="name-find-region">Искать по всей области</div>
 					</div>
 					<div class="search-city-wrap">
 						<input type="text" id="cityBox" placeholder="Начните вводить город">
@@ -169,18 +178,221 @@
 						</div>
 						<div class="area-form">
 							<div class="area-form-in" id="errorCategory">
-								<select data-validation="required" data-validation-event="change" data-validation-error-msg="Поле обязательное для заполнения" data-validation-error-msg-container="#errorCategory">
+								<input type="text" class="rubric-tov">
+								<div class="lightbox-rubric">
+									<div class="lgbox-rubric-block">
+										<div class="lgbox-title">
+											Выберите рубрику
+											<div class="lgbox-title-click"></div>
+										</div>
+										<ul>
+											<li><a href="#" id="rubric-cat-1"><i class="icon-main-business"></i><p>Бизнес и услуги</p></a></li>
+											<li><a href="#" id="rubric-cat-2"><i class="icon-main-house"></i><p>Дом и сад</p></a></li>
+											<li><a href="#" id="rubric-cat-3"><i class="icon-main-child"></i><p>Детский раздел</p></a></li>
+											<li><a href="#" id="rubric-cat-4"><i class="icon-main-animal"></i><p>Животные</p></a></li>
+											<li><a href="#" id="rubric-cat-5"><i class="icon-main-style"></i><p>Мода и стиль</p></a></li>
+											<li><a href="#" id="rubric-cat-6"><i class="icon-main-state"></i><p>Недвижимость</p></a></li>
+											<li><a href="#" id="rubric-cat-7"><i class="icon-main-work"></i><p>Работа</p></a></li>
+											<li><a href="#" id="rubric-cat-8"><i class="icon-main-transport"></i><p>Транспорт</p></a></li>
+											<li><a href="#" id="rubric-cat-9"><i class="icon-main-hobby"></i><p>Хобби, отдых и спорт</p></a></li>
+											<li><a href="#" id="rubric-cat-10"><i class="icon-main-electro"> </i><p>Электроника</p></a></li>
+										</ul>
+									</div>
+									<div class="lgbox-rubric-subcat">
+										<div class="lgbox-title">
+											<ul>
+												<li>Рубрика</li>
+												<li lgname="subcat"></li>
+												<li lgname="subname"></li>
+											</ul>
+											<div class="lgbox-title-click"></div>
+										</div>
+										<ul class="lg-rubric-cat">
+											<li id="rubric-cat-1"><p>Бизнес и услуги</p></li>
+											<li id="rubric-cat-2"><p>Дом и сад</p></li>
+											<li id="rubric-cat-3"><p>Детский раздел</p></li>
+											<li id="rubric-cat-4"><p>Животные</p></li>
+											<li id="rubric-cat-5"><p>Мода и стиль</p></li>
+											<li id="rubric-cat-6"><p>Недвижимость</p></li>
+											<li id="rubric-cat-7"><p>Работа</p></li>
+											<li id="rubric-cat-8"><p>Транспорт</p></li>
+											<li id="rubric-cat-9"><p>Хобби, отдых и спорт</p></li>
+											<li id="rubric-cat-10"><p>Электроника</p></li>
+										</ul>
+										<ul class="lg-rubric-subcat" subcat="rubric-cat-1">
+											<li id="rubric-subcat-1"><p>Бизнес и услуги</p></li>
+											<li id="rubric-subcat-2"><p>Дом и сад</p></li>
+											<li id="rubric-subcat-3"><p>Детский раздел</p></li>
+											<li id="rubric-subcat-4"><p>Животные</p></li>
+											<li id="rubric-subcat-5"><p>Мода и стиль</p></li>
+											<li id="rubric-subcat-6"><p>Недвижимость</p></li>
+											<li id="rubric-subcat-7"><p>Работа</p></li>
+											<li id="rubric-subcat-10"><p>Электроника</p></li>
+										</ul>
+										<ul class="lg-rubric-subcat" subcat="rubric-cat-2">
+											<li id="rubric-subcat-1"><p>Бизнес и услуги</p></li>
+											<li id="rubric-subcat-2"><p>Дом и сад</p></li>
+											<li id="rubric-subcat-3"><p>Детский раздел</p></li>
+											<li id="rubric-subcat-4"><p>Животные</p></li>
+											<li id="rubric-subcat-6"><p>Недвижимость</p></li>
+											<li id="rubric-subcat-7"><p>Работа</p></li>
+											<li id="rubric-subcat-8"><p>Транспорт</p></li>
+											<li id="rubric-subcat-9"><p>Хобби, отдых и спорт</p></li>
+											<li id="rubric-subcat-10"><p>Электроника</p></li>
+										</ul>
+										<ul class="lg-rubric-subcat" subcat="rubric-cat-3">
+											<li id="rubric-subcat-1"><p>Бизнес и услуги</p></li>
+											<li id="rubric-subcat-2"><p>Дом и сад</p></li>
+											<li id="rubric-subcat-3"><p>Детский раздел</p></li>
+											<li id="rubric-subcat-4"><p>Животные</p></li>
+											<li id="rubric-subcat-5"><p>Мода и стиль</p></li>
+											<li id="rubric-subcat-6"><p>Недвижимость</p></li>
+											<li id="rubric-subcat-7"><p>Работа</p></li>
+										</ul>
+										<ul class="lg-rubric-subcat" subcat="rubric-cat-4">
+											<li id="rubric-subcat-1"><p>Бизнес и услуги</p></li>
+											<li id="rubric-subcat-5"><p>Мода и стиль</p></li>
+											<li id="rubric-subcat-6"><p>Недвижимость</p></li>
+											<li id="rubric-subcat-7"><p>Работа</p></li>
+											<li id="rubric-subcat-8"><p>Транспорт</p></li>
+											<li id="rubric-subcat-9"><p>Хобби, отдых и спорт</p></li>
+											<li id="rubric-subcat-10"><p>Электроника</p></li>
+										</ul>
+										<ul class="lg-rubric-subcat" subcat="rubric-cat-5">
+											<li id="rubric-subcat-2"><p>Дом и сад</p></li>
+											<li id="rubric-subcat-3"><p>Детский раздел</p></li>
+											<li id="rubric-subcat-4"><p>Животные</p></li>
+											<li id="rubric-subcat-5"><p>Мода и стиль</p></li>
+											<li id="rubric-subcat-6"><p>Недвижимость</p></li>
+											<li id="rubric-subcat-7"><p>Работа</p></li>
+											<li id="rubric-subcat-8"><p>Транспорт</p></li>
+											<li id="rubric-subcat-9"><p>Хобби, отдых и спорт</p></li>
+											<li id="rubric-subcat-10"><p>Электроника</p></li>
+										</ul>
+										<ul class="lg-rubric-subcat" subcat="rubric-cat-6">
+											<li id="rubric-subcat-1"><p>Бизнес и услуги</p></li>
+											<li id="rubric-subcat-2"><p>Дом и сад</p></li>
+											<li id="rubric-subcat-3"><p>Детский раздел</p></li>
+											<li id="rubric-subcat-4"><p>Животные</p></li>
+											<li id="rubric-subcat-5"><p>Мода и стиль</p></li>
+											<li id="rubric-subcat-6"><p>Недвижимость</p></li>
+											<li id="rubric-subcat-7"><p>Работа</p></li>
+											<li id="rubric-subcat-8"><p>Транспорт</p></li>
+											<li id="rubric-subcat-9"><p>Хобби, отдых и спорт</p></li>
+											<li id="rubric-subcat-10"><p>Электроника</p></li>
+										</ul>
+										<ul class="lg-rubric-subcat" subcat="rubric-cat-7">
+											<li id="rubric-subcat-1"><p>Бизнес и услуги</p></li>
+											<li id="rubric-subcat-2"><p>Дом и сад</p></li>
+											<li id="rubric-subcat-7"><p>Работа</p></li>
+											<li id="rubric-subcat-8"><p>Транспорт</p></li>
+											<li id="rubric-subcat-9"><p>Хобби, отдых и спорт</p></li>
+											<li id="rubric-subcat-10"><p>Электроника</p></li>
+										</ul>
+										<ul class="lg-rubric-subcat" subcat="rubric-cat-8">
+											<li id="rubric-subcat-1"><p>Бизнес и услуги</p></li>
+											<li id="rubric-subcat-2"><p>Дом и сад</p></li>
+											<li id="rubric-subcat-3"><p>Детский раздел</p></li>
+											<li id="rubric-subcat-4"><p>Животные</p></li>
+											<li id="rubric-subcat-5"><p>Мода и стиль</p></li>
+											<li id="rubric-subcat-6"><p>Недвижимость</p></li>
+										</ul>
+										<ul class="lg-rubric-subcat" subcat="rubric-cat-9">
+											<li id="rubric-subcat-1"><p>Бизнес и услуги</p></li>
+											<li id="rubric-subcat-2"><p>Дом и сад</p></li>
+											<li id="rubric-subcat-8"><p>Транспорт</p></li>
+											<li id="rubric-subcat-9"><p>Хобби, отдых и спорт</p></li>
+											<li id="rubric-subcat-10"><p>Электроника</p></li>
+										</ul>
+										<ul class="lg-rubric-subcat" subcat="rubric-cat-10">
+											<li id="rubric-subcat-7"><p>Работа</p></li>
+											<li id="rubric-subcat-8"><p>Транспорт</p></li>
+											<li id="rubric-subcat-9"><p>Хобби, отдых и спорт</p></li>
+											<li id="rubric-subcat-10"><p>Электроника</p></li>
+										</ul>
+										<ul class="lg-rubric-subname" subcat="rubric-subcat-1">
+											<li id="rubric-subcat-7"><p>Работа</p></li>
+											<li id="rubric-subcat-8"><p>Транспорт</p></li>
+											<li id="rubric-subcat-9"><p>Хобби, отдых и спорт</p></li>
+											<li id="rubric-subcat-8"><p>Транспорт</p></li>
+											<li id="rubric-subcat-9"><p>Хобби, отдых и спорт</p></li>
+											<li id="rubric-subcat-10"><p>Электроника</p></li>
+										</ul>
+										<ul class="lg-rubric-subname" subcat="rubric-subcat-2">
+											<li id="rubric-subcat-7"><p>Работа</p></li>
+											<li id="rubric-subcat-8"><p>Транспорт</p></li>
+											<li id="rubric-subcat-9"><p>Хобби, отдых и спорт</p></li>
+											<li id="rubric-subcat-10"><p>Электроника</p></li>
+										</ul>
+										<ul class="lg-rubric-subname" subcat="rubric-subcat-3">
+											<li id="rubric-subcat-7"><p>Работа</p></li>
+											<li id="rubric-subcat-8"><p>Транспорт</p></li>
+											<li id="rubric-subcat-9"><p>Хобби, отдых и спорт</p></li>
+											<li id="rubric-subcat-10"><p>Электроника</p></li>
+										</ul>
+										<ul class="lg-rubric-subname" subcat="rubric-subcat-4">
+											<li id="rubric-subcat-7"><p>Работа</p></li>
+											<li id="rubric-subcat-8"><p>Транспорт</p></li>
+											<li id="rubric-subcat-9"><p>Хобби, отдых и спорт</p></li>
+										</ul>
+										<ul class="lg-rubric-subname" subcat="rubric-subcat-5">
+											<li id="rubric-subcat-8"><p>Транспорт</p></li>
+											<li id="rubric-subcat-9"><p>Хобби, отдых и спорт</p></li>
+											<li id="rubric-subcat-7"><p>Работа</p></li>
+											<li id="rubric-subcat-8"><p>Транспорт</p></li>
+											<li id="rubric-subcat-9"><p>Хобби, отдых и спорт</p></li>
+											<li id="rubric-subcat-10"><p>Электроника</p></li>
+										</ul>
+										<ul class="lg-rubric-subname" subcat="rubric-subcat-6">
+											<li id="rubric-subcat-7"><p>Работа</p></li>
+											<li id="rubric-subcat-9"><p>Хобби, отдых и спорт</p></li>
+											<li id="rubric-subcat-10"><p>Электроника</p></li>
+										</ul>
+										<ul class="lg-rubric-subname" subcat="rubric-subcat-7">
+											<li id="rubric-subcat-7"><p>Работа</p></li>
+											<li id="rubric-subcat-8"><p>Транспорт</p></li>
+											<li id="rubric-subcat-9"><p>Хобби, отдых и спорт</p></li>
+											<li id="rubric-subcat-10"><p>Электроника</p></li>
+											<li id="rubric-subcat-8"><p>Транспорт</p></li>
+											<li id="rubric-subcat-9"><p>Хобби, отдых и спорт</p></li>
+											<li id="rubric-subcat-8"><p>Транспорт</p></li>
+											<li id="rubric-subcat-9"><p>Хобби, отдых и спорт</p></li>
+											<li id="rubric-subcat-8"><p>Транспорт</p></li>
+											<li id="rubric-subcat-9"><p>Хобби, отдых и спорт</p></li>
+										</ul>
+										<ul class="lg-rubric-subname" subcat="rubric-subcat-8">
+											<li id="rubric-subcat-7"><p>Работа</p></li>
+											<li id="rubric-subcat-8"><p>Транспорт</p></li>
+										</ul>
+										<ul class="lg-rubric-subname" subcat="rubric-subcat-9">
+											<li id="rubric-subcat-7"><p>Работа</p></li>
+											<li id="rubric-subcat-8"><p>Транспорт</p></li>
+											<li id="rubric-subcat-9"><p>Хобби, отдых и спорт</p></li>
+											<li id="rubric-subcat-8"><p>Транспорт</p></li>
+											<li id="rubric-subcat-9"><p>Хобби, отдых и спорт</p></li>
+											<li id="rubric-subcat-8"><p>Транспорт</p></li>
+											<li id="rubric-subcat-9"><p>Хобби, отдых и спорт</p></li>
+											<li id="rubric-subcat-10"><p>Электроника</p></li>
+										</ul>
+										<ul class="lg-rubric-subname" subcat="rubric-subcat-10">
+											<li id="rubric-subcat-7"><p>Работа</p></li>
+											<li id="rubric-subcat-9"><p>Хобби, отдых и спорт</p></li>
+											<li id="rubric-subcat-10"><p>Электроника</p></li>
+										</ul>
+									</div>
+								<!-- <select data-validation="required" data-validation-event="change" data-validation-error-msg="Поле обязательное для заполнения" data-validation-error-msg-container="#errorCategory">
 									<option value="">Укажите рубрику</option>
 									<option value="Рубрика 1">Рубрика 1</option>
 									<option value="Рубрика 2">Рубрика 2</option>
 									<option value="Рубрика 3">Рубрика 3</option>
 									<option value="Рубрика 4">Рубрика 4</option>
 									<option value="Рубрика 5">Рубрика 5</option>
-								</select>
+								</select> -->
 								<i class="icon-success"></i>
 							</div>
 						</div>
 					</div>
+					<div class="clearfix"></div>
 					
 					<!-- begin field -->
 					<div class="field h-line">
@@ -245,63 +457,74 @@
 										<div class="photoload-el">
 											<form action="/upload-target" class="dropzone"></form>		
 										</div>
+										<input type="file" name="f">
 									</li>
 									<!-- begin photo -->
 									<li class="photoload-in">
 										<div class="photoload-el">
 											<form action="/upload-target" class="dropzone"></form>		
 										</div>
+										<input type="file" name="f">
 									</li>
 									<!-- begin photo -->
 									<li class="photoload-in">
 										<div class="photoload-el">
 											<form action="/upload-target" class="dropzone"></form>		
 										</div>
+										<input type="file" name="f">
 									</li>
 									<!-- begin photo -->
 									<li class="photoload-in">
 										<div class="photoload-el">
 											<form action="/upload-target" class="dropzone"></form>										
 										</div>
+										<input type="file" name="f">
 									</li>
 									<!-- begin photo -->
 									<li class="photoload-in">
 										<div class="photoload-el">
 											<form action="/upload-target" class="dropzone"></form>		
 										</div>
+										<input type="file" name="f">
 									</li>
 									<!-- begin photo -->
 									<li class="photoload-in">
 										<div class="photoload-el">
 											<form action="/upload-target" class="dropzone"></form>	
 										</div>
+										<input type="file" name="f">
 									</li>
 									<!-- begin photo -->
 									<li class="photoload-in">
 										<div class="photoload-el">
 											<form action="/upload-target" class="dropzone"></form>	
 										</div>
+										<input type="file" name="f">
 									</li>
 									<!-- begin photo -->
 									<li class="photoload-in">
 										<div class="photoload-el">
 											<form action="/upload-target" class="dropzone"></form>	
 										</div>
+										<input type="file" name="f">
 									</li>
 									<!-- begin photo -->
 									<li class="photoload-in">
 										<div class="photoload-el">
 											<form action="/upload-target" class="dropzone"></form>	
 										</div>
+										<input type="file" name="f">
 									</li>
 									<!-- begin photo -->
 									<li class="photoload-in">
 										<div class="photoload-el ">
 											<form action="/upload-target" class="dropzone"></form>	
 										</div>
+										<input type="file" name="f">
 									</li>
 								</ul>
-							</div>
+							</div> 
+							<p class="alternativ-but">Если у вас возникли проблемы, воспользуйтесь <span>альтернативной формой</span></p>
 						</div>
 					</div>
 					<h2 class="post-title">Ваши контактные данные</h2>
@@ -536,6 +759,7 @@
 	<script src="js/jquery.fancybox.js"></script>
 	<script src="js/jquery.fancybox-thumbs.js"></script>
 	<script src='js/dropzone.js'></script>
+	<script src="js/lightbox.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>

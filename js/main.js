@@ -1070,7 +1070,9 @@ if ($('.multifilters-wrap').length) {
 			var redId = $(this).attr('id');
 			$('.city-wrap#'+redId+'').show();
 			$('.location-title-region').show().text(regionMark);
-			$('.location-title-this-region').show().text('Искать по всей области');
+			var textRegion = $('.name-find-region').html();
+			console.log(textRegion)
+			$('.location-title-this-region').show().text(''+textRegion+'');
 			$('.location-title-back').show();
 			$('input[type="hidden"]').val(redId);
 
@@ -1462,3 +1464,11 @@ $(function() {
 	})
 
 })
+
+  $(function() {
+    // Create a rondell with the 'carousel' preset and set an option
+    // to disable the rondell while the lightbox is displayed
+    $("#rondellCarousel").rondell({
+      preset: "carousel",
+    });
+  });
