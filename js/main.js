@@ -1456,14 +1456,18 @@ $(function() {
 		$('html, body').animate({scrollTop: 0},500);
 		return false;
 	})
-	$('.userbox').mouseenter(function(){
-		$('.header-top .userbox-pop-up').css('display','block')
-	})
-	$('.header-top .userbox-pop-up').mouseleave(function(){
-		$('.header-top .userbox-pop-up').css('display','none')
-	})
+	
+		$('.userbox').on('click',function(){
+		if($('.header-top .userbox-pop-up').css('display') == 'none'){
+			$('.header-top .userbox-pop-up').fadeIn(200)
+		}
+		else{
+			$('.header-top .userbox-pop-up').fadeOut(200)
+		}
 
+		})	
 })
+ 
 
   $(function() {
     // Create a rondell with the 'carousel' preset and set an option

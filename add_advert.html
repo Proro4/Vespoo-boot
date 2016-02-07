@@ -43,7 +43,7 @@
 					<a href="index.html"  class="logo"><img src="img/l
 					ogo.png" alt="Wespoo"></a>
 					<a href="#" class="post-new">+ Подать объявление</a>
-					<a href="#" class="userbox">Мой профиль</a>
+					<a class="userbox">Мой профиль</a>
 					<ul class="userbox-pop-up">
 						<li><a href="">Мой профиль:</a></li>
 						<li><a href="">Объявления</a></li>
@@ -176,9 +176,11 @@
 						<div class="label-form">
 							<label>Рубрика <span class="text-orange">*</span></label>
 						</div>
-						<div class="area-form">
+						<div class="area-form ">
 							<div class="area-form-in" id="errorCategory">
-								<input type="text" class="rubric-tov">
+								<div class="empty-rubric"></div>
+								<input type="text" id="advertTitle" class="form-input rubric-tov" name="advert-title" data-validation-help="Пожалуйста, укажите заголовок" >
+								<i class="icon-success"></i>
 								<div class="lightbox-rubric">
 									<div class="lgbox-rubric-block">
 										<div class="lgbox-title">

@@ -6,9 +6,11 @@ var categoryWidth =$('.lgbox-rubric-subcat').width();
 	var leftCategory = (bodyWidth - categoryWidth) / 2;
 	$('.lgbox-rubric-block').css('left',leftLightbox);
 	$('.lgbox-rubric-subcat').css('left',leftLightbox);
-	$('.rubric-tov').on('click',function(){
+	$('.empty-rubric').on('click',function(){
 		$('.header > .container,.body-branding .service-1,.body-branding .service-2,.body-branding .banner-1').css('z-index','3');
-		$('.lightbox-rubric').css('display','block');
+		setTimeout(function(){
+			$('.lightbox-rubric').css('display','block');
+		},300);
 	})
 	$('.lgbox-title').on('click',function(){
 		$('.lightbox-rubric').css('display','none');
