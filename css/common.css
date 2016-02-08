@@ -2127,7 +2127,7 @@ input.photoload-item:active,input.photoload-item:focus{border:0; outline: 0; }
     width: 120px;
     position: relative;
     display: inline-block;
-    bottom: 44px;
+    bottom: 30px;
     left: 160px;
 }
 
@@ -2138,11 +2138,12 @@ input.photoload-item:active,input.photoload-item:focus{border:0; outline: 0; }
 	    position: relative;
     left: 315px;
     bottom: 42px;
-}*/
+}
+*/
 .for-cash .input-cash>span{
 	position: relative;
 	    right: 125px;
-    bottom: 14px;
+    bottom: -6px;
 }
 
 #profile-1 .post-title{
@@ -2611,3 +2612,29 @@ input.photoload-item:active,input.photoload-item:focus{border:0; outline: 0; }
 .header-top .userbox-pop-up li.userbox-exit a:hover{
 	color: #583d8b;
 background: none;}
+.block-in-rubric{
+	display: none;
+}
+.use-type select{
+border: 0;
+box-shadow: 0 0 6px rgba(1, 1, 1, 0.3);
+padding: 8px;
+border-radius: 3px;
+float: left;
+}
+    .select2-results .select2-highlighted{
+    	background-color: #d4762e;
+    }
+    .select2-results .select2-result-label{
+    	font-family: Arial, sans-serif;
+    }
+    .select2-drop-active,.select2-choice.select2-default{
+    	border-radius: 0;
+    	border:0;
+    	    box-shadow: 0 0 6px rgba(1, 1, 1, 0.3);
+    }
+    .has-success .select2-choice, .has-success .select2-choices,.select2-choice.select2-default:focus,.select2-choice.select2-default:active,.select2-container.form-control.selects:focus,.select2-container.form-control.selects:active{
+    	outline: 0;
+    	border:0;
+    	box-shadow: 0 0 6px rgba(1, 1, 1, 0.3);
+    }

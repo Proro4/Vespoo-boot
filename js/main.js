@@ -958,7 +958,7 @@ if ($('.multifilters-wrap').length) {
 	$('.profile').tabs();
 
 // Selectric
-	$('select').selectric();
+	// $('select').selectric();
 
 // custom checkbox
 	$('input').iCheck({
@@ -1466,13 +1466,14 @@ $(function() {
 		}
 
 		})	
+
 })
  
-
-  $(function() {
-    // Create a rondell with the 'carousel' preset and set an option
-    // to disable the rondell while the lightbox is displayed
-    $("#rondellCarousel").rondell({
-      preset: "carousel",
-    });
-  });
+ Dropzone.prototype.defaultOptions.autoProcessQueue = false;
+  // $(function() {
+  //   // Create a rondell with the 'carousel' preset and set an option
+  //   // to disable the rondell while the lightbox is displayed
+  //   $("#rondellCarousel").rondell({
+  //     preset: "carousel",
+  //   });
+  // });і

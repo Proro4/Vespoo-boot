@@ -11,10 +11,11 @@
 	<link rel="stylesheet" href="css/selectric.css">
 	<link rel="stylesheet" href="css/jquery.fancybox.css">
 	<link rel="stylesheet" href="css/jquery.fancybox-thumbs.css">
-	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/bootstrap-theme.css"> 
   <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/3.5.2/select2.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2-bootstrap-css/1.4.6/select2-bootstrap.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/common.css">
 
 
 
@@ -387,6 +388,12 @@
 											<li id="rubric-subcat-10"><p>Электроника</p></li>
 										</ul>
 									</div>
+									<div class="block-in-rubric">
+										<div class="lg-name"></div>
+										<div class="lg-subcat"></div>
+										<div class="lg-subname"></div>
+										<div class="lg-all"></div>
+									</div>
 								<!-- <select data-validation="required" data-validation-event="change" data-validation-error-msg="Поле обязательное для заполнения" data-validation-error-msg-container="#errorCategory">
 									<option value="">Укажите рубрику</option>
 									<option value="Рубрика 1">Рубрика 1</option>
@@ -542,11 +549,24 @@
 						</div>
 						<div class="area-form">
 							<div class="area-form-in" id="errorRegion">
-								<select data-validation="required" data-validation-event="change" data-validation-error-msg="Поле обязательное для заполнения" data-validation-error-msg-container="#errorRegion">
+								<!-- <select data-validation="required" data-validation-event="change" data-validation-error-msg="Поле обязательное для заполнения" data-validation-error-msg-container="#errorRegion">
 									<option value="">Укажите область</option>
 									<option value="Киевская область">Киевская область</option>
 									<option value="Черкасская область">Черкасская область</option>
-								</select>
+								</select> -->
+								<div class="col-md-5" style="">
+									<select class="form-control selects1" data-validation="required" data-validation-event="change" data-validation-error-msg="Поле обязательное для заполнения" data-validation-error-msg-container="#errorRegion">
+									  <option></option>
+									      <option value="AL">Киевская область</option>
+									      <option value="AR">Харьковская область</option>
+									      <option value="IL">Винницкая область</option>
+									      <option value="IA">Львовская область</option>
+									      <option value="KS">Хмельницкая область</option>
+									      <option value="MN">Одесская область</option>
+									</select>
+
+								</div>
+
 								<i class="icon-success"></i>
 							</div>
 						</div>
@@ -557,54 +577,32 @@
 							<label>Город <span class="text-orange">*</span></label>
 						</div>
 						<div class="area-form">
-							<div class="area-form-in " id="errorCity">
-								<select data-validation="required" data-validation-event="change" data-validation-error-msg="Поле обязательное для заполнения" data-validation-error-msg-container="#errorCity">
+							<div class="area-form-in" id="errorCity">
+								<!-- <select data-validation="required" data-validation-event="change" data-validation-error-msg="Поле обязательное для заполнения" data-validation-error-msg-container="#errorCity">
 									<option value="">Укажите город</option>
 									<option value="Киев">Киев</option>
 									<option value="Черкассы">Черкассы</option>
-								</select>
+								</select> -->
+								<div class="col-md-5" style="">
+									<select class="form-control selects"  data-validation="required" data-validation-event="change" data-validation-error-msg="Поле обязательное для заполнения" data-validation-error-msg-container="#errorCity">
+									  <option></option>
+									      <option value="AL">Киев</option>
+									      <option value="AR">Харьков</option>
+									      <option value="IL">Винница</option>
+									      <option value="IA">Львов</option>
+									      <option value="KS">Хмельницкий</option>
+									      <option value="KY">Ровно</option>
+									      <option value="LA">Кривой Рог</option>
+									      <option value="MN">Одесса</option>
+									</select>
+
+								</div>
+
 								<i class="icon-success"></i>
 							</div>
 						</div>
 
-						<div class="col-md-4" style="margin:50px">
-<select class="form-control selects" >
-  <option></option>
-    <optgroup label="Alaskan/Hawaiian Time Zone">
-      <option value="AK">Alaska</option>
-      <option value="HI">Hawaii</option>
-    </optgroup>
-    <optgroup label="Pacific Time Zone">
-      <option value="CA">California</option>
-      <option value="NV">Nevada</option>
-      <option value="OR">Oregon</option>
-      <option value="WA">Washington</option>
-    </optgroup>
-    <optgroup label="Mountain Time Zone">
-      <option value="AZ">Arizona</option>
-      <option value="CO">Colorado</option>
-      <option value="ID">Idaho</option>
-      <option value="MT">Montana</option><option value="NE">Nebraska</option>
-      <option value="NM">New Mexico</option>
-      <option value="ND">North Dakota</option>
-      <option value="UT">Utah</option>
-      <option value="WY">Wyoming</option>
-    </optgroup>
-    <optgroup label="Central Time Zone">
-      <option value="AL">Alabama</option>
-      <option value="AR">Arkansas</option>
-      <option value="IL">Illinois</option>
-      <option value="IA">Iowa</option>
-      <option value="KS">Kansas</option>
-      <option value="KY">Kentucky</option>
-      <option value="LA">Louisiana</option>
-      <option value="MN">Minnesota</option>
-      <option value="MS">Mississippi</option>
-      <option value="MO">Missouri</option>
-    </optgroup>
-</select>
 
-</div>
 						
 						
 					</div>
@@ -671,7 +669,7 @@
 							<label>Тип объявления <span class="text-orange">*</span></label>
 						</div>
 						<div class="area-form">
-							<div class="area-form-in" id="errorType">
+							<div class="area-form-in use-type" id="errorType">
 								<select data-validation="required" data-validation-event="change" data-validation-error-msg="Поле обязательное для заполнения" data-validation-error-msg-container="#errorType">
 									<option value="">Укажите тип</option>
 									<option value="Частное">Частное</option>
@@ -805,7 +803,7 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
 	<script src="js/icheck.min.js"></script>
-	<script src="js/jquery.selectric.js"></script>
+	// <script src="js/jquery.selectric.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/jquery.form-validator.min.js"></script>
 	<script src="js/jquery.fancybox.js"></script>
@@ -817,7 +815,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/3.5.2/select2.min.js"></script>
   <script type="text/javascript">
     $(document).ready(function(){
-        $( ".selects" ).select2( { placeholder: "Select a State"} );
+        $( ".selects" ).select2( { placeholder: "укажите область"} );
+        $( ".selects1" ).select2( { placeholder: "укажите город"} );
     });
   </script>
 </body>
