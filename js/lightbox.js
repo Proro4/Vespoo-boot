@@ -77,3 +77,32 @@ $(document).ready(function(){
 
 	})
 })
+
+
+//DnD
+
+// $(document).ready(function(){
+// 	setInterval(function(){
+// 		$(".dz-image img").attr('draggable','true');
+// 	},3000)
+  
+//   $(".dz-image").on("dragover",function(e){
+//   	console.log('1');
+//     e.preventDefault();
+//   });
+  
+//   $(".dz-image img").on("dragstart",function(e){
+//     e.originalEvent.dataTransfer.setData("Text",e.target.id);
+//   });
+  
+  
+//   $(".dz-image").on("drop",function(e){
+//   	console.log('2');
+//     e.preventDefault();
+//     var data=e.originalEvent.dataTransfer.getData("Text");
+//     e.target.appendChild(document.getElementById(data));
+//   });
+  
+
+  
+// });
