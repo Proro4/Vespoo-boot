@@ -1137,7 +1137,7 @@ form .field:after { content: ""; display: table; clear: both; }
 .multifilters .multifilters-in + .multifilters-in .nav-btn i { margin-top: 6px; }
 .multifilters .multifilters-in + .multifilters-in .nav-menu { top: 27px; }
 .multifilters .multifilters-in.is-active .nav-btn { box-shadow: 0 0 0 1px #d67b34; }
-.multifilters .is-active a{color: white;}
+/*.multifilters .is-active a{color: white;}*/
 .multifilters .multifilters-in.is-active .nav-input { box-shadow: 0 0 0 1px #d67b34; }
 .multifilters .multifilters-in.multifilters-input .nav-btn { cursor: text; }
 .multifilters .multifilters-in.multifilters-input .nav-btn i { display: none; }
@@ -1167,11 +1167,13 @@ form .field:after { content: ""; display: table; clear: both; }
 .multifilters li .nav-menu li { color: #583d8b; border-bottom: 1px solid #eee; }
 .multifilters li .nav-menu li.is-active, .multifilters li .nav-menu li.is-active:hover { color: #fff; background-color: #d4762d; }
 .multifilters li .nav-menu li:hover { background-color: #fbf2eb; }
-.multifilters li .nav-menu li:hover .nav-submenu { display: block; }
+.multifilters>li>.nav-menu>li:hover>.nav-submenu { display: block; }
+.multifilters>li>.nav-menu>li .two-nav-submenu:hover .nav-submenu-h { display: block; }
 .multifilters li .nav-menu li a { display: block; padding: 5px 10px; white-space: nowrap; *zoom: 1; }
 .multifilters li .nav-menu li a:after { content: ""; display: table; clear: both; }
 .multifilters li .nav-menu li a i { float: right; margin-top: 2px; }
 .multifilters li .nav-menu li .nav-submenu { display: none; position: absolute; top: 0; left: 100%; background-color: #fff; box-shadow: 0 0 6px rgba(1, 1, 1, 0.3); }
+.multifilters li .nav-menu li .nav-submenu-h { display: none; position: absolute; top: 0; left: 100%; background-color: #fff; box-shadow: 0 0 6px rgba(1, 1, 1, 0.3); }
 
 /* pagination */
 .pagination { margin-top: 20px; line-height: 25px; *zoom: 1;  width: 100%;}
@@ -1498,14 +1500,14 @@ form .field:after { content: ""; display: table; clear: both; }
     left: 0px; box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4);}
 .post-list li .post-list-mark i { display: block; position: relative; left: -1px;
     top: 1px; margin-left: auto; margin-right: auto; vertical-align: middle;}
- .post-list-mark.icon-all-icon-mark i{display: inline-block; position: absolute; left: 7px;
-    top: 10px; margin-left: auto; margin-right: auto; vertical-align: middle;}
+ .post-list-mark.icon-all-icon-mark i{display: inline-block; position: absolute; left: 1px;
+    top: 3px; margin-left: auto; margin-right: auto; vertical-align: middle;}
  /*.post-list-mark.icon-all-icon-mark .icon-main-electro{display: inline-block; position: absolute; left: 14px;
     top: 5px; margin-left: auto; margin-right: auto; vertical-align: middle;}
  .post-list-mark.icon-all-icon-mark .icon-main-trade{display: inline-block; position: absolute; left: 4px;
     top: 10px; margin-left: auto; margin-right: auto; vertical-align: middle;}*/
 .post-list-mark.icon-all-icon-mark .icon-main-electro,
-.post-list-mark.icon-all-icon-mark .icon-main-trade {display: block;margin-left: 3px; margin-right: 2px;}
+.post-list-mark.icon-all-icon-mark .icon-main-trade {display: block;margin-left: 0px; margin-right: 2px;}
 
 
 .stic-purple { background: #522D90 none repeat scroll 0% 0%;}
@@ -2646,4 +2648,14 @@ float: left;
   /* Required to make elements draggable in old WebKit */
   -khtml-user-drag: element;
   -webkit-user-drag: element;
+}
+.multifilters li .nav-menu li a span{
+	padding-right: 15px;
+}
+.active-ct{
+	color: #D4762D !important;
+}
+.multifilters li .nav-menu li a.active-ct{
+	color: white !important;
+	background: #D4762D;
 }

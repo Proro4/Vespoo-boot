@@ -1091,7 +1091,11 @@ if ($('.multifilters-wrap').length) {
 				$('input[type="hidden"]').text(redId);
 			});
 	
+// Active zone
+		$(".city-list li.active-ct").trigger( "click" );
+			$('a.active-cat').trigger( "click" );
 
+// Active zone
 
 // Show phone number
 	$('.show-phone').on('click', function(){
@@ -1469,11 +1473,9 @@ $(function() {
 
 })
  
- Dropzone.prototype.defaultOptions.autoProcessQueue = false;
-  // $(function() {
-  //   // Create a rondell with the 'carousel' preset and set an option
-  //   // to disable the rondell while the lightbox is displayed
-  //   $("#rondellCarousel").rondell({
-  //     preset: "carousel",
-  //   });
-  // });і
+
+
+$(document).ready(function(){
+	$('a.active-cat').trigger( "click" );
+	$('.multifilters .multifilters-in.multifilters-checkbox .nav-menu li label.active-cat').trigger('click');
+	})

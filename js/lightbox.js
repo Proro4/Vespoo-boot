@@ -68,7 +68,6 @@ var categoryWidth =$('.lgbox-rubric-subcat').width();
 	    var clickIdSub = this.id;
  	    $('.lg-subname').html(clickIdSub);
  	    $('.lg-all').html($('.lg-name').html()+ " : "+ $('.lg-subcat').html() + " : " + $('.lg-subname').html() );
- 	    console.log($('.lg-all').html())
 
 	})
 })
