@@ -2638,3 +2638,12 @@ float: left;
     	border:0;
     	box-shadow: 0 0 6px rgba(1, 1, 1, 0.3);
     }
+    [draggable] {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  /* Required to make elements draggable in old WebKit */
+  -khtml-user-drag: element;
+  -webkit-user-drag: element;
+}
