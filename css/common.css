@@ -2624,18 +2624,31 @@ padding: 8px;
 border-radius: 3px;
 float: left;
 }
-    .select2-results .select2-highlighted{
+    .select2-results .select2-highlighted,.select2-results__option{
     	background-color: #d4762e;
     }
+    .select2-container--krajee .select2-results__option[aria-selected]{
+	color: #583d8b;
+}
+	.select2-container--krajee .select2-results__option[aria-selected=true] {
+    color: white;
+    background-color: #d4762e;
+}
+
+.select2-container--krajee .select2-results__option--highlighted[aria-selected] {
+    background-color: #d4762e;
+    color: #fff;
+}
+
     .select2-results .select2-result-label{
     	font-family: Arial, sans-serif;
     }
-    .select2-drop-active,.select2-choice.select2-default{
+    .select2-drop-active,.select2-choice.select2-default,.select2-selection.select2-selection--single{
     	border-radius: 0;
     	border:0;
     	    box-shadow: 0 0 6px rgba(1, 1, 1, 0.3);
     }
-    .has-success .select2-choice, .has-success .select2-choices,.select2-choice.select2-default:focus,.select2-choice.select2-default:active,.select2-container.form-control.selects:focus,.select2-container.form-control.selects:active{
+    .select2-dropdown.select2-dropdown--below,.has-success .select2-choice, .has-success .select2-choices,.select2-choice.select2-default:focus,.select2-choice.select2-default:active,.select2-container.form-control.selects:focus,.select2-container.form-control.selects:active{
     	outline: 0;
     	border:0;
     	box-shadow: 0 0 6px rgba(1, 1, 1, 0.3);
@@ -2658,4 +2671,37 @@ float: left;
 .multifilters li .nav-menu li a.active-ct{
 	color: white !important;
 	background: #D4762D;
+}
+.select2-container--krajee .select2-selection--single .select2-selection__arrow b{
+	    border-color: #D4762D transparent transparent transparent;
+}
+
+.select2-container--krajee .select2-results__group{
+	    color: #583D8B;
+    text-shadow: none;
+    background-color:none;
+}
+.select2-container--krajee .select2-selection--single .select2-selection__rendered{
+	    font-size: 16px;
+    color: #583d8b;
+}
+.chaked-search{
+	position: absolute;
+	bottom: -35px;
+	width: 100%;
+}
+.chaked-search .area-form{
+	 min-width: 28%;
+    display: inline-block;
+}
+.chaked-search .area-form+.area-form{
+	  min-width: 20%;
+}
+.banner-inner-top.for-chaked-search{
+	margin-top: 50px;
+}
+.chaked-search .area-form .icheckbox_square-orange + p{
+	margin-right: 0;
+	font-size: 14px;
+	padding-top: 8px;
 }

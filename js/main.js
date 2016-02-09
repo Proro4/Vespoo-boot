@@ -1412,7 +1412,7 @@ $(window).scroll(function () {
 	var WindowHeight = $(window).height();
 	var heightTop = jQuery(document).scrollTop();
 	if (heightTop >= 220) {
-		$('.banner-standart-text').css('display','none');
+		$('.banner-standart-text,.chaked-search').css('display','none');
 	    $('.header').addClass('is-fixed');
 		$('.location-wrap').css('margin-top','10px');
 		$('.location-wrap').css('padding-top','10px');
@@ -1422,7 +1422,7 @@ $(window).scroll(function () {
 	    $('.header').removeClass('is-fixed');
 		$('.location-wrap').css('margin-top','-1px');
 		$('.location-wrap').css('padding-top','0px');
-		$('.banner-standart-text').css('display','block');
+		$('.banner-standart-text,.chaked-search').css('display','block');
 		$('.btn.btn-default.field.submit').css('background-color','#9785b7');
 	}
 	if(heightTop >= 470){
