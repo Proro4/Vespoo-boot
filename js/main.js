@@ -1,4 +1,23 @@
 $(document).ready(function(){
+
+	// Active zone
+			$('.form-input.nav-input.mask-input').each(function(){
+				if($(this).val() != ''){
+					var textVal = $(this).val();
+					$(this).parent().find('.nav-menu').append('<li><a class="active-cat" href="javascript:void(0);">до (см³) <span>'+textVal+'</span></a></li>')
+					$(this).parent().find('.nav-btn span').text(textVal)
+					$(this).parent().find('.active-ct').trigger( "click" );
+				}
+			})
+			$(".city-list li.active-ct").trigger( "click" );
+			setTimeout(function(){
+				$('.active-cat').trigger( "click" );
+				$('.active-ct').trigger( "click" );
+			},500)
+
+// Active zone
+
+
 	setInterval(function(){
 
 	if($('.ad-is-date .icheckbox_square-orange').hasClass('checked')){
@@ -1091,11 +1110,7 @@ if ($('.multifilters-wrap').length) {
 				$('input[type="hidden"]').text(redId);
 			});
 	
-// Active zone
-		$(".city-list li.active-ct").trigger( "click" );
-			$('a.active-cat').trigger( "click" );
 
-// Active zone
 
 // Show phone number
 	$('.show-phone').on('click', function(){

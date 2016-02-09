@@ -36,6 +36,7 @@ var categoryWidth =$('.lgbox-rubric-subcat').width();
 		$('.lg-rubric-subcat').css('display','none');
 		$('.lg-rubric-subcat[subcat="'+clickId+'"]').css('display','inline-block');
  	    $('.lg-name').html(clickId);
+ 	    $('.lg-id').attr('id',clickId );
 	})
 	$('.lg-rubric-cat li').on('click',function(){
 		$('.lg-rubric-cat li').removeClass('active-cat')
@@ -49,6 +50,7 @@ var categoryWidth =$('.lgbox-rubric-subcat').width();
 		$('.lg-rubric-subcat').css('display','none');
 		$('.lg-rubric-subcat[subcat="'+clickId+'"]').css('display','inline-block');
  	    $('.lg-name').html(clickId);
+ 	    $('.lg-id').attr('id',clickId );
 
 	})
 	$('.lg-rubric-subcat li').on('click',function(){
@@ -58,6 +60,7 @@ var categoryWidth =$('.lgbox-rubric-subcat').width();
 		$('.lg-rubric-subname').css('display','none');
 		$('.lg-rubric-subname[subcat="'+clickIdSub+'"]').css('display','inline-block');
  	    $('.lg-subcat').html(clickIdSub);
+ 	    $('.lg-id').val(clickIdSub);
 	})
 	$('.lg-rubric-subname li').on('click',function(){
 		$('.lightbox-rubric').css('display','none');
@@ -69,7 +72,7 @@ var categoryWidth =$('.lgbox-rubric-subcat').width();
 	    var clickName = $(this).find('p').text();
  	    $('.lg-subname').html(clickIdSub);
  	    // $('.lg-all').html($('.lg-name').html()+ " : "+ $('.lg-subcat').html() + " : " + $('.lg-subname').html() );
- 	    $('.lg-id').val(clickIdSub );
+ 	    $('.lg-id').text(clickIdSub );
  	    $('.lg-all').val(clickName );
  	    console.log( $('.lg-id').val())
  	    console.log($('.lg-all').val())
