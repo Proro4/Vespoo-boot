@@ -69,10 +69,10 @@ var categoryWidth =$('.lgbox-rubric-subcat').width();
 	    var clickName = $(this).find('p').text();
  	    $('.lg-subname').html(clickIdSub);
  	    // $('.lg-all').html($('.lg-name').html()+ " : "+ $('.lg-subcat').html() + " : " + $('.lg-subname').html() );
- 	    $('.lg-all').attr('for-rubric',clickIdSub );
+ 	    $('.lg-id').val(clickIdSub );
  	    $('.lg-all').val(clickName );
- 	    console.log( $('.lg-all').val())
- 	    console.log($('.lg-all').attr('for-rubric'))
+ 	    console.log( $('.lg-id').val())
+ 	    console.log($('.lg-all').val())
 
 	})
 })
