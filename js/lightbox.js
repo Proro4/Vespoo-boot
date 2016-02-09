@@ -66,8 +66,13 @@ var categoryWidth =$('.lgbox-rubric-subcat').width();
 		var setСategory = $(this).find('p').html();
 		$('.rubric-tov').val(setСategory);
 	    var clickIdSub = this.id;
+	    var clickName = $(this).find('p').text();
  	    $('.lg-subname').html(clickIdSub);
- 	    $('.lg-all').html($('.lg-name').html()+ " : "+ $('.lg-subcat').html() + " : " + $('.lg-subname').html() );
+ 	    // $('.lg-all').html($('.lg-name').html()+ " : "+ $('.lg-subcat').html() + " : " + $('.lg-subname').html() );
+ 	    $('.lg-all').attr('for-rubric',clickIdSub );
+ 	    $('.lg-all').val(clickName );
+ 	    console.log( $('.lg-all').val())
+ 	    console.log($('.lg-all').attr('for-rubric'))
 
 	})
 })

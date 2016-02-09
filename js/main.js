@@ -1476,6 +1476,6 @@ $(function() {
 
 
 $(document).ready(function(){
-	$('a.active-cat').trigger( "click" );
-	$('.multifilters .multifilters-in.multifilters-checkbox .nav-menu li label.active-cat').trigger('click');
+		$('a.active-cat').trigger( "click" );
+		$('.multifilters .multifilters-in.multifilters-checkbox .nav-menu li label.active-cat').trigger('click');
 	})
