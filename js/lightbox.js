@@ -62,7 +62,7 @@ var categoryWidth =$('.lgbox-rubric-subcat').width();
  	    $('.lg-subcat').html(clickIdSub);
  	    $('.lg-id').val(clickIdSub);
 	})
-	$('.lg-rubric-subname li').on('click',function(){
+	$('.lg-rubric-subname li,.last-subcat').on('click',function(){
 		$('.lightbox-rubric').css('display','none');
 		$('.header > .container').css('z-index','1000');
 		$('.body-branding .service-1,.body-branding .service-2,.body-branding .banner-1').css('z-index','1100');
