@@ -89,6 +89,7 @@ $(document).ready(function(){
 		$('.photoload-in input[type="file"]').css('display','block');
 		$('.photoload-in').css({'float':'none'})
 		$(this).parent().css('display','none');
+		$(".advert-add .label-form .label-icon").css('display','none');
 
 	})
 })

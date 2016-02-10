@@ -4,8 +4,8 @@ $(document).ready(function(){
 			$('.form-input.nav-input.mask-input').each(function(){
 				if($(this).val() != ''){
 					var textVal = $(this).val();
-					$(this).parent().find('.nav-menu').append('<li><a class="active-cat" href="javascript:void(0);">до (см³) <span>'+textVal+'</span></a></li>')
-					$(this).parent().find('.nav-btn span').text(textVal)
+					$(this).parent().find('.nav-menu').append('<li><a class="active-cat" href="javascript:void(0);"><span>'+textVal+'</span></a></li>')
+					
 					$(this).parent().find('.active-ct').trigger( "click" );
 				}
 			})
@@ -14,7 +14,11 @@ $(document).ready(function(){
 				$('.active-cat').trigger( "click" );
 				$('.active-ct').trigger( "click" );
 			},500)
-
+			$('.nav-input').keydown(function(){
+				if (event.which == 13){
+					$(this).trigger("focusout");
+				}
+			})
 // Active zone
 
 
@@ -1494,3 +1498,12 @@ $(document).ready(function(){
 		$('a.active-cat').trigger( "click" );
 		$('.multifilters .multifilters-in.multifilters-checkbox .nav-menu li label.active-cat').trigger('click');
 	})
+
+
+//city-search hiiden
+$('.form-group').on('click',function(){
+	$('.search-city').css('display',"none");
+})
+$('.location-wrap').hover(function(){
+	$('.search-city').css('display',"none");
+})
