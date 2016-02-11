@@ -69,13 +69,13 @@ $(document).ready(function(){
 		$(this).find('.post-list-in p:eq(0)').html(beginTextPol+'...')
 	})
 
-
+	
 	//event Dropzone
 Dropzone.autoDiscover = false;
 $(".dropzone").dropzone({
    init: function () {
     this.on("addedfile", function(file) {
-     console.log(file);
+     // console.log(file);
      $('.photoload-in').each(function(){
       var photoIn = $(this).find('.dz-preview');
       if( photoIn.length > 1){
