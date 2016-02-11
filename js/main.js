@@ -19,6 +19,17 @@ $(document).ready(function(){
 					$(this).trigger("focusout");
 				}
 			})
+
+
+			//For load foto
+
+		setInterval(function() {
+			$('.file-preview-thumbnails').each(function(){
+				if($(this).find('.file-preview-frame').length > 1){
+					$(this).find('.file-preview-frame').first().remove();
+				}
+			})
+	}, 1000);
 // Active zone
 
 
@@ -59,52 +70,30 @@ $(document).ready(function(){
 	})
 
 
-	//For load foto
-
-		// setInterval(function() {
-
-		// 	// $('.dz-error-mark').html('<div class="exit-icon-dz"></div>')
-
-		// 	// $('.dz-error-mark').on('click',function(){
-		// 	// 	$(this).parent().remove();
-		// 	// })
-		// 	// $('.photoload-in').each(function(){
-		// 	// 	if($(this).find('.dz-preview').length > 1){
-		// 	// 		$(this).next().find('.dropzone ').append($(this).find('.dz-preview').last())
-		// 	// 		// $(this).find('.dz-preview').last().remove();
-		// 	// 	}
-		// 	// 	if($(this).find('.dz-preview').length > 10){
-		// 	// 		// $(this).next().find('.dropzone ').append($(this).find('.dz-preview').last())
-		// 	// 		$(this).find('.dz-preview').last().remove();
-		// 	// 	}
-		// 	// })
-			
-		// 	$('.file-preview-thumbnails').each(function(){
-		// 		if($(this).find('.file-preview-frame').length > 1){
-		// 			$(this).find('.file-preview-frame').first().remove();
-		// 		}
-		// 	})
-	// }, 1000);
-
 	//event Dropzone
-		  var myDropzone = new Dropzone(".dropzone");
-			  myDropzone.on("addedfile", function(file) {
-				$('.photoload-in').each(function(){
-					var photoIn = $(this).find('.dz-preview');
-					if( photoIn.length > 1){
-						$(this).next().find('.dropzone ').append( photoIn.last())
-						// $(this).find('.dz-preview').last().remove();
-					}
-					var photoDz = $('.photoload-in').find('.dz-preview');
-					if(photoDz.length > 10){
-						photoDz.last().remove();
-					}
-				})
-			$('.dz-error-mark').html('<div class="exit-icon-dz"></div>')
-			$('.dz-error-mark').on('click',function(){
-				$(this).parent().remove();
-			})
-		  });
+Dropzone.autoDiscover = false;
+$(".dropzone").dropzone({
+   init: function () {
+    this.on("addedfile", function(file) {
+     console.log(file);
+     $('.photoload-in').each(function(){
+      var photoIn = $(this).find('.dz-preview');
+      if( photoIn.length > 1){
+       $(this).next().find('.dropzone ').append( photoIn.last())
+       // $(this).find('.dz-preview').last().remove();
+      }
+      var photoDz = $('.photoload-in').find('.dz-preview');
+      if(photoDz.length > 10){
+       photoDz.last().remove();
+      }
+     })
+     $('.dz-error-mark').html('<div class="exit-icon-dz"></div>')
+     $('.dz-error-mark').on('click',function(){
+      $(this).parent().remove();
+     })
+    })
+   }
+  });
 
 
 	//For load foto end
