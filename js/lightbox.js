@@ -1,4 +1,8 @@
 $(document).ready(function(){     
+
+
+
+
 var bodyWidth = $('body').width();
 var lightbox = $('.lgbox-rubric-block').width();
 var categoryWidth =$('.lgbox-rubric-subcat').width();
@@ -53,6 +57,14 @@ var categoryWidth =$('.lgbox-rubric-subcat').width();
  	    $('.lg-id').attr('id',clickId );
 
 	})
+
+	$('.lg-rubric-subcat li').each(function(){
+		if ($(this).is('[id]') == false) {
+	 	    	$(this).addClass('last-subcat');
+	 	    }
+ 	    })
+
+	
 	$('.lg-rubric-subcat li').on('click',function(){
 		$('.lg-rubric-subcat li').removeClass('active-cat')
 		$(this).addClass('active-cat')
@@ -61,6 +73,8 @@ var categoryWidth =$('.lgbox-rubric-subcat').width();
 		$('.lg-rubric-subname[subcat="'+clickIdSub+'"]').css('display','inline-block');
  	    $('.lg-subcat').html(clickIdSub);
  	    $('.lg-id').val(clickIdSub);
+
+
 	})
 	$('.lg-rubric-subname li,.last-subcat').on('click',function(){
 		$('.lightbox-rubric').css('display','none');
@@ -71,13 +85,13 @@ var categoryWidth =$('.lgbox-rubric-subcat').width();
 	    var clickIdSub = this.id;
 	    var clickName = $(this).find('p').text();
  	    $('.lg-subname').html(clickIdSub);
- 	    // $('.lg-all').html($('.lg-name').html()+ " : "+ $('.lg-subcat').html() + " : " + $('.lg-subname').html() );
  	    $('.lg-id').text(clickIdSub );
  	    $('.lg-all').val(clickName );
  	    console.log( $('.lg-id').val())
  	    console.log($('.lg-all').val())
 
 	})
+
 })
 
 
@@ -92,46 +106,15 @@ $(document).ready(function(){
 		$(".advert-add .label-form .label-icon").css('display','none');
 
 	})
+
+
 })
 
 
 //DnD
 
 $(document).ready(function(){
-	// setInterval(function(){
-	// 	$(".photoload-in").attr('draggable','true');
-	// },3000)
-  
-  // $(".dz-image").on("dragover",function(e){
-  // 	console.log('1');
-  //   e.preventDefault();
-  // });
-  
-  // $(".dz-image img").on("dragstart",function(e){
-  //   e.originalEvent.dataTransfer.setData("Text",e.target.id);
-  // });
-  
-  
-  // $(".photoload-in").on("drop",function(e){
-  // 	// alert('1');
-  // 	console.log('2');
-  //   e.preventDefault();
-  //   var data=e.originalEvent.dataTransfer.getData("Text");
-  //   e.target.appendChild(document.getElementById(data));
-  // });
-  
-
 	
-
-
-
-
-
-
-
-
-
-
 
   function handleDragOver(e) {
 	  if (e.preventDefault) {

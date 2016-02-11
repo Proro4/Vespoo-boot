@@ -57,16 +57,28 @@ $(document).ready(function(){
 		var beginTextPol = textPol.substring(0, 30);
 		$(this).find('.post-list-in p:eq(0)').html(beginTextPol+'...')
 	})
+
+
+	//For load foto
+
 		setInterval(function() {
+
+			$('.dz-error-mark').html('<div class="exit-icon-dz"></div>')
 
 			$('.dz-error-mark').on('click',function(){
 				$(this).parent().remove();
 			})
-			$('.dropzone').each(function(){
+			$('.photoload-in').each(function(){
 				if($(this).find('.dz-preview').length > 1){
-					$(this).find('.dz-preview').first().remove();
+					$(this).next().find('.dropzone ').append($(this).find('.dz-preview').last())
+					// $(this).find('.dz-preview').last().remove();
+				}
+				if($(this).find('.dz-preview').length > 10){
+					// $(this).next().find('.dropzone ').append($(this).find('.dz-preview').last())
+					$(this).find('.dz-preview').last().remove();
 				}
 			})
+			
 			$('.file-preview-thumbnails').each(function(){
 				if($(this).find('.file-preview-frame').length > 1){
 					$(this).find('.file-preview-frame').first().remove();
@@ -74,7 +86,10 @@ $(document).ready(function(){
 			})
 
 		
-	}, 1000);
+	}, 500);
+
+
+	//For load foto end
 
 	setTimeout(function() {
 

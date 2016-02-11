@@ -2718,3 +2718,12 @@ float: left;
 .header.is-fixed .container .post-new:focus{
 	color: white;
 }
+.exit-icon-dz{
+	height: 100%;
+	width: 100%;
+	background: url(../img/exit-icon.png)no-repeat center;
+	opacity: 0.8;
+}
+.exit-icon-dz:hover{
+	opacity: 1;
+}
