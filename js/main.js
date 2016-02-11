@@ -70,30 +70,7 @@ $(document).ready(function(){
 	})
 
 	
-	//event Dropzone
-Dropzone.autoDiscover = false;
-$(".dropzone").dropzone({
-   init: function () {
-    this.on("addedfile", function(file) {
-     // console.log(file);
-     $('.photoload-in').each(function(){
-      var photoIn = $(this).find('.dz-preview');
-      if( photoIn.length > 1){
-       $(this).next().find('.dropzone ').append( photoIn.last())
-       // $(this).find('.dz-preview').last().remove();
-      }
-      var photoDz = $('.photoload-in').find('.dz-preview');
-      if(photoDz.length > 10){
-       photoDz.last().remove();
-      }
-     })
-     $('.dz-error-mark').html('<div class="exit-icon-dz"></div>')
-     $('.dz-error-mark').on('click',function(){
-      $(this).parent().remove();
-     })
-    })
-   }
-  });
+	
 
 
 	//For load foto end
