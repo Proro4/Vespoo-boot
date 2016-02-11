@@ -21,6 +21,12 @@ var categoryWidth =$('.lgbox-rubric-subcat').width();
 		$('.header > .container').css('z-index','1000');
 		$('.body-branding .service-1,.body-branding .service-2,.body-branding .banner-1').css('z-index','1100');
 	})
+	
+	$('.lgbox-rubric-block li a').each(function(){
+		if ($(this).is('[id]') == false) {
+	 	    	$(this).addClass('last-subcat');
+	 	    }
+ 	    })
 	$('.lgbox-rubric-block li a').on('click',function(){
 		$('.lg-rubric-cat li').removeClass('active-cat')
 
@@ -42,6 +48,12 @@ var categoryWidth =$('.lgbox-rubric-subcat').width();
  	    $('.lg-name').html(clickId);
  	    $('.lg-id').attr('id',clickId );
 	})
+
+	$('.lg-rubric-cat li').each(function(){
+		if ($(this).is('[id]') == false) {
+	 	    	$(this).addClass('last-subcat');
+	 	    }
+ 	    })
 	$('.lg-rubric-cat li').on('click',function(){
 		$('.lg-rubric-cat li').removeClass('active-cat')
 		$(this).addClass('active-cat')
