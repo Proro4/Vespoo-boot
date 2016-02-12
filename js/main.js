@@ -33,15 +33,16 @@ $(document).ready(function(){
 // Active zone
 
 
-	setInterval(function(){
+	setInterval(function(){	
+		
 
-	if($('.ad-is-date .icheckbox_square-orange').hasClass('checked')){
-		$('.ad-is-data .icheckbox_square-orange').addClass('checked');
-	}
-	else{
-		$('.ad-is-data .icheckbox_square-orange').removeClass('checked');
+		if($('.ad-is-date .icheckbox_square-orange').hasClass('checked')){
+			$('.ad-is-data .icheckbox_square-orange').addClass('checked');
+		}
+		else{
+			$('.ad-is-data .icheckbox_square-orange').removeClass('checked');
 
-	}
+		}
 	},1000)
 
 

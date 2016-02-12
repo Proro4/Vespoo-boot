@@ -119,6 +119,9 @@ $(document).ready(function(){
 
 	})
 
+	//one-checked
+
+
 
 })
 
@@ -200,3 +203,8 @@ $(document).ready(function(){
 	  	
 });
 
+
+// checked multifilter
+	$('.chaked-search .area-form').on('click',function(){
+			alert('2');
+	})

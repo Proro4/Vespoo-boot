@@ -805,7 +805,8 @@
 	<script src="js/main.js"></script>
 	  <script type="text/javascript">
 	    $(document).ready(function(){
-	        $(".selects").select2( { placeholder: "укажите область"} );
+	    	var placeText = $('.selects').attr('textPlace');
+	        $(".selects").select2( { placeholder: ''+placeText+''} );
 	        $(".selects1").select2( { placeholder: "укажите город"} );
 			$(".dropzone").dropzone({
 			   init: function () {
