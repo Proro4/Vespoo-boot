@@ -204,7 +204,7 @@ $(document).ready(function(){
 });
 
 
-// checked multifilter
-	$('.chaked-search .area-form').on('click',function(){
-			alert('2');
-	})
+// // checked multifilter
+// 	$('.chaked-search .area-form').on('click',function(){
+// 			alert('2');
+// 	})

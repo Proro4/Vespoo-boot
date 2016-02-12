@@ -2768,8 +2768,16 @@ float: left;
 	border-radius:0; 
 }
 li.multifilters-in.multifilters-checkbox.one-checkbox{
-	background: transparent;
+	/*padding-bottom: 50px;*/
 }
 li.multifilters-in.multifilters-checkbox.one-checkbox a{
 	background: transparent;
+	/*border:0;*/
+}
+li.multifilters-in.multifilters-checkbox.one-checkbox .nav-menu{
+	display: block !important;
+	border:0;
+}
+li.multifilters-in.multifilters-checkbox.one-checkbox .nav-menu li:first-child{
+	display: none;
 }
