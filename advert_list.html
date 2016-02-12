@@ -61,21 +61,6 @@
 					   		<input type="text" class="form-control field search advert-search" placeholder="8 350 432 объявлений">
 					</div>
 				 		<button type="submit" class="col-xs-3 btn btn-default field submit">Поиск</button>
-				 		<div class="chaked-search">
-							<div class="area-form">
-								<input type="checkbox" name="advert-check" data-validation="required">
-								<p>Искать в заголовке и описании</p>						
-							</div>
-							<div class="area-form">
-								<input type="checkbox" name="advert-check" data-validation="required">
-								<p>Только с фото</p>						
-							</div>
-							<div class="area-form">
-								<input type="checkbox" name="advert-check" data-validation="required">
-								<p>Только с доставкой</p>						
-							</div>
-				 			
-				 		</div>
 				</form>
 
 				<!-- begion location-wrap -->
@@ -151,7 +136,7 @@
 		<!-- begin content-wrap  -->
 		<div class="content-wrap container">
 			<!-- begin banner-inner-top  -->
-			<div class="banner-inner-top for-chaked-search">
+			<div class="banner-inner-top ">
 				<a href="#"><img src="img/banners/banner-inner-top.jpg" alt="banner"></a>
 			</div>
 			<!-- end banner-inner-top -->
@@ -537,9 +522,22 @@
 										<li><label><input type="checkbox"><span>Хамелеон</span><i class="icon-all-info multifilters-info">подсказка на все случаи жизни</i></label></li>
 									</ul>
 								</li>
-								<!-- <li>
-									<input type="submit" class="submit-btn" value="test">
-								</li> -->
+								<li class="chaked-search">
+									
+									<div class="area-form">
+										<input type="checkbox" name="advert-check" data-validation="required">
+										<p>Искать в заголовке и описании</p>						
+									</div>
+									<div class="area-form">
+										<input type="checkbox" name="advert-check" data-validation="required">
+										<p>Только с фото</p>						
+									</div>
+									<div class="area-form">
+										<input type="checkbox" name="advert-check" data-validation="required">
+										<p>Только с доставкой</p>						
+									</div>
+				 			
+								</li>
 							</ul>
 						</fieldset>
 					</form>
@@ -574,9 +572,9 @@
 							<li><a href="#">Бизнес</a></li>
 						</ul>
 						<div class="al-settings-sort">
-							<select>
-								<option value="от дешевых к дорогим">от дешевых к дорогим</option>
-								<option value="от дорогих к дешевым">от дорогих к дешевым</option>
+							<select  class="selecters" >
+								<option value="от дешевых к дорогим">От дешевых к дорогим</option>
+								<option value="от дорогих к дешевым">От дорогих к дешевым</option>
 							</select>
 						</div>
 						<ul class="al-settings-currency">

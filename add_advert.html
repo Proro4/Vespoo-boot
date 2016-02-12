@@ -13,8 +13,8 @@
 	<link rel="stylesheet" href="css/jquery.fancybox-thumbs.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/bootstrap-theme.css"> 
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/3.5.2/select2.min.css" rel="stylesheet" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2-bootstrap-css/1.4.6/select2-bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/3.5.2/select2.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2-bootstrap-css/1.4.6/select2-bootstrap.min.css" rel="stylesheet" />
 	<link rel="stylesheet" href="css/common.css">
 
 
@@ -427,7 +427,7 @@
 							<p>Цена <input type="text"> </p> 
 
 								<div class="area-form-in area-for-cash" id="errorCategory">
-								<select data-validation="required" data-validation-event="change" data-validation-error-msg="Поле обязательное для заполнения" data-validation-error-msg-container="#errorCategory">
+								<select class="selecters" data-validation="required" data-validation-event="change" data-validation-error-msg="Поле обязательное для заполнения" data-validation-error-msg-container="#errorCategory">
 									<option value="">грн.</option>
 									<option value="Рубрика 1">евро.</option>
 									<option value="Рубрика 2">дол.</option>
@@ -543,8 +543,8 @@
 									<option value="Киевская область">Киевская область</option>
 									<option value="Черкасская область">Черкасская область</option>
 								</select> -->
-								<div class="col-md-5" style="">
-									<select class="form-control selects1" data-validation="required" data-validation-event="change" data-validation-error-msg="Поле обязательное для заполнения" data-validation-error-msg-container="#errorRegion">
+								<div class="col-md-7 no-padding" style="">
+									<select class="form-control selects1" data-validation="required" data-validation-event="change" data-validation-error-msg="Поле обязательное для заполнения" data-validation-error-msg-container="#errorRegion" textPlace="Укажите город">
 									  <option></option>
 									      <option value="AL">Киевская область</option>
 									      <option value="AR">Харьковская область</option>
@@ -572,7 +572,7 @@
 									<option value="Киев">Киев</option>
 									<option value="Черкассы">Черкассы</option>
 								</select> -->
-								<div class="col-md-5" style="">
+								<div class="col-md-7 no-padding" style="">
 									<select class="form-control selects"  data-validation="required" data-validation-event="change" data-validation-error-msg="Поле обязательное для заполнения" data-validation-error-msg-container="#errorCity">
 									  <option></option>
 									      <option value="AL">Киев</option>
@@ -659,7 +659,7 @@
 						</div>
 						<div class="area-form">
 							<div class="area-form-in use-type" id="errorType">
-								<select data-validation="required" data-validation-event="change" data-validation-error-msg="Поле обязательное для заполнения" data-validation-error-msg-container="#errorType">
+								<select class="selecters" data-validation="required" data-validation-event="change" data-validation-error-msg="Поле обязательное для заполнения" data-validation-error-msg-container="#errorType">
 									<option value="">Укажите тип</option>
 									<option value="Частное">Частное</option>
 									<option value="Бизнес">Бизнес</option>
@@ -792,51 +792,48 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
 	<script src="js/icheck.min.js"></script>
-	// <script src="js/jquery.selectric.js"></script>
+	<script src="js/jquery.selectric.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/jquery.form-validator.min.js"></script>
 	<script src="js/jquery.fancybox.js"></script>
 	<script src="js/jquery.fancybox-thumbs.js"></script>
 	<script src='js/dropzone.js'></script>
 	<script src="js/lightbox.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/3.5.2/select2.min.js"></script>
-  <script src="js/jquery-ui-1.7.2.custom.min.js"></script>  
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/3.5.2/select2.min.js"></script>
+	<script src="js/jquery-ui-1.7.2.custom.min.js"></script>  
 	<script src="js/main.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function(){
-        $( ".selects" ).select2( { placeholder: "укажите область"} );
-        $( ".selects1" ).select2( { placeholder: "укажите город"} );
-$(".dropzone").dropzone({
-   init: function () {
-    this.on("addedfile", function(file) {
-     // console.log(file);
-     $('.photoload-in').each(function(){
-      var photoIn = $(this).find('.dz-preview');
-      if( photoIn.length > 1){
-       $(this).next().find('.dropzone ').append( photoIn.last())
-       // $(this).find('.dz-preview').last().remove();
-      }
-      var photoDz = $('.photoload-in').find('.dz-preview');
-      if(photoDz.length > 10){
-       photoDz.last().remove();
-      }
-     })
-     $('.dz-error-mark').html('<div class="exit-icon-dz"></div>')
-     $('.dz-error-mark').on('click',function(){
-      $(this).parent().remove();
-     })
-    })
-   }
-  });
-    });
-     Dropzone.prototype.defaultOptions.autoProcessQueue = false;
-     // Dropzone.prototype.defaultOptions.maxFiles = 1;
-Dropzone.autoDiscover = false;
-
-	//event Dropzone
-
-
-  </script>
+	  <script type="text/javascript">
+	    $(document).ready(function(){
+	        $(".selects").select2( { placeholder: "укажите область"} );
+	        $(".selects1").select2( { placeholder: "укажите город"} );
+			$(".dropzone").dropzone({
+			   init: function () {
+			    this.on("addedfile", function(file) {
+			     // console.log(file);
+			     $('.photoload-in').each(function(){
+			      var photoIn = $(this).find('.dz-preview');
+			      if( photoIn.length > 1){
+			       $(this).next().find('.dropzone ').append( photoIn.last())
+			       // $(this).find('.dz-preview').last().remove();
+			      }
+			      var photoDz = $('.photoload-in').find('.dz-preview');
+			      if(photoDz.length > 10){
+			       photoDz.last().remove();
+			      }
+			     })
+			     $('.dz-error-mark').html('<div class="exit-icon-dz"></div>')
+			     $('.dz-error-mark').on('click',function(){
+			      $(this).parent().remove();
+			     })
+			    })
+			   }
+			  });
+		    });
+	     Dropzone.prototype.defaultOptions.autoProcessQueue = false;
+	     // Dropzone.prototype.defaultOptions.maxFiles = 1;
+			Dropzone.autoDiscover = false;
+		//event Dropzone
+	  </script>
 </body>
 </html>

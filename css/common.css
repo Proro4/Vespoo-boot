@@ -1051,6 +1051,7 @@ form .field:after { content: ""; display: table; clear: both; }
 .al-settings-sort .selectric .label { margin: 0 23px 0 0px; height: 33px; line-height: 33px; font-size: 18px; padding: 0; font-weight: normal;}
 .al-settings-sort .selectric:hover .label { color: #d4762d; }
 .al-settings-sort .selectric .button { width: 23px; height: 33px; border-left: 1px solid #dfdfdf; }
+.al-settings-sort .selectric{padding-left: 10px;}
 .al-settings-currency { float: left; margin-left: 7px; box-shadow: 0 0 6px rgba(1, 1, 1, 0.3); *zoom: 1; }
 .al-settings-currency:after { content: ""; display: table; clear: both; }
 .al-settings-currency li { float: left; }
@@ -2119,7 +2120,7 @@ input.photoload-item:active,input.photoload-item:focus{border:0; outline: 0; }
 	    background-color: #583d8b;
 }
 .for-cash .icheckbox_square-orange + p{
-	 line-height: 1.6;
+	 line-height: 2.1;
 }
 .for-cash .label-form{
 	min-height: 150px;
@@ -2131,14 +2132,14 @@ input.photoload-item:active,input.photoload-item:focus{border:0; outline: 0; }
 	    font-size: 16px;
 	    margin-left: 15px;
 	    padding: 0 5px;
-		height: 34px;
+		height: 35px;
 }
 
 .for-cash .area-for-cash{
     width: 120px;
     position: relative;
     display: inline-block;
-    bottom: 30px;
+    bottom: 35px;
     left: 160px;
 }
 
@@ -2154,7 +2155,7 @@ input.photoload-item:active,input.photoload-item:focus{border:0; outline: 0; }
 .for-cash .input-cash>span{
 	position: relative;
 	    right: 125px;
-    bottom: -6px;
+    bottom: 13px;
 }
 
 #profile-1 .post-title{
@@ -2706,9 +2707,6 @@ float: left;
 .chaked-search .area-form+.area-form{
 	  min-width: 20%;
 }
-.banner-inner-top.for-chaked-search{
-	margin-top: 50px;
-}
 .chaked-search .area-form .icheckbox_square-orange + p{
 	margin-right: 0;
 	font-size: 14px;
@@ -2726,4 +2724,32 @@ float: left;
 }
 .exit-icon-dz:hover{
 	opacity: 1;
+}
+.select2-container .select2-choice .select2-arrow{
+	width: 35px;
+	background: none;
+}
+.select2-container .select2-choice .select2-arrow:after {
+    content: "▾";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-top-color: #d4762d;
+    border-bottom: none;
+    font-size: 30px;
+}
+.select2-container .select2-choice .select2-arrow:hover::after{
+    border-top-color: #c4c4c4;
+}
+.select2-container .select2-choice .select2-arrow b{
+	background: none;
+}
+.select2-drop.select2-drop-above .select2-search input{
+	border-radius:0; 
 }
