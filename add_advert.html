@@ -818,15 +818,13 @@
 			       $(this).next().find('.dropzone ').append( photoIn.last())
 			       // $(this).find('.dz-preview').last().remove();
 			      } 
-			      else if( photoIn.length > 1){
-			       photoIn.last().remove();
-			      }
 			      var photoDz = $('.photoload-in').find('.dz-preview');
-			      // console.log($(this).index())
-			      if(photoDz.length > 10){
+			      var lastLoad = photoDz.closest('.photoload-in').index()
+			      if(photoDz.length > (10-lastLoad)){
 			       photoDz.last().remove();
 			      }
 			     })
+
 			     $('.dz-error-mark').html('<div class="exit-icon-dz"></div>')
 			     $('.dz-error-mark').on('click',function(){
 			      $(this).parent().remove();
