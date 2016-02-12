@@ -11,7 +11,7 @@ var categoryWidth =$('.lgbox-rubric-subcat').width();
 	$('.lgbox-rubric-block').css('left',leftLightbox);
 	$('.lgbox-rubric-subcat').css('left',leftLightbox);
 	$('.empty-rubric').on('click',function(){
-		$('.header > .container,.body-branding .service-1,.body-branding .service-2,.body-branding .banner-1').css('z-index','3');
+		$('.header > .container,.body-branding .service-1,.body-branding .service-2,.body-branding .banner-1,.footer').css('z-index','3');
 		setTimeout(function(){
 			$('.lightbox-rubric').css('display','block');
 		},300);
@@ -20,6 +20,7 @@ var categoryWidth =$('.lgbox-rubric-subcat').width();
 		$('.lightbox-rubric').css('display','none');
 		$('.header > .container').css('z-index','1000');
 		$('.body-branding .service-1,.body-branding .service-2,.body-branding .banner-1').css('z-index','1100');
+		$('.footer').css('z-index','6');
 	})
 	
 	$('.lgbox-rubric-block li a').each(function(){

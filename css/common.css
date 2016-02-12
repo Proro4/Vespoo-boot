@@ -2474,7 +2474,7 @@ input.photoload-item:active,input.photoload-item:focus{border:0; outline: 0; }
 	background: rgba(0,0,0,.5);
 	left: 0;
 	top: 0;
-	z-index: 1000;
+	z-index: 10000;
 	display:none;
 }
 .lgbox-rubric-block{
@@ -2584,6 +2584,9 @@ input.photoload-item:active,input.photoload-item:focus{border:0; outline: 0; }
 	color: #675096;
 	opacity: 1;
 	padding-left: 5px;
+}
+.alternativ-but{
+	padding: 20px 0 15px 0;
 }
 .alternativ-but span{
 	color: #c26e3b;

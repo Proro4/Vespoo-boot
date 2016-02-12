@@ -123,70 +123,6 @@
 			</div>
 		</div>
 		<!-- end header -->
-
-		<!-- begin body-branding  -->
-		<div class="body-branding">
-			<!-- begin banner  -->
-			<div class="banner-1">
-				<a href="#"><img src="img/banners/Banner-160x600.jpg" alt="banner"></a>
-				<button class="close-banner">x</button>
-			</div>
-			<!-- end banner -->
-
-			<!-- begin service-1  -->
-			<div class="service-1">
-				<a href="#"><img src="img/banners/service-1.jpg" alt="service"></a>
-				<button class="close-banner">x</button>
-			</div>
-			<!-- end service-1 -->
-
-			<!-- begin service-2  -->
-			<div class="service-2">
-				<a href="#"><img src="img/banners/service-1.jpg" alt="service"></a>
-				<button class="close-banner">x</button>
-			</div>
-			<!-- end service-2 -->
-		</div>
-		<!-- end body-branding -->
-
-		<!-- begin content-wrap  -->
-		<div class="content-wrap container">
-					<form class="post-preview has-validation-callback">
-				<img src="img/content/advert-photo.jpg" alt="">
-				<h3>Название файла</h3>
-				<p>Размер: 3 Mb</p>
-				<p>Высота: 422 px</p>
-				<p>Ширина : 630 px</p>
-				<b>Разместить данное фото ?</b>
-				<input type="submit" value="Подтвердить">
-				<button>отмена</button>
-			</form>
-			<form action="#" id="formAdvert" class="advert-add">
-				<fieldset>
-					<h2 class="post-title">Подать объявление</h2>
-					<!-- begin field -->
-					<div class="field">
-						<div class="label-form">
-							<label for="advertTitle">Заголовок <span class="text-orange">*</span></label>
-						</div>
-						<div class="area-form">
-							<div class="area-form-in">
-								<input type="text" id="advertTitle" class="form-input" name="advert-title" data-validation="required" data-validation-help="Пожалуйста, укажите заголовок" data-validation-error-msg="Поле обязательное для заполнения">
-								<i class="icon-success"></i>
-							</div>
-							<p class="desc">70 знаков осталось</p>
-						</div>
-					</div>
-					<!-- begin field -->
-					<div class="field">
-						<div class="label-form">
-							<label>Рубрика <span class="text-orange">*</span></label>
-						</div>
-						<div class="area-form ">
-							<div class="area-form-in" id="errorCategory">
-								<div class="empty-rubric"></div>
-								<input type="text" id="advertTitle" class="form-input rubric-tov" name="advert-title" data-validation-help="Пожалуйста, укажите заголовок" >
-								<i class="icon-success"></i>
 								<div class="lightbox-rubric">
 									<div class="lgbox-rubric-block">
 										<div class="lgbox-title">
@@ -393,6 +329,70 @@
 									</div>
 								<i class="icon-success"></i>
 							</div>
+
+		<!-- begin body-branding  -->
+		<div class="body-branding">
+			<!-- begin banner  -->
+			<div class="banner-1">
+				<a href="#"><img src="img/banners/Banner-160x600.jpg" alt="banner"></a>
+				<button class="close-banner">x</button>
+			</div>
+			<!-- end banner -->
+
+			<!-- begin service-1  -->
+			<div class="service-1">
+				<a href="#"><img src="img/banners/service-1.jpg" alt="service"></a>
+				<button class="close-banner">x</button>
+			</div>
+			<!-- end service-1 -->
+
+			<!-- begin service-2  -->
+			<div class="service-2">
+				<a href="#"><img src="img/banners/service-1.jpg" alt="service"></a>
+				<button class="close-banner">x</button>
+			</div>
+			<!-- end service-2 -->
+		</div>
+		<!-- end body-branding -->
+
+		<!-- begin content-wrap  -->
+		<div class="content-wrap container">
+					<form class="post-preview has-validation-callback">
+				<img src="img/content/advert-photo.jpg" alt="">
+				<h3>Название файла</h3>
+				<p>Размер: 3 Mb</p>
+				<p>Высота: 422 px</p>
+				<p>Ширина : 630 px</p>
+				<b>Разместить данное фото ?</b>
+				<input type="submit" value="Подтвердить">
+				<button>отмена</button>
+			</form>
+			<form action="#" id="formAdvert" class="advert-add">
+				<fieldset>
+					<h2 class="post-title">Подать объявление</h2>
+					<!-- begin field -->
+					<div class="field">
+						<div class="label-form">
+							<label for="advertTitle">Заголовок <span class="text-orange">*</span></label>
+						</div>
+						<div class="area-form">
+							<div class="area-form-in">
+								<input type="text" id="advertTitle" class="form-input" name="advert-title" data-validation="required" data-validation-help="Пожалуйста, укажите заголовок" data-validation-error-msg="Поле обязательное для заполнения" maxlength="70">
+								<i class="icon-success"></i>
+							</div>
+							<p class="desc">Максимум 70 знаков</p>
+						</div>
+					</div>
+					<!-- begin field -->
+					<div class="field">
+						<div class="label-form">
+							<label>Рубрика <span class="text-orange">*</span></label>
+						</div>
+						<div class="area-form ">
+							<div class="area-form-in" id="errorCategory">
+								<div class="empty-rubric"></div>
+								<input type="text" id="advertTitle" class="form-input rubric-tov" name="advert-title" data-validation-help="Пожалуйста, укажите заголовок" >
+								<i class="icon-success"></i>
 						</div>
 					</div>
 					<div class="clearfix"></div>
@@ -404,10 +404,10 @@
 						</div>
 						<div class="area-form">
 							<div class="area-form-in">
-								<textarea id="advertText" name="advert-area" class="form-area" data-validation="required" data-validation-help="Описание Вашего товара"  data-validation-error-msg="Поле обязательное для заполнения"></textarea>
+								<textarea id="advertText" name="advert-area" class="form-area" data-validation="required" data-validation-help="Описание Вашего товара"  data-validation-error-msg="Поле обязательное для заполнения" maxlength="500"></textarea>
 								<i class="icon-success"></i>
 							</div>
-							<p class="desc">4096 знаков осталось</p>
+							<p class="desc">Максимум 500 знаков</p>
 						</div>
 					</div>
 					<div class="field for-cash">
@@ -806,8 +806,8 @@
 	  <script type="text/javascript">
 	    $(document).ready(function(){
 	    	var placeText = $('.selects').attr('textPlace');
-	        $(".selects").select2( { placeholder: 'укажите город'} );
-	        $(".selects1").select2( { placeholder: "укажите город"} );
+	        $(".selects1").select2( { placeholder: "укажите Область"} );
+	        $(".selects").select2( { placeholder: 'укажите Город'} );
 			$(".dropzone").dropzone({
 			   init: function () {
 			    this.on("addedfile", function(file) {
@@ -817,8 +817,12 @@
 			      if( photoIn.length > 1){
 			       $(this).next().find('.dropzone ').append( photoIn.last())
 			       // $(this).find('.dz-preview').last().remove();
+			      } 
+			      else if( photoIn.length > 1){
+			       photoIn.last().remove();
 			      }
 			      var photoDz = $('.photoload-in').find('.dz-preview');
+			      // console.log($(this).index())
 			      if(photoDz.length > 10){
 			       photoDz.last().remove();
 			      }
