@@ -2771,16 +2771,39 @@ float: left;
 	border-radius:0; 
 }
 li.multifilters-in.multifilters-checkbox.one-checkbox{
-	/*padding-bottom: 50px;*/
+	padding-bottom: 25px;
+	margin-top: 0;
 }
 li.multifilters-in.multifilters-checkbox.one-checkbox a{
 	background: transparent;
+	height: 0;
+	overflow: hidden;
 	/*border:0;*/
+	z-index: 1;	
 }
 li.multifilters-in.multifilters-checkbox.one-checkbox .nav-menu{
 	display: block !important;
 	border:0;
+	position: relative;
+	bottom:45px;
+	z-index: 1;
+	box-shadow: none;
+	background: transparent;
+}
+li.multifilters-in.multifilters-checkbox.one-checkbox.is-active a{
+	border-top: 0;
+	box-shadow: none;
 }
 li.multifilters-in.multifilters-checkbox.one-checkbox .nav-menu li:first-child{
 	display: none;
+}
+li.multifilters-in.multifilters-checkbox.one-checkbox .clear-filter-btn{
+	display: none !important;
+}
+li.multifilters-in.multifilters-checkbox.one-checkbox .icheckbox_square-orange{
+	/*margin-top: 2px;*/ 	
+}
+
+li.multifilters-in.multifilters-checkbox.one-checkbox .nav-menu li label i{
+	margin-top: 0;
 }
