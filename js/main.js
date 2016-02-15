@@ -132,7 +132,6 @@ $(document).ready(function(){
 	})
 //check-price arrow transform
 $('.check-price .field').click(function(){
-	console.log('1');
 })
 
 
@@ -1014,7 +1013,6 @@ if ($('.multifilters-wrap').length) {
 			}
 			// var checkBlock = $(this).find('img');
 			// if (checkBlock.css('display') == 'none') {
-			// 	console.log('block');
 			// 	$('.header').css('top', '0');
 			// }
 		});
@@ -1091,7 +1089,6 @@ if ($('.multifilters-wrap').length) {
 			$('.city-wrap#'+redId+'').show();
 			$('.location-title-region').show().text(regionMark);
 			var textRegion = $('.name-find-region').html();
-			console.log(textRegion)
 			$('.location-title-this-region').show().text(''+textRegion+'');
 			$('.location-title-back').show();
 			$('input[type="hidden"]').val(redId);

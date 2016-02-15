@@ -161,7 +161,7 @@
 											<li id="rubric-cat-7"><p>Работа</p></li>
 											<li id="rubric-cat-8"><p>Транспорт</p></li>
 											<li id="rubric-cat-9"><p>Хобби, отдых и спорт</p></li>
-											<li ><p>Электроника</p></li>
+											<li id="rubric-cat-10" ><p>Электроника</p></li>
 										</ul>
 										<ul class="lg-rubric-subcat" subcat="rubric-cat-1">
 											<li id="rubric-subcat-1"><p>Бизнес и услуги</p></li>
@@ -171,7 +171,7 @@
 											<li id="rubric-subcat-5"><p>Мода и стиль</p></li>
 											<li id="rubric-subcat-6"><p>Недвижимость</p></li>
 											<li id="rubric-subcat-7"><p>Работа</p></li>
-											<li><p>Электроника</p></li>
+											<li id="rubric-subcat-10"><p>Электроника</p></li>
 										</ul>
 										<ul class="lg-rubric-subcat" subcat="rubric-cat-2">
 											<li id="rubric-subcat-1"><p>Бизнес и услуги</p></li>
@@ -182,7 +182,7 @@
 											<li id="rubric-subcat-7"><p>Работа</p></li>
 											<li id="rubric-subcat-8"><p>Транспорт</p></li>
 											<li id="rubric-subcat-9"><p>Хобби, отдых и спорт</p></li>
-											<li><p>Электроника</p></li>
+											<li id="rubric-subcat-10"><p>Электроника</p></li>
 										</ul>
 										<ul class="lg-rubric-subcat" subcat="rubric-cat-3">
 											<li id="rubric-subcat-1"><p>Бизнес и услуги</p></li>
@@ -248,12 +248,12 @@
 											<li id="rubric-subcat-9"><p>Хобби, отдых и спорт</p></li>
 											<li id="rubric-subcat-10"><p>Электроника</p></li>
 										</ul>
-										<ul class="lg-rubric-subcat" subcat="rubric-cat-10">
+										<!-- <ul class="lg-rubric-subcat" subcat="rubric-cat-10">
 											<li id="rubric-subcat-7"><p>Работа</p></li>
 											<li id="rubric-subcat-8"><p>Транспорт</p></li>
 											<li id="rubric-subcat-9"><p>Хобби, отдых и спорт</p></li>
 											<li id="rubric-subcat-10"><p>Электроника</p></li>
-										</ul>
+										</ul> -->
 										<ul class="lg-rubric-subname" subcat="rubric-subcat-1">
 											<li id="rubric-subcat-7"><p>Работа</p></li>
 											<li id="rubric-subcat-8"><p>Транспорт</p></li>
@@ -819,11 +819,11 @@
 			       // $(this).find('.dz-preview').last().remove();
 			      } 
 			      var photoDz = $('.photoload-in').find('.dz-preview');
-			      var lastLoad = photoDz.closest('.photoload-in').index()
+			      var lastLoad = photoDz.closest('.photoload-in').index();
 			      if(photoDz.length > (10-lastLoad)){
 			       photoDz.last().remove();
 			      }
-			     })
+			     });
 
 			     $('.dz-error-mark').html('<div class="exit-icon-dz"></div>')
 			     $('.dz-error-mark').on('click',function(){
