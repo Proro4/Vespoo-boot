@@ -1132,7 +1132,9 @@ form .field:after { content: ""; display: table; clear: both; }
 
 .multifilters { padding: 25px 20px; background-color: #f1eff0; *zoom: 1; }
 .multifilters:after { content: ""; display: table; clear: both; }
-.multifilters .multifilters-in { *zoom: 1; }
+.multifilters .multifilters-in { *zoom: 1;  }
+.multifilters .multifilters-in a{ height: 35px;}
+.multifilters-in.multifilters-select a,li.multifilters-in.multifilters-checkbox a,li.multifilters-in.multifilters-input a{height: 25px;}
 .multifilters .multifilters-in:after { content: ""; display: table; clear: both; }
 .multifilters .multifilters-in + .multifilters-in { margin-top: 20px; }
 .multifilters .multifilters-in + .multifilters-in.multifilters-both { margin-top: 10px; }
@@ -1292,7 +1294,7 @@ form .field:after { content: ""; display: table; clear: both; }
 .blog-aside { float: right; margin-top: 30px; width: 300px; *zoom: 1; }
 .blog-aside:after { content: ""; display: table; clear: both; }
 
-.form-subscribe { padding: 20px; background-color: #f1f0f0; }
+.form-subscribe { padding: 20px; background-color: #f1f0f0;      }
 .form-subscribe h3 { font-size: 18px; text-align: center; text-transform: uppercase; font-weight: normal; margin: 0; }
 .form-subscribe form { margin-top: 15px; }
 .form-subscribe .field { position: relative; }
@@ -1482,6 +1484,8 @@ form .field:after { content: ""; display: table; clear: both; }
 ***-------------------------------------------------------------------------------------------------
 ***-------------------------------------------------------------------------------------------------
 ***---------------------------------------------------------------------------------------------***/
+
+  
 .arrow-top { display: none; position: relative; transition: 0.3s all; background: #008000 none repeat scroll 0% 0%;
     margin: 0px auto; width: 1300px; text-align: center;}
     @media screen and (max-width: 1260px){
@@ -2237,7 +2241,7 @@ input.photoload-item:active,input.photoload-item:focus{border:0; outline: 0; }
   	display: inline-block;
   	font-size: 16px;
   	line-height: 35px;
- 	margin-left: 15px;
+ 	margin-left: 10px;
   }
   .ad-is-date li+li{
   	margin-left: 200px;
@@ -2811,4 +2815,7 @@ li.multifilters-in.multifilters-checkbox.one-checkbox .icheckbox_square-orange{
 
 li.multifilters-in.multifilters-checkbox.one-checkbox .nav-menu li label i{
 	margin-top: 0;
+}
+.blog-list-r{
+	padding-right: 50px;
 }
