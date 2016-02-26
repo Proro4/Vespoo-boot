@@ -1494,6 +1494,14 @@ $(document).ready(function(){
 // Selectric
 	$('.selecters').selectric();
 
+
+		$('.msg-status li a').on('click',function(){
+			$('.msg-status li').removeClass('is-active');
+			$(this).parent().addClass('is-active');
+			var clickStatus = $(this).attr('ad-in');
+			$('.ad-is').css('display',"none");
+			$('#'+clickStatus+'').css('display','block');
+		})
 	})
 
 
