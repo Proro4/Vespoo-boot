@@ -1216,7 +1216,14 @@ if ($('.multifilters-wrap').length) {
 		bannerHide();
 	});
 	$('.close-banner').on('click', function(){
-		$(this).parent().hide();
+		if($(this).parent().find('a,div,span,img').css('display') != 'none'){
+			$(this).parent().find('a,div,span,img').hide();
+			$(this).css('left','0px');
+		}
+		else{
+			$(this).parent().find('a,div,span,img').show();
+			$(this).css('left','');
+		}
 	});
 
 	var advertStart;
@@ -1502,8 +1509,15 @@ $(document).ready(function(){
 			$('.ad-is').css('display',"none");
 			$('#'+clickStatus+'').css('display','block');
 		})
-	})
 
+		//del first slide
+
+		$('.slick-track .advert-slider-in:eq(0)').remove();
+	})
+	
+		//first-felp-fix
+		$('.nav-help>li').removeClass('is-active');
+		$('.nav-help>li:eq(0)').addClass('is-active');
 
 //city-search hiiden
 $('.form-group').on('click',function(){
