@@ -1088,8 +1088,11 @@ if ($('.multifilters-wrap').length) {
 			var redId = $(this).attr('id');
 			$('.city-wrap#'+redId+'').show();
 			$('.location-title-region').show().text(regionMark);
-			var textRegion = $('.name-find-region').html();
-			$('.location-title-this-region').show().text(''+textRegion+'');
+			var textRegion = $('.location-title-region').html();
+			console.log(textRegion)
+			$('.location-title-this-region').show();
+			$('.location-title-this-region').html(''+textRegion+'');
+
 			$('.location-title-back').show();
 			$('input[type="hidden"]').val(redId);
 
@@ -1100,7 +1103,8 @@ if ($('.multifilters-wrap').length) {
 				$('.location-wrap').hide();
 				$('.location-wrap input').val('');
 				$('.location-wrap .clear-input').hide();
-				$('.city-wrap').hide();				$('.region-wrap').show();
+				$('.city-wrap').hide();				
+				$('.region-wrap').show();
 				$('.location-title-region').hide();
 				$('.location-title-this-region').hide();
 				$('.location-title-back').hide();
