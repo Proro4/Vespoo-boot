@@ -1089,7 +1089,7 @@ if ($('.multifilters-wrap').length) {
 			$('.location-title-this-region').html(''+textRegion+'');
 
 			$('.location-title-back').show();
-			$('input[type="hidden"]').val(redId);
+			$('input.icCurrent-reg[type="hidden"]').text(redId);
 
 		});
 		 $('.city-list li').on('click', function(){
@@ -1104,7 +1104,7 @@ if ($('.multifilters-wrap').length) {
 				$('.location-title-this-region').hide();
 				$('.location-title-back').hide();
 				var redId = $(this).attr('id');
-				$('input[type="hidden"]').text(redId);
+				$('input.icCurrent-city[type="hidden"]').text(redId);
 			});
 	
 
