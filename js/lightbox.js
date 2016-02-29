@@ -29,14 +29,14 @@ var categoryWidth =$('.lgbox-rubric-subcat').width();
 	 	    }
  	    })
 	$('.lgbox-rubric-block li a').on('click',function(){
-		$('.lg-rubric-cat li').removeClass('active-cat')
+		$('.lg-rubric-cat li').removeClass('active-cat');
 
-		$(this).addClass('active-cat')
+		$(this).addClass('active-cat');
 		 var textrubric = $(this).find('p').html();
 		   var clickId = this.id;
 		   $('.lg-rubric-cat li').each(function(){
 		   	if($(this).find('p').html() == textrubric){
-		   		$(this).addClass('active-cat')
+		   		$(this).addClass('active-cat');
 		   	}
 		   })
 		   	
@@ -69,8 +69,8 @@ var categoryWidth =$('.lgbox-rubric-subcat').width();
 	 	    }
  	    })
 	$('.lg-rubric-cat li').on('click',function(){
-		$('.lg-rubric-cat li').removeClass('active-cat')
-		$(this).addClass('active-cat')
+		$('.lg-rubric-cat li').removeClass('active-cat');
+		$(this).addClass('active-cat');
 		var textrubric = $(this).html();
 	    var clickId = this.id;
  	    $('li[lgname="subcat"]').html(textrubric);
@@ -99,8 +99,8 @@ var categoryWidth =$('.lgbox-rubric-subcat').width();
 
 	
 	$('.lg-rubric-subcat li').on('click',function(){
-		$('.lg-rubric-subcat li').removeClass('active-cat')
-		$(this).addClass('active-cat')
+		$('.lg-rubric-subcat li').removeClass('active-cat');
+		$(this).addClass('active-cat');
 	    var clickIdSub = this.id;
 		$('.lg-rubric-subname').css('display','none');
 		$('.lg-rubric-subname[subcat="'+clickIdSub+'"]').css('display','inline-block');
@@ -218,7 +218,7 @@ $(document).ready(function(){
 	var cols = document.querySelectorAll('.photoload .dropzone');
 	[].forEach.call(cols, function(col) {
 	  col.addEventListener('dragstart', handleDragStart, false);
-	  col.addEventListener('dragenter', handleDragEnter, false)
+	  col.addEventListener('dragenter', handleDragEnter, false);
 	  col.addEventListener('dragover', handleDragOver, false);
 	  col.addEventListener('dragleave', handleDragLeave, false);
 	  col.addEventListener('drop', handleDrop, false);
