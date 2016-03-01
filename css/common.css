@@ -250,12 +250,12 @@ body { min-width: 1020px;}
 .header > .container { z-index: 1000; }
 
 .body-branding { z-index: 3; top: 0; left: 0; bottom: 0; right: 0; }
-.body-branding .block-links-1 { position: absolute; z-index: 1100; right: 20px; top: 519px; z-index: 5; }
-.body-branding .block-links-1 > a { display: block; }
-.body-branding .block-links-2 { position: fixed; z-index: 1100; top: 100px; left: 0; }
-.body-branding .block-links-2 > a { display: block; }
-.body-branding .block-links-3 { position: fixed; z-index: 1100; top: 450px; left: 0; }
-.body-branding .block-links-3 > a { display: block; }
+.body-branding .notice-wrap { position: absolute; z-index: 1100; right: 20px; top: 519px; z-index: 5; }
+.body-branding .notice-wrap > a { display: block; }
+.body-branding .service-1 { position: fixed; z-index: 1100; top: 100px; left: 0; }
+.body-branding .service-1 > a { display: block; }
+.body-branding .service-2 { position: fixed; z-index: 1100; top: 450px; left: 0; }
+.body-branding .service-2 > a { display: block; }
 
 .content-wrap { position: relative; z-index: 4; margin-top: 185px; }
 
