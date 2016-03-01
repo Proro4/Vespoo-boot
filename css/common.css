@@ -885,7 +885,7 @@ form .field:after { content: ""; display: table; clear: both; }
 .notice-photo-in { overflow: hidden; position: relative; }
 .notice-photo-in:hover .notice-photo-mask { top: 0; -webkit-transition: all 0.4s; transition: all 0.4s; }
 
-.notice-desc-list { margin-top: 10px; padding: 0 0 0 20px; *zoom: 1; }
+.notice-desc-list { margin-top: 10px; padding: 0 0 0 20px; *zoom: 1;  word-break:break-all;}
 .notice-desc-list:after { content: ""; display: table; clear: both; }
 .notice-desc-list .notice-desc-el { float: left; margin-top: 10px; padding-right: 20px; width: 50%; }
 .notice-desc-list .notice-desc-el a:hover { text-decoration: underline; }
