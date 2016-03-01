@@ -885,14 +885,14 @@ form .field:after { content: ""; display: table; clear: both; }
 .notice-photo-in { overflow: hidden; position: relative; }
 .notice-photo-in:hover .notice-photo-mask { top: 0; -webkit-transition: all 0.4s; transition: all 0.4s; }
 
-.notice-desc-list { margin-top: 10px; padding: 0 0 0 20px; *zoom: 1;  word-break:break-all;}
+.notice-desc-list { margin-top: 10px; padding: 0 0 0 20px; *zoom: 1; }
 .notice-desc-list:after { content: ""; display: table; clear: both; }
 .notice-desc-list .notice-desc-el { float: left; margin-top: 10px; padding-right: 20px; width: 50%; }
 .notice-desc-list .notice-desc-el a:hover { text-decoration: underline; }
 
 .title-sm { margin-top: 30px; margin-bottom: 10px; margin-left: 20px; font-size: 18px; line-height: 20px; color: #d4762d; text-transform: uppercase; font-weight: bold; }
 
-.notice-desc { margin-left: 20px; margin-right: 20px; font-size: 18px; line-height: 22px; }
+.notice-desc { margin-left: 20px; margin-right: 20px; font-size: 18px; line-height: 22px; word-break: break-all;}
 
 .notice-slider-in { padding: 5px; width: 130px; height: 130px; }
 .notice-slider-in .img-wrapper { display: inline-block; padding: 5px; width: 120px; height: 120px; line-height: 105px; vertical-align: middle; text-align: center; background-color: #fff;  box-shadow: 0 0 3px rgba(1, 1, 1, 0.3); }
