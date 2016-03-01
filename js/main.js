@@ -1206,9 +1206,9 @@ if ($('.multifilters-wrap').length) {
 // banner
 	function bannerHide() {
 		if ($(window).width() < 1342) {
-			$('.banner-1, .service-1, .service-2').hide();
+			$('.block-links-1, .block-links-2, .block-links-3').hide();
 		} else {
-			$('.banner-1, .service-1, .service-2').show();
+			$('.block-links-1, .block-links-2, .block-links-3').show();
 		}
 	}
 	bannerHide();
@@ -1446,25 +1446,25 @@ $(window).scroll(function () {
 		$('.btn.btn-default.field.submit').css('background-color','#9785b7');
 	}
 	if(heightTop >= 470){
-		$('.body-branding .banner-1').css('position','fixed');
-		$('.body-branding .banner-1').css('top','45px');
+		$('.body-branding .block-links-1').css('position','fixed');
+		$('.body-branding .block-links-1').css('top','45px');
 	}
 	else{
-		$('.body-branding .banner-1').css('position','absolute');
-		$('.body-branding .banner-1').css('top','519px');
+		$('.body-branding .block-links-1').css('position','absolute');
+		$('.body-branding .block-links-1').css('top','519px');
 	}
 	if(heightTop > bodyHeight-foot*2.3){
-		$('.body-branding .banner-1').css('position','absolute');
-		$('.body-branding .banner-1').css('top','auto');
-		$('.body-branding .banner-1').css('bottom',foot+30);
+		$('.body-branding .block-links-1').css('position','absolute');
+		$('.body-branding .block-links-1').css('top','auto');
+		$('.body-branding .block-links-1').css('bottom',foot+30);
 
-		$('.service-1').css({'position':'absolute','top':'auto','bottom':foot+380});
-		$('.service-2').css({'position':'absolute','top':'auto','bottom':foot+30});
+		$('.block-links-2').css({'position':'absolute','top':'auto','bottom':foot+380});
+		$('.block-links-3').css({'position':'absolute','top':'auto','bottom':foot+30});
 
 	}else{
 
-		$('.service-1').css({'position':'fixed',bottom:'auto','top': '50px'});
-		$('.service-2').css({'position':'fixed',bottom:'auto','top': '400px'});
+		$('.block-links-2').css({'position':'fixed',bottom:'auto','top': '50px'});
+		$('.block-links-3').css({'position':'fixed',bottom:'auto','top': '400px'});
 	}
 
 	if(heightTop > 600){
