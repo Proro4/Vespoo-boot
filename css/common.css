@@ -854,8 +854,8 @@ form .field:after { content: ""; display: table; clear: both; }
 .banner-inner-top > a { display: inline-block; width: 100%; height: 100%; line-height: 90px; vertical-align: middle; text-align: center; }
 .banner-inner-top > a img { max-width: 728px; max-height: 90px; vertical-align: middle; }
 
-.advert-wrap { position: relative; margin-top: 20px; padding-bottom: 50px; *zoom: 1; }
-.advert-wrap:after { content: ""; display: table; clear: both; }
+.notice-wrap { position: relative; margin-top: 20px; padding-bottom: 50px; *zoom: 1; }
+.notice-wrap:after { content: ""; display: table; clear: both; }
 
 .advert-in { float: left; width: 650px; *zoom: 1; }
 .advert-in:after { content: ""; display: table; clear: both; }
@@ -1941,7 +1941,7 @@ input.photoload-item:active,input.photoload-item:focus{border:0; outline: 0; }
 }
 .fallback{display: none;}
 
-.advertlist-wrap .aadvertlist-aside,.advertlist-wrap .advertlist-aside,.advert-wrap .advert-in ,.registration .registration-in{
+.advertlist-wrap .aadvertlist-aside,.advertlist-wrap .advertlist-aside,.notice-wrap .advert-in ,.registration .registration-in{
 	padding-left: 0;
 }
 .advertlist-wrap .advertlist-in{
