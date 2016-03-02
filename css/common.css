@@ -1307,7 +1307,7 @@ form .field:after { content: ""; display: table; clear: both; }
 .blog-news { margin-top: 25px; }
 .blog-news h3 { padding-top: 13px; padding-bottom: 13px; font-size: 20px; color: #fff; line-height: 24px; text-align: center; font-weight: normal; text-transform: uppercase; background-color: #d4762d; }
 .blog-news ul { margin-top: 10px; font-size: 15px; line-height: 25px; text-align: center; }
-.blog-news ul li a:hover { text-decoration: underline; }
+.blog-news ul li a:hover { text-decoration: underline;  color: #583d8b;}
 .blog-news ul li i { display: inline-block; margin-right: 15px; vertical-align: -2px; }
 
 .blog-tags { margin-top: 30px; }
