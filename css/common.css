@@ -1190,7 +1190,7 @@ form .field:after { content: ""; display: table; clear: both; }
 .multifilters li .nav-menu li a:after { content: ""; display: table; clear: both; }
 .multifilters li .nav-menu li a i { float: right; margin-top: 2px; }
 .multifilters li .nav-menu li .nav-submenu { display: none; position: absolute; top: 0; left: 100%; background-color: #fff; box-shadow: 0 0 6px rgba(1, 1, 1, 0.3); }
-.multifilters li .nav-menu li .nav-submenu-h { display: none; position: absolute; top: 0; left: 100%; background-color: #fff; box-shadow: 0 0 6px rgba(1, 1, 1, 0.3); max-height: 300px; overflow-y:scroll;}
+.multifilters li .nav-menu li .nav-submenu-h { display: none; position: absolute; top: 0; left: 100%; background-color: #fff; box-shadow: 0 0 6px rgba(1, 1, 1, 0.3); max-height: 300px; overflow-y:auto; overflow-x: hidden;}
 
 /* pagination */
 .pagination { margin-top: 20px; line-height: 25px; *zoom: 1;  width: 100%;}
