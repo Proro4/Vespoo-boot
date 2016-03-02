@@ -873,7 +873,7 @@ form .field:after { content: ""; display: table; clear: both; }
 .actions-list li + li { margin-left: 15px; }
 .actions-list li a { display: block; padding: 8px 10px; box-shadow: 0 0 3px rgba(1, 1, 1, 0.3);  }
 .actions-list li a .icon-star-sm { display: inline-block; margin-right: 5px; width: 14px; height: 13px; line-height: 20px; background: url("../img/other/star-sm.png") no-repeat center center; }
-.actions-list li a:hover { box-shadow: 0 0 5px 1px #d4762d;  border:1px solid d4762d;}
+.actions-list li a:hover { box-shadow: 0 0 5px 1px #d4762d;  color:#583d8b;}
 
 .notice-photo { margin-top: 20px; padding: 10px; min-height: 120px; text-align: center; box-shadow: 0 0 3px rgba(1, 1, 1, 0.3); }
 .notice-photo-empty { display: none; font-size: 24px; line-height: 120px; text-decoration: underline; color: #ccc; }
@@ -2865,4 +2865,26 @@ li.multifilters-in.multifilters-checkbox.one-checkbox .nav-menu li label i{
     margin-top: 5px;
 
     max-width: 85%;
+}
+
+/** preview-page **/
+
+.preview-page{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	height: 220px;
+	width: 100%;
+	background: white;
+	z-index: 500;	
+	border-top: 1px solid #D4762D;
+	text-align: center;
+	padding-top: 25px;
+}
+.preview-page p{
+ 	font-size: 18px;
+}
+.preview-page .field{
+	width: 300px;
+	margin: 0 auto
 }

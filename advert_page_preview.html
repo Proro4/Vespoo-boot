@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/png">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Wespoo</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="css/bundle.min.css">
+	<link rel="stylesheet" href="css/orange.css">
+	<link rel="stylesheet" href="css/selectric.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.css">
+	<link rel="stylesheet" href="css/jquery.fancybox-thumbs.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.css">
+</head>
+<body>
+	<!--Begin Arrow-top-->
+<div class="arrow-top">
+	<div class="arrow-to-top">
+		<a id="top" href=""><img src="" alt=""></a>
+	</div>
+</div>
+<!--end Arrow-top-->
+	<!-- begin wrapper  -->
+	<div id="main" class="wrapper">
+		<!-- begin banner-top -->
+		<div class="banner-top">
+			<a href="#" class="banner-top-in"></a>
+			<button class="close-banner-fix">x</button>
+		</div>
+		<!-- end banner-top -->
+		
+			<!-- begin header  -->
+		
+		<div class="header" name='header'>
+			<div class="container" >
+				<div class="row no-margin">
+				<!-- begin header__top  -->
+				<div class="header-top" >
+					<a href="index.html"  class="logo"><img src="img/l
+					ogo.png" alt="Wespoo"></a>
+					<a href="#" class="post-new">+ Подать объявление</a>
+					<a href="#" class="userbox">Мой профиль</a>
+					<ul class="lang-selector">
+						<li><a href="#">язык</a></li>
+						<li><a href="#">мова</a></li>
+					</ul>
+				</div>
+				<!-- end header__top -->
+
+				<form action="#" id="searchForm" class="form-search">
+					<div class="form-group location col-xs-4 no-padding">
+						<input type="text" class="form-control field search city-search" id="cityCurrent" placeholder="Город, область...">
+						<input type="hidden" id='icCurrent' value="">
+							<a href="#" class="clear-input reset icon-all-close"></a>
+					</div>
+					<div class="form-group col-xs-4 no-padding">
+					   		<input type="text" class="form-control field search notice-search" placeholder="8 350 432 объявлений">
+					</div>
+				 		<button type="submit" class="col-xs-3 btn btn-default field submit">Поиск</button>
+
+				</form>
+
+				<!-- begion location-wrap -->
+				<div class="location-wrap">
+					<div class="location-title">
+						<button class="location-title-all">Искать по всей стране</button>
+						<br>
+
+						<button class="location-title-region region-hover">Искать по всей области</button>
+						<button class="location-title-this-region"></button>
+						<button class="location-title-back">вернуться к выбору области</button>
+					</div>
+					<div class="search-city-wrap">
+						<input type="text" id="cityBox" placeholder="Начните вводить город">
+						<a href="#" class="clear-input icon-all-close"></a>
+					</div>
+					<div class="region-wrap">
+						<ul class="region-list"><li id="reg1">Автономная Республика Крым </li><li id="reg2">Винницкая область</li></ul>
+					</div>
+					<div class="city-wrap" id="reg1">
+						<ul class="city-list">
+							<li id="city1-1">Киев</li><li id="city1-2">Белая Церковь</li><li id="city1-3">Буча</li>
+						</ul>
+					</div>
+					<div class="city-wrap" id="reg2">
+						<ul class="city-list">
+							<li id="city2-1">Буча</li><li id="city2-2">Иванков</li><li id="city2-2">Борисполь</li>
+						</ul>
+					</div>
+					<div class="exit-location-wrap">
+						закрыть <span>X</span>
+					</div>
+				</div>
+				<!-- end location-wrap -->
+				<div class="search-city">
+					<p>Где вы:</p>
+					<button  class="take-city">Киев</button>
+					<button  class="take-city">Одесса</button>
+					<div class="search-city-line"></div>
+					<button class="take-searchForm">Выбрать город</button>
+					<i>X</i>
+				</div>
+			</div>
+			</div>
+		</div>
+
+		<!-- end header -->
+
+		<!-- begin body-branding  -->
+		<div class="body-branding">
+			<!-- begin banner  -->
+			<div class="banner-1">
+				<a href="#"><img src="img/banners/Banner-160x600.jpg" alt="banner"></a>
+				<button class="close-banner">x</button>
+			</div>
+			<!-- end banner -->
+
+			<!-- begin service-1  -->
+			<div class="service-1">
+				<a href="#"><img src="img/banners/service-1.jpg" alt="service"></a>
+				<button class="close-banner">x</button>
+			</div>
+			<!-- end service-1 -->
+
+			<!-- begin service-2  -->
+			<div class="service-2">
+				<a href="#"><img src="img/banners/service-1.jpg" alt="service"></a>
+				<button class="close-banner">x</button>
+			</div>
+			<!-- end service-2 -->
+		</div>
+		<!-- end body-branding -->
+
+		<!-- begin content-wrap  -->
+		<div class="content-wrap container">
+			<!-- begin breadcrumbs  -->
+			<div class="breadcrumbs">
+				<ul class="breadcrumbs-list">
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Раздел</a></li>
+					<li><a href="#">Подраздел</a></li>
+				</ul>
+			</div>
+			<!-- end breadcrumbs -->
+
+			<!-- begin banner-inner__top  -->
+			<div class="banner-inner-top">
+				<a href="#"><img src="img/banners/banner-inner-top.jpg" alt="banner"></a>
+			</div>
+			<!-- end banner-inner__top -->
+
+			<!-- begin notice-wrap-wrap  -->
+			<div class="notice-wrap">
+				<!-- begin notice-in  -->
+				<div class="notice-in col-xs-8">
+					<h2 class="notice-title">плащ палатка солдатская</h2>
+					<!-- begin notice-info  -->
+					<div class="notice-info">
+						<a href="#" class="show-map-link">Львов, Франковский район, Львовская область</a>
+						<p class="notice-info-el">
+							<span class="notice-date">Добавлено в 18:07, 2 июля, 2015 г.</span>
+							<span class="notice-id">Номер обьявления: 215520620</span>
+						</p>
+					</div>
+					<!-- end notice-info -->
+
+					<ul class="actions-list">
+						<li>
+							<a href="#"><i class="icon-star-sm"></i> В избранное</a>
+						</li>
+						<li>
+							<a href="#"><i class="icon-star-sm"></i> Выделить</a>
+						</li>
+						<li>
+							<a href="#"><i class="icon-star-sm"></i> Поднять</a>
+						</li>
+					</ul>
+					
+					<!-- begin notice-photo -->
+					<div class="notice-photo">
+						<div class="notice-photo-in">
+							<img src="img/content/image-for-test.jpg" alt="photo">
+							<!-- begin mask -->
+							<div class="notice-photo-mask">
+								<a href="img/content/image-for-test.jpg" class="notice-fancybox" data-fancybox-group="notice-gallery" data-width="1280" data-height="720" title="плащ палатка солдатская плащ палатка солдатская плащ палатка солдатская">
+									<p>Смотреть</p>
+								</a>
+							</div>
+						</div>
+						<p class="notice-photo-empty">Без фото</p>
+					</div>
+					<!-- end notice-photo -->
+
+					<!-- begin notice-desc-list -->
+					<div class="notice-desc-list">
+						<!-- begin row -->
+						<div class="row">
+							<div class="notice-desc-el">
+								<span><strong>Обьявление от: </strong></span>
+								<a href="#">Частного лица</a>
+							</div>
+							<div class="notice-desc-el">
+								<span><strong>Тип товара: </strong></span>
+								<a href="#">Бытовая техника</a>
+							</div>
+						</div>
+						<!-- begin row -->
+						<div class="row">
+							<div class="notice-desc-el">
+								<span><strong>Состояние: </strong></span>
+								<a href="#">Новое</a>
+							</div>
+							<div class="notice-desc-el">
+								<span><strong>Клас: </strong></span>
+								<a href="#">Вентиляторы</a>
+							</div>
+						</div>
+					</div>
+					<!-- end notice-desc-list -->
+
+					<h3 class="title-sm">Описание товара</h3>
+					<p class="notice-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Нужно ведь проверить и кириллицу! Нужно ведь проверить и кириллицу! Нужно ведь проверить и кириллицу! Нужно ведь проверить и кириллицу! Нужно ведь проверить и кириллицу! Нужно ведь проверить и кириллицу! Нужно ведь проверить и кириллицу!</p>
+
+					<h3 class="title-sm">Дополнительные изображения</h3>
+					<!-- begin notice-slider  -->
+					<div class="notice-slider">
+						<div class="notice-slider-in">
+							<a href="img/content/notice-photo.jpg" class="img-wrapper notice-fancybox" data-width="1280" data-height="720" title="плащ палатка солдатская плащ палатка солдатская плащ палатка солдатская">
+								<img src="img/content/notice-photo.jpg" alt="photo">
+							</a>
+						</div>
+						<div class="notice-slider-in">
+							<a href="img/content/notice-photo.jpg" class="img-wrapper notice-fancybox" data-width="1280" data-height="720" title="плащ палатка солдатская плащ палатка солдатская плащ палатка солдатская">
+								<img src="img/content/notice-photo.jpg" alt="photo">
+							</a>
+						</div>
+						<div class="notice-slider-in">
+							<a href="img/content/notice-photo.jpg" class="img-wrapper notice-fancybox" data-width="1280" data-height="720" title="плащ палатка солдатская плащ палатка солдатская плащ палатка солдатская">
+								<img src="img/content/notice-photo.jpg" alt="photo">
+							</a>
+						</div>
+						<div class="notice-slider-in">
+							<a href="img/content/image-for-test.jpg" class="img-wrapper notice-fancybox" data-width="1280" data-height="720" title="плащ палатка солдатская плащ палатка солдатская плащ палатка солдатская">
+								<img src="img/content/image-for-test.jpg" alt="photo">
+							</a>
+						</div>
+						<div class="notice-slider-in">
+							<a href="img/content/notice-photo.jpg" class="img-wrapper notice-fancybox" data-width="1280" data-height="720" title="плащ палатка солдатская плащ палатка солдатская плащ палатка солдатская">
+								<img src="img/content/notice-photo.jpg" alt="photo">
+							</a>
+						</div>
+						<div class="notice-slider-in">
+							<a href="img/content/notice-photo.jpg" class="img-wrapper notice-fancybox" data-width="1280" data-height="720" title="плащ палатка солдатская плащ палатка солдатская плащ палатка солдатская">
+								<img src="img/content/notice-photo.jpg" alt="photo">
+							</a>
+						</div>
+						<div class="notice-slider-in">
+							<a href="img/content/notice-photo.jpg" class="img-wrapper notice-fancybox" data-width="1280" data-height="720" title="плащ палатка солдатская плащ палатка солдатская плащ палатка солдатская">
+								<img src="img/content/notice-photo.jpg" alt="photo">
+							</a>
+						</div>
+						<div class="notice-slider-in">
+							<a href="img/content/notice-photo.jpg" class="img-wrapper notice-fancybox" data-width="1280" data-height="720" title="плащ палатка солдатская плащ палатка солдатская плащ палатка солдатская">
+								<img src="img/content/notice-photo.jpg" alt="photo">
+							</a>
+						</div>
+						<div class="notice-slider-in">
+							<a href="img/content/notice-photo.jpg" class="img-wrapper notice-fancybox" data-width="1280" data-height="720" title="плащ палатка солдатская плащ палатка солдатская плащ палатка солдатская">
+								<img src="img/content/notice-photo.jpg" alt="photo">
+							</a>
+						</div>
+						<div class="notice-slider-in">
+							<a href="img/content/test-175.jpg" class="img-wrapper notice-fancybox" data-width="1280" data-height="720" title="плащ палатка солдатская плащ палатка солдатская плащ палатка солдатская">
+								<img src="img/content/test-175.jpg" alt="photo">
+							</a>
+						</div>
+						<div class="notice-slider-in">
+							<a href="img/content/notice-photo.jpg" class="img-wrapper notice-fancybox" data-width="1280" data-height="720" title="плащ палатка солдатская плащ палатка солдатская плащ палатка солдатская">
+								<img src="img/content/notice-photo.jpg" alt="photo">
+							</a>
+						</div>
+					</div>
+					<!-- end notice-slider -->
+
+					<!-- begin notice-socials -->
+					<div class="notice-socials">
+						<span>Поделиться:</span>
+						<ul class="notice-socials-list">
+							<li><a href="#"><i class="icon-social-twitter"></i>35</a></li>
+							<li><a href="#"><i class="icon-social-fb"></i>35</a></li>
+							<li><a href="#"><i class="icon-social-vk"></i>35</a></li>
+							<li><a href="#"><i class="icon-social-class"></i>35</a></li>
+							<li><a href="#"><i class="icon-social-gplus"></i>35</a></li>
+						</ul>
+					</div>
+					<!-- end notice-socials -->
+
+					<!-- begin pagination-sm  -->
+					<div class="pagination-sm">
+						<a href="#" class="white-btn prev-btn">Назад</a>
+						<a href="#" class="white-btn next-btn">Следующее объявление</a>
+					</div>
+					<!-- end pagination-sm -->
+
+					<!-- begin author-contacts  -->
+					<div class="author-contacts">
+						<div class="row">
+							<span class="title-sm">Контакты автора объявления</span>
+							<a href="#author-msg" class="submit-btn author-q-popup"><i class="icon-all-mail-lg"></i>Написать автору</a>
+							<!-- begin popup question to author  -->
+							<div id="author-msg" class="author-msg-popup">
+								<div class="add-com">
+									<p class="title-sm">Задать вопрос автору объявления<i class="arrow-bot-orange"></i></p>
+									<form action="#" class="form-comment form-question">
+										<fieldset>
+											<!-- begin field -->
+											<div class="field">
+												<input type="text" class="form-input" placeholder="Ваш e-mail..." data-validation="email" data-validation-error-msg="Поле обязательное для заполнения">
+											</div>
+											<!-- begin field -->
+											<div class="field">
+												<textarea class="form-area" placeholder="Текст сообщения..." data-validation="length" data-validation-length="min4" data-validation-error-msg="Поле обязательное для заполнения"></textarea>
+											</div>
+											<!-- begin field -->
+											<div class="field add-file">
+												<p><i class="icon-all-clip-sm"></i>Прикрепить файл</p>
+												<p><input class="form-input" type="file" name="photo" multiple accept="image/*,image/jpeg">
+												<p class="field-info">Типы файлов, которые принимаются: jpg, jpeg, png, doc, pdf, gif, zip, rar, tar, html, swf, txt, xls, docx, xlsx, odt<span>Максимальный размер файла 2 МБ</span></p>
+											</div>
+											<input type="submit" class="submit-btn" value='Отправить'>
+										</fieldset>
+									</form>
+								</div>
+							</div>
+							<!-- end popup question to author -->
+						</div>
+						<ul class="author-contacts-list">
+							<li><a href="#"><i class="icon-all-phone-sm"></i>067 000 0000 , 067 000 0000</a></li>
+							<li><a href="#"><i class="icon-all-mail-sm"></i>mail@gmail.com</a></li>
+							<li><a href="#"><i class="icon-all-skype-sm"></i>skypename</a></li>
+						</ul>
+					</div>
+					<!-- end author-contacts -->
+
+					<!-- begin notice-comments  -->
+					<div class="notice-com">
+						<p class="title-sm">Комменатрии</p>
+						<ul class="notice-com-list">
+							<!-- begin comment -->
+							<li>
+								<div class="user-ava-img">
+									<img src="img/content/news-img.jpg" alt="">
+								</div>
+								<div class="notice-com-in">
+									<p class="user-name"><a href="#">Имя пользователя</a></p>
+									<p>Комментарий про товар о чем угодно Комментарий про товар о чем-то</p>
+									<p class="notice-com-date">2 дня назад</p>
+								</div>
+							</li>
+							<!-- begin comment -->
+							<li>
+								<div class="user-ava-img">
+									<img src="img/content/news-img.jpg" alt="">
+								</div>
+								<div class="notice-com-in">
+									<p class="user-name"><a href="#">Имя пользователя</a></p>
+									<p>Комментарий про товар о чем угодно Комментарий про товар о чем-то</p>
+									<p class="notice-com-date">2 дня назад</p>
+								</div>
+							</li>
+							<!-- begin comment -->
+							<li>
+								<div class="user-ava-img">
+									<img src="img/content/news-img.jpg" alt="">
+								</div>
+								<div class="notice-com-in">
+									<p class="user-name"><a href="#">Имя пользователя</a></p>
+									<p>Комментарий про товар о чем угодно Комментарий про товар о чем-то</p>
+									<p class="notice-com-date">2 дня назад</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<!-- end notice-comments -->
+
+					<!-- begin add-comment  -->
+					<div class="add-com">
+						<p class="title-sm">Написать комментарий<i class="arrow-bot-orange"></i></p>
+						<form action="#" class="form-comment">
+							<fieldset>
+								<!-- begin field -->
+								<div class="field">
+									<input type="text" class="form-input" placeholder="Имя пользователя" data-validation="required" data-validation-error-msg="Поле обязательное для заполнения">
+								</div>
+								<!-- begin field -->
+								<div class="field">
+									<textarea class="form-area" placeholder="Текст комментария..." data-validation="length" data-validation-length="min4" data-validation-error-msg="Поле обязательное для заполнения"></textarea>
+								</div>
+								<!-- begin field -->
+								<div class="field add-file">
+									<p><i class="icon-all-clip-sm"></i>Прикрепить файл</p>
+									<input type="text" class="form-input">
+									<p class="field-info">Типы файлов, которые принимаются: jpg, jpeg, png, doc, pdf, gif, zip, rar, tar, html, swf, txt, xls, docx, xlsx, odt<span>Максимальный размер файла 2 МБ</span></p>
+								</div>
+								<button class="submit-btn">Отправить</button>
+							</fieldset>
+						</form>
+					</div>
+					<!-- end add-comment -->
+				</div>
+				<!-- end notice-in -->
+
+				<!-- begin notice-aside  -->
+				<div class="notice-aside">
+					<!-- begin notice-el  -->
+					<div class="notice-el">
+						<!-- begin notice-el-container -->
+						<div class="notice-el-container">
+							<p class="notice-el-price">3554 грн.</p>
+							<a href="#author-msg" class="submit-btn author-q-popup"><i class="icon-all-mail-lg"></i>Написать автору</a>
+							<button class="submit-btn show-phone"><i class="icon-all-phone-lg"></i><span class="author-phone" data-phone="+096 000 0000">+09x xxx xxxx</span><span> показать</span></button>
+						</div>
+						<!-- end notice-el-container -->
+							
+						<!-- begin notice-el-map  -->
+						<div class="notice-el-map">
+							<div class="map-inner">
+								<img src="img/content/map-photo.jpg" alt="map">
+							</div>
+							<div class="notice-el-map-in">
+								<i class="icon-all-loc-lg"></i>
+								<div class="notice-el-map-info">
+									<p>Львов, Франковский район, Львовская область</p>
+									<a href="#" class="show-map-link">показать на карте</a>
+								</div>
+							</div>
+						</div>
+						<!-- end notice-el-map -->
+						
+						<!-- begin notice-el-user  -->
+						<div class="notice-el-user">
+							<i class="icon-all-user-lg"></i>
+							<div class="notice-el-user-info">
+								<p>Имя продавца</p>
+								<p>на Wespoo с 20.08.2015</p>
+								<a href="#">Другие обьявления автора</a>
+							</div>
+						</div>
+						<!-- end notice-el-user -->
+
+						<!-- begin banner  -->
+						<div class="banner">
+							<a href="#"><img src="img/banners/banner-300x600.jpg" alt="banner-img"></a>
+						</div>
+						<!-- end banner -->
+					</div>
+					<!-- end notice-el -->
+				</div>
+				<!-- end notice-aside -->
+			</div>
+			<!-- end notice-wrap-wrap -->
+
+			<!-- begin notice-post  -->
+			<div class="notice-post">
+				<h2 class="post-title">Другие объявления автора</h2>
+				<ul class="notice-post-list">
+					<!-- begin advert -->
+					<li>
+						<a href="#" class="notice-post-img">
+							<img src="img/content/news-img.jpg" alt="photo">
+						</a>
+						<div class="notice-post-in">
+							<a href="#" class="notice-post-title">Лучшая покупка для дома</a>
+							<p class="notice-post-desc">Короткое описание товара Короткое описание товара Короткое описание товара...</p>
+							<p class="notice-post-price">2000 грн.</p>
+							<p class="notice-post-loc">Киев</p>
+							<p class="notice-post-date">8 августа</p>
+						</div>
+					</li>
+					<!-- begin advert -->
+					<li>
+						<a href="#" class="notice-post-img">
+							<img src="img/content/test-175.jpg" alt="photo">
+						</a>
+						<div class="notice-post-in">
+							<a href="#" class="notice-post-title">Лучшая покупка для дома</a>
+							<p class="notice-post-desc">Короткое описание товара...</p>
+							<p class="notice-post-price">2000 грн.</p>
+							<p class="notice-post-loc">Киев</p>
+							<p class="notice-post-date">8 августа</p>
+						</div>
+					</li>
+					<!-- begin advert -->
+					<li>
+						<a href="#" class="notice-post-img">
+							<img src="img/content/image-for-test.jpg" alt="photo">
+						</a>
+						<div class="notice-post-in">
+							<a href="#" class="notice-post-title">Лучшая покупка для дома</a>
+							<p class="notice-post-desc">Короткое описание товара Короткое описание</p>
+							<p class="notice-post-price">2000 грн.</p>
+							<p class="notice-post-loc">Киев</p>
+							<p class="notice-post-date">8 августа</p>
+						</div>
+					</li>
+					<!-- begin advert -->
+					<li>
+						<a href="#" class="notice-post-img">
+							<img src="img/content/notice-photo.jpg" alt="photo">
+						</a>
+						<div class="notice-post-in">
+							<a href="#" class="notice-post-title">Лучшая покупка для дома</a>
+							<p class="notice-post-desc">Короткое описание товара Короткое описание товара Короткое описание товара...</p>
+							<p class="notice-post-price">2000 грн.</p>
+							<p class="notice-post-loc">Киев</p>
+							<p class="notice-post-date">8 августа</p>
+						</div>
+					</li>
+				</ul>
+				<div class="show-all-btn">
+					<a href="#">Смотреть все объявления автора</a>
+				</div>
+			</div>
+			<!-- end notice-post -->
+
+			<!-- begin notice-post  -->
+			<div class="notice-post">
+				<h2 class="post-title">Похожие объявления</h2>
+				<ul class="notice-post-list">
+					<!-- begin advert -->
+					<li>
+						<a href="#" class="notice-post-img">
+							<img src="img/content/news-img.jpg" alt="photo">
+						</a>
+						<div class="notice-post-in">
+							<a href="#" class="notice-post-title">Лучшая покупка для дома</a>
+							<p class="notice-post-desc">Короткое описание товара Короткое описание товара Короткое описание товара...</p>
+							<p class="notice-post-price">2000 грн.</p>
+							<p class="notice-post-loc">Киев</p>
+							<p class="notice-post-date">8 августа</p>
+						</div>
+					</li>
+					<!-- begin advert -->
+					<li>
+						<a href="#" class="notice-post-img">
+							<img src="img/content/test-175.jpg" alt="photo">
+						</a>
+						<div class="notice-post-in">
+							<a href="#" class="notice-post-title">Лучшая покупка для дома</a>
+							<p class="notice-post-desc">Короткое описание товара...</p>
+							<p class="notice-post-price">2000 грн.</p>
+							<p class="notice-post-loc">Киев</p>
+							<p class="notice-post-date">8 августа</p>
+						</div>
+					</li>
+					<!-- begin advert -->
+					<li>
+						<a href="#" class="notice-post-img">
+							<img src="img/content/image-for-test.jpg" alt="photo">
+						</a>
+						<div class="notice-post-in">
+							<a href="#" class="notice-post-title">Лучшая покупка для дома</a>
+							<p class="notice-post-desc">Короткое описание товара Короткое описание</p>
+							<p class="notice-post-price">2000 грн.</p>
+							<p class="notice-post-loc">Киев</p>
+							<p class="notice-post-date">8 августа</p>
+						</div>
+					</li>
+					<!-- begin advert -->
+					<li>
+						<a href="#" class="notice-post-img">
+							<img src="img/content/notice-photo.jpg" alt="photo">
+						</a>
+						<div class="notice-post-in">
+							<a href="#" class="notice-post-title">Лучшая покупка для дома</a>
+							<p class="notice-post-desc">Короткое описание товара Короткое описание товара Короткое описание товара...</p>
+							<p class="notice-post-price">2000 грн.</p>
+							<p class="notice-post-loc">Киев</p>
+							<p class="notice-post-date">8 августа</p>
+						</div>
+					</li>
+				</ul>
+				<div class="show-all-btn">
+					<a href="#">Смотреть все похожие объявления</a>
+				</div>
+			</div>
+			<!-- end notice-post -->
+
+			<!-- begin section-about  -->
+			<div class="section-about">
+				<div class="row">
+					<div class="logo">
+						<a href="#">
+							<img src="img/logo-2.png" alt="Wespoo">
+						</a>
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam totam rem aperiam totam</p>
+				</div>
+				<div class="row">
+					<p><strong>Популярные запросы:</strong> <a href="#">рубрика</a>, <a href="#">категория</a>, <a href="#">техника</a>, <a href="#">рубрика</a>, <a href="#">категория</a>, <a href="#">техника</a>, <a href="#">рубрика</a>, <a href="#">категория</a>, <a href="#">техника</a>, <a href="#">рубрика</a>, <a href="#">категория</a>, <a href="#">техника</a>, <a href="#">рубрика</a>, <a href="#">категория</a>, <a href="#">техника</a>, <a href="#">рубрика</a>, <a href="#">категория</a>, <a href="#">техника</a>, <a href="#">рубрика</a>, <a href="#">категория</a>, <a href="#">техника</a>, <a href="#">рубрика</a>, <a href="#">категория</a>, <a href="#">техника</a>, <a href="#">рубрика</a>, <a href="#">категория</a>, <a href="#">техника</a>.</p>
+				</div>
+				<p class="social-title">Спасибо, что рассказываете о нас друзьям!</p>
+				<ul class="social-list">
+					<li><a href="#"><i class="icon-social-twitter"></i>Поделиться<span>35</span></a></li>
+					<li><a href="#"><i class="icon-social-fb"></i>Поделиться<span>35</span></a></li>
+					<li><a href="#"><i class="icon-social-vk"></i>Поделиться<span>35</span></a></li>
+					<li><a href="#"><i class="icon-social-class"></i>Поделиться<span>35</span></a></li>
+					<li><a href="#"><i class="icon-social-gplus"></i>Поделиться<span>35</span></a></li>
+				</ul>
+			</div>
+			<!-- end section-about -->
+		</div>
+		<!-- end content-wrap -->
+	</div>
+	<!-- end wrapper -->
+
+		<!-- preview-page begin -->
+		<div class="preview-page">
+			<p>
+				Так будет выглядеть страница вашего сообщения!
+			</p>
+			<div class="field h-line mt40">
+            <div class="label-form">
+                <label class="label-hide">Вернуться назад</label>
+            </div>
+            <div class="area-form">
+                <button class="submit-btn inverse">Вернуться назад</button>
+            </div>
+        </div>
+			<div class="field">
+            <div class="label-form">
+                <label class="label-hide">Отправить</label>
+            </div>
+            <div class="area-form">
+                <button type="submit" class="submit-btn">Отправить</button>
+            </div>
+        </div>
+		</div>
+		<!-- preview-page end -->
+	<!-- begin footer  -->
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+			<!-- begin footer--left  -->
+			<div class="footer-left col-xs-8">
+				<div class="footer-col">
+					<p>Компания</p>
+					<ul class="footer-list">
+						<li><a href="#">Добавить обьявление</a></li>
+						<li><a href="#">Реклама на сайте</a></li>
+						<li><a href="#">Безопасные сделки Wespoo</a></li>
+						<li><a href="#">Партнерские программы</a></li>
+						<li><a href="#">Сортировка в поиске</a></li>
+					</ul>
+				</div>
+				<div class="footer-col col-xs-6">
+					<p>Партнерам</p>
+					<ul class="footer-list">
+						<li><a href="#">Политика конфиденциальности</a></li>
+						<li><a href="#">Возвращения средств</a></li>
+						<li><a href="#">Карта опций</a></li>
+						<li><a href="#">Карта городов</a></li>
+						<li><a href="#">Карта сайта</a></li>
+						<li><a href="#">Помощь</a></li>
+						<li><a href="#">Оставить отзыв о сайте Wespoo</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- end footer--left -->
+			<!-- begin footer--right  -->
+			<div class="footer-right col-xs-4">
+				<p>Отдел заботы о пользователях</p>
+				<p>Фамилия Имя</p>
+				<p>Консультант по вопросам работы сайта Wespoo</p>
+				<p>Горячая линия:</p>
+				<ul class="phone-list">
+					<li>0-800-00-00-00</li>
+					<li>(067)123-45-67</li>
+					<li>(093)123-45-67</li>
+				</ul>
+				<a href="#" class="phone-btn">Связаться</a>
+			</div>
+			<!-- end footer--right -->
+			<!-- begin footer-bottom  -->
+			<div class="footer-bottom col-xs-12">
+				<a href="#" class="footer-logo"><img src="img/logo-2.png" alt="Wespoo"></a>
+				<p>&copy; Wespoo.com. Все права защищены.</p>
+				<p>Разработка и поддержка <a href="#">MTITM</a></p>
+			</div>
+			<!-- end footer-bottom -->
+			
+				
+			</div>
+		</div>
+	</div>
+	<!-- end footer -->
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/icheck.min.js"></script>
+	<script src="js/jquery.selectric.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.form-validator.min.js"></script>
+	<script src="js/jquery.fancybox.js"></script>
+	<script src="js/jquery.fancybox-thumbs.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
