@@ -1084,7 +1084,7 @@ form .field:after { content: ""; display: table; clear: both; }
 .advertlist-item-title { *zoom: 1; font-size: 20px; line-height: 24px; padding-right: 15px; margin-top: 3px; }
 .advertlist-item-title:after { content: ""; display: table; clear: both; }
 .advertlist-item-title a { font-weight: bold; }
-.advertlist-item-title a:hover { color: #d4762d; }
+.advertlist-item-title a:hover ,.advertlist-item-title a:focus,.advertlist-item-title a:active{ color: #d4762d; }
 .advertlist-item-title span { float: right; font-weight: bold; color: #d4762d; }
 .advertlist-item-desc { margin-top: 10px; width: 350px; min-height: 95px; font-size: 18px; line-height: 22px; }
 .advertlist-item-desc + p { margin-top: 3px; font-size: 18px; line-height: 22px; color: #d4762d; font-weight: bold; }
