@@ -973,7 +973,7 @@ form .field:after { content: ""; display: table; clear: both; }
 .notice-post-img { float: left; margin-right: 15px; padding: 5px; width: 185px; height: 185px; line-height: 173px; text-align: center; vertical-align: middle; box-shadow: 0 0 3px rgba(1, 1, 1, 0.3); }
 .notice-post-img img { max-width: 175px; max-height: 175px; vertical-align: middle; }
 .notice-post-title { font-size: 20px; line-height: 24px; font-weight: bold; }
-.notice-post-title:hover { color: #d4762d; }
+/*.notice-post-title:hover { color: #d4762d; }*/
 .notice-post-desc { overflow: hidden; margin-top: 5px; height: 66px; font-size: 18px; line-height: 22px; }
 .notice-post-price { margin-top: 5px; margin-bottom: 5px; font-size: 24px; color: #d4762d; font-weight: bold; }
 .notice-post-loc { font-size: 18px; color: #d4762d; font-weight: bold; }
