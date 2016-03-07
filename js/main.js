@@ -1089,7 +1089,6 @@ if ($('.multifilters-wrap').length) {
 			$('.location-title-this-region').html(''+textRegion+'');
 			$('.location-title-back').show();
 			$('input[type="hidden"]').text(redId);
-			console.log($('input[type="hidden"]').text());
 
 		});
 		 $('.city-list li').on('click', function(){
@@ -1105,7 +1104,6 @@ if ($('.multifilters-wrap').length) {
 				$('.location-title-back').hide();
 				var redId = $(this).attr('id');
 				$('input[type="hidden"]').text(redId);
-			console.log($('input[type="hidden"]').text());
 			});
 	
 
