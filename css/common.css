@@ -908,7 +908,7 @@ form .field:after { content: ""; display: table; clear: both; }
 .notice-slider-in .img-wrapper { display: inline-block; padding: 5px; width: 120px; height: 120px; line-height: 105px; vertical-align: middle; text-align: center; background-color: #fff;  box-shadow: 0 0 3px rgba(1, 1, 1, 0.3); }
 .notice-slider-in .img-wrapper:hover { box-shadow: 0 0 5px #d4762d; border:1px solid #d4762d; }
 .notice-slider-in .img-wrapper img { display: inline-block; max-width: 110px; max-height: 110px; vertical-align: middle; }
-.notice-slider .slick-next, .notice-slider .slick-prev { margin-top: -23px; width: 22px; height: 46px; background: url("../img/other/advert-slider-arrow.png") no-repeat center center; box-shadow: 0 0 2px rgba(1, 1, 1, 0.5); opacity: 0.8; }
+.notice-slider .slick-next, .notice-slider .slick-prev { margin-top: -23px; width: 22px; height: 46px; background: url("../img/other/slider-for-arrow.png") no-repeat center center; box-shadow: 0 0 2px rgba(1, 1, 1, 0.5); opacity: 0.8; }
 .notice-slider .slick-next:hover, .notice-slider .slick-prev:hover { opacity: 1; }
 .notice-slider .slick-next:before, .notice-slider .slick-prev:before { content: none; }
 .notice-slider .slick-next { right: 10px; }
