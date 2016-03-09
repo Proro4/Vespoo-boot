@@ -23,13 +23,13 @@ $(document).ready(function(){
 
 			//For load foto
 
-		setInterval(function() {
-			$('.file-preview-thumbnails').each(function(){
-				if($(this).find('.file-preview-frame').length > 1){
-					$(this).find('.file-preview-frame').first().remove();
-				}
-			})
-	}, 1000);
+	// 	setInterval(function() {
+	// 		$('.file-preview-thumbnails').each(function(){
+	// 			if($(this).find('.file-preview-frame').length > 1){
+	// 				$(this).find('.file-preview-frame').first().remove();
+	// 			}
+	// 		})
+	// }, 1000);
 // Active zone
 
 
@@ -1503,7 +1503,9 @@ $(document).ready(function(){
 		$('.msg-status li a').on('click',function(){
 			$('.msg-status li').removeClass('is-active');
 			$(this).parent().addClass('is-active');
-			var clickStatus = $(this).attr('ad-in');
+			var clickStatus = $(this).attr('href');
+			clickStatus = clickStatus.substring(1);
+			console.log(clickStatus)
 			$('.ad-is').css('display',"none");
 			$('#'+clickStatus+'').css('display','block');
 		})
