@@ -978,6 +978,8 @@ if ($('.multifilters-wrap').length) {
 
 // jQuery tabs
 	$('.profile').tabs();
+	$('.profile-tables').tabs();
+
 
 // custom checkbox
 	$('input').iCheck({
@@ -1503,16 +1505,15 @@ $(document).ready(function(){
 		$('.msg-status li a').on('click',function(){
 			$('.msg-status li').removeClass('is-active');
 			$(this).parent().addClass('is-active');
-			var clickStatus = $(this).attr('href');
-			clickStatus = clickStatus.substring(1);
-			console.log(clickStatus)
-			$('.ad-is').css('display',"none");
-			$('#'+clickStatus+'').css('display','block');
+			// var clickStatus = $(this).attr('href');
+			// clickStatus = clickStatus.substring(1);
+			// $('.ad-is').css('display',"none");
+			// $('#'+clickStatus+'').css('display','block');
 		})
 
 		//del first slide
 
-		$('.slick-track .notice-slider-in:eq(0)').remove();
+		// $('.slick-track .notice-slider-in:eq(0)').remove();
 	})
 	
 		//first-felp-fix
